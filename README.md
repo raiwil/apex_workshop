@@ -1,18 +1,15 @@
-# Static HTML Docs Starter
+# APEX Hands-On Workshop
 
-A wide documentation layout with:
-- colored sidebar
-- wide content area
-- step cards
-- screenshots
-- copyable code blocks
+Static HTML/CSS/JS documentation layout.
 
-## Run
-Open `index.html` directly in a browser.
+## Files
+- `index.html`
+- `styles.css`
+- `script.js`
+- `assets/placeholder.png`
+
+## Open locally
+Open `index.html` in your browser or use VS Code Live Server.
 
 ## GitHub Pages
-You can publish the folder as-is to GitHub Pages.
-
-## Replace the screenshot placeholder
-Put your own image here:
-`assets/placeholder.png`
+Upload these files to the root of your repository and enable GitHub Pages for the `main` branch.

@@ -3,544 +3,201 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Docs Layout Starter</title>
-  <style>
-    :root{
-      --bg: #f5f7fb;
-      --panel: #ffffff;
-      --panel-2: #0f172a;
-      --text: #111827;
-      --muted: #64748b;
-      --line: #e5e7eb;
-      --accent: #f97316;
-      --accent-2: #fb923c;
-      --accent-soft: rgba(249,115,22,.12);
-      --code-bg: #0b1220;
-      --code-text: #e5e7eb;
-      --shadow: 0 18px 40px rgba(15, 23, 42, .08);
-      --radius-xl: 28px;
-      --radius-lg: 20px;
-      --radius-md: 14px;
-      --sidebar-w: 340px;
-      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
-
-    * { box-sizing: border-box; }
-    html, body { height: 100%; margin: 0; }
-    body {
-      background:
-        radial-gradient(circle at top left, rgba(249,115,22,.10), transparent 26%),
-        radial-gradient(circle at top right, rgba(59,130,246,.07), transparent 22%),
-        var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    a { color: inherit; text-decoration: none; }
-
-    .layout {
-      display: grid;
-      grid-template-columns: var(--sidebar-w) 1fr;
-      min-height: 100vh;
-    }
-
-    .sidebar {
-      position: sticky;
-      top: 0;
-      height: 100vh;
-      overflow: auto;
-      background:
-        linear-gradient(180deg, #1e293b 0%, #111827 100%);
-      color: white;
-      border-right: 1px solid rgba(255,255,255,.08);
-      padding: 18px 16px;
-    }
-
-    .brand {
-      padding: 8px 10px 18px;
-      margin-bottom: 14px;
-      border-bottom: 1px solid rgba(255,255,255,.08);
-    }
-
-    .brand small {
-      display: inline-block;
-      font-size: .74rem;
-      text-transform: uppercase;
-      letter-spacing: .12em;
-      color: #fdba74;
-      font-weight: 700;
-    }
-
-    .brand h1 {
-      margin: 8px 0 0;
-      font-size: 1.1rem;
-      line-height: 1.25;
-    }
-
-    .search {
-      margin: 14px 0 18px;
-      padding: 10px 12px;
-      border-radius: 14px;
-      background: rgba(255,255,255,.06);
-      border: 1px solid rgba(255,255,255,.09);
-      color: rgba(255,255,255,.9);
-      font-size: .95rem;
-      width: 100%;
-      outline: none;
-    }
-
-    .search::placeholder { color: rgba(255,255,255,.45); }
-
-    .nav-title {
-      margin: 16px 10px 8px;
-      color: rgba(255,255,255,.5);
-      font-size: .74rem;
-      font-weight: 700;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-    }
-
-    .nav a {
-      display: block;
-      margin: 6px 0;
-      padding: 11px 12px;
-      border-radius: 14px;
-      color: rgba(255,255,255,.88);
-      border-left: 4px solid transparent;
-      transition: .18s ease;
-    }
-
-    .nav a:hover {
-      background: rgba(255,255,255,.08);
-      transform: translateX(2px);
-    }
-
-    .nav a.active {
-      background: rgba(249,115,22,.17);
-      border-left-color: var(--accent);
-      color: #fff;
-      box-shadow: inset 0 0 0 1px rgba(249,115,22,.12);
-    }
-
-    .sidebar-card {
-      margin-top: 18px;
-      padding: 16px;
-      border-radius: 18px;
-      background: linear-gradient(180deg, rgba(249,115,22,.15), rgba(249,115,22,.06));
-      border: 1px solid rgba(251,146,60,.20);
-    }
-
-    .sidebar-card strong {
-      display: block;
-      margin-bottom: 6px;
-      font-size: .95rem;
-    }
-
-    .sidebar-card p {
-      margin: 0;
-      color: rgba(255,255,255,.78);
-      font-size: .92rem;
-    }
-
-    .content {
-      padding: 28px;
-    }
-
-    .article {
-      width: 100%;
-      max-width: none;
-      margin: 0 auto;
-      background: rgba(255,255,255,.86);
-      backdrop-filter: blur(8px);
-      border: 1px solid rgba(229,231,235,.85);
-      border-radius: var(--radius-xl);
-      box-shadow: var(--shadow);
-      padding: 32px;
-    }
-
-    .topbar {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 18px;
-      padding-bottom: 18px;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .crumbs {
-      font-size: .92rem;
-      color: var(--muted);
-    }
-
-    .pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 10px 14px;
-      border-radius: 999px;
-      background: var(--accent-soft);
-      color: #9a3412;
-      font-weight: 600;
-      border: 1px solid rgba(249,115,22,.14);
-    }
-
-    .kicker {
-      margin: 0;
-      color: var(--accent);
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: .09em;
-      font-size: .82rem;
-    }
-
-    h2 {
-      margin: 8px 0 12px;
-      font-size: clamp(2rem, 3vw, 3rem);
-      line-height: 1.1;
-      letter-spacing: -.03em;
-    }
-
-    .lead {
-      max-width: 82ch;
-      margin: 0 0 22px;
-      color: var(--muted);
-      font-size: 1.04rem;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.45fr) minmax(320px, .85fr);
-      gap: 22px;
-      align-items: start;
-    }
-
-    .step-list {
-      display: grid;
-      gap: 18px;
-    }
-
-    .step {
-      display: grid;
-      grid-template-columns: 56px 1fr;
-      gap: 16px;
-      padding: 22px;
-      border-radius: 22px;
-      border: 1px solid var(--line);
-      background: #fff;
-    }
-
-    .step-number {
-      width: 56px;
-      height: 56px;
-      border-radius: 18px;
-      display: grid;
-      place-items: center;
-      font-weight: 800;
-      color: #9a3412;
-      background: linear-gradient(180deg, #ffedd5, #fed7aa);
-      border: 1px solid #fdba74;
-      box-shadow: inset 0 1px 0 rgba(255,255,255,.65);
-    }
-
-    .step h3 {
-      margin: 0 0 6px;
-      font-size: 1.18rem;
-      line-height: 1.25;
-    }
-
-    .step p {
-      margin: 0 0 14px;
-      color: var(--muted);
-    }
-
-    .shot {
-      overflow: hidden;
-      border-radius: 18px;
-      border: 1px solid var(--line);
-      background: #f8fafc;
-    }
-
-    .shot img {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-
-    .code {
-      position: relative;
-      margin-top: 12px;
-      border-radius: 18px;
-      overflow: hidden;
-      background: var(--code-bg);
-      border: 1px solid #111827;
-      box-shadow: 0 10px 22px rgba(15, 23, 42, .18);
-    }
-
-    .code button {
-      position: absolute;
-      right: 12px;
-      top: 12px;
-      border: 0;
-      cursor: pointer;
-      padding: 8px 12px;
-      border-radius: 10px;
-      background: rgba(255,255,255,.12);
-      color: white;
-      font: inherit;
-    }
-
-    .code button:hover { background: rgba(255,255,255,.18); }
-
-    .code pre {
-      margin: 0;
-      padding: 20px;
-      color: var(--code-text);
-      overflow: auto;
-      font-size: .93rem;
-      line-height: 1.65;
-    }
-
-    .panel {
-      position: sticky;
-      top: 28px;
-      border-radius: 24px;
-      background: linear-gradient(180deg, #ffffff, #f8fafc);
-      border: 1px solid var(--line);
-      padding: 20px;
-      box-shadow: 0 10px 20px rgba(15,23,42,.04);
-    }
-
-    .panel h4 {
-      margin: 0 0 8px;
-      font-size: 1rem;
-    }
-
-    .panel p {
-      margin: 0 0 14px;
-      color: var(--muted);
-      font-size: .95rem;
-    }
-
-    .panel ul {
-      margin: 0;
-      padding-left: 18px;
-      color: #334155;
-    }
-
-    .note {
-      margin-top: 16px;
-      padding: 14px 16px;
-      border-radius: 16px;
-      border: 1px solid #dbeafe;
-      background: #eff6ff;
-      color: #1e3a8a;
-    }
-
-    .footer-space {
-      height: 20px;
-    }
-
-    @media (max-width: 1120px) {
-      .grid {
-        grid-template-columns: 1fr;
-      }
-      .panel {
-        position: relative;
-        top: auto;
-      }
-    }
-
-    @media (max-width: 920px) {
-      .layout {
-        grid-template-columns: 1fr;
-      }
-
-      .sidebar {
-        position: relative;
-        height: auto;
-        border-right: 0;
-        border-bottom: 1px solid rgba(255,255,255,.08);
-      }
-
-      .content {
-        padding: 16px;
-      }
-
-      .article {
-        padding: 18px;
-      }
-    }
-
-    @media (max-width: 640px) {
-      .step {
-        grid-template-columns: 1fr;
-      }
-      .step-number {
-        width: 48px;
-        height: 48px;
-        border-radius: 16px;
-      }
-    }
-  </style>
+  <title>APEX Hands-On Workshop</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="layout">
     <aside class="sidebar">
       <div class="brand">
-        <small>Getting Started</small>
-        <h1>AI Vector Search · Lab 2</h1>
+        <div class="brand-mark">⌂</div>
+        <div class="brand-text">
+          <small>APEX</small>
+          <h1>Hands-On Workshop</h1>
+        </div>
       </div>
 
-      <input class="search" type="search" placeholder="Search chapters..." aria-label="Search chapters" />
+      <div class="sidebar-section">
+        <div class="section-header">Lab 2: Create User & Populate Tables <span>⌄</span></div>
+        <nav class="nav">
+          <a href="#intro" class="active">Introduction</a>
+          <a href="#task1">Task 1: Login to Database Actions</a>
+          <a href="#task2">Task 2: Create database users</a>
+          <a href="#task3">Task 3: Grant database privileges</a>
+          <a href="#task4">Task 4: Copy an ONNX Model</a>
+          <a href="#task5">Task 5: Import Schemas</a>
+          <a href="#task6">Task 6: Import APEX Demo Workspace and Application</a>
+          <a href="#ack">Acknowledgements</a>
+        </nav>
+      </div>
 
-      <div class="nav-title">Overview</div>
-      <nav class="nav">
-        <a href="#intro" class="active">Introduction</a>
-        <a href="#task1">Task 1: Login to Database Actions</a>
-        <a href="#task2">Task 2: Create database users</a>
-        <a href="#task3">Task 3: Grant database privileges</a>
-        <a href="#task4">Task 4: Copy an ONNX Model</a>
-        <a href="#task5">Task 5: Import Schemas</a>
-        <a href="#task6">Task 6: Import APEX Demo Workspace</a>
-      </nav>
+      <div class="sidebar-section collapsed">
+        <div class="section-header">Lab 3: Introduction <span>⌄</span></div>
+        <nav class="nav">
+          <a href="#lab3">Overview</a>
+        </nav>
+      </div>
 
-      <div class="nav-title">Extras</div>
-      <nav class="nav">
-        <a href="#ack">Acknowledgements</a>
-      </nav>
+      <div class="sidebar-section collapsed">
+        <div class="section-header">Lab 4: Vector Embeddings <span>⌄</span></div>
+        <nav class="nav">
+          <a href="#lab4">Overview</a>
+        </nav>
+      </div>
 
-      <div class="sidebar-card">
-        <strong>Tip</strong>
-        <p>Use this layout for guides, labs, onboarding docs or internal runbooks.</p>
+      <div class="sidebar-section collapsed">
+        <div class="section-header">Lab 5: Exhaustive Search <span>⌄</span></div>
+        <nav class="nav">
+          <a href="#lab5">Overview</a>
+        </nav>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="theme-toggle" aria-label="Theme controls">
+          <span>☼</span>
+          <span class="toggle-track"><span class="toggle-knob"></span></span>
+          <span>☾</span>
+        </div>
+        <div class="copyright">© 2025 APEX Workshop</div>
       </div>
     </aside>
 
     <main class="content">
-      <article class="article">
-        <div class="topbar">
-          <div class="crumbs">Home / Labs / Lab 2 / Create User and Populate Tables</div>
-          <div class="pill">Static HTML • GitHub Pages ready</div>
-        </div>
+      <div class="page">
+        <header class="topbar">
+          <div class="breadcrumbs">
+            <a href="#">Getting Started</a>
+            <span>›</span>
+            <a href="#">Lab 2: Create User & Populate Tables</a>
+            <span>›</span>
+            <span>Task 3: Grant database privileges</span>
+          </div>
+        </header>
 
-        <p class="kicker" id="intro">Lab 2</p>
-        <h2>Create a documentation page with more space and a colored menu</h2>
-        <p class="lead">
-          Diese Version nutzt die Breite besser aus, hat eine deutlich farbigere Sidebar und
-          unterstützt große Tutorial-Abschnitte mit Bildern, Notizen und kopierbaren Codeblöcken.
-        </p>
+        <article class="article">
+          <p class="eyebrow" id="intro">Lab 2</p>
+          <h2>Task 3: Grant database privileges</h2>
 
-        <div class="grid">
-          <section class="step-list">
-            <section class="step" id="task1">
-              <div class="step-number">1</div>
-              <div>
-                <h3>Login to Database Actions</h3>
-                <p>Describe the first action. You can keep the explanation short and put screenshots directly below.</p>
-                <div class="shot">
-                  <img src="assets/placeholder.png" alt="Screenshot placeholder">
-                </div>
+          <p class="lead">
+            If you created the NATIONALPARKS and INCIDENT users in the OCI console as described above,
+            then the following roles and enable script have already been run. If you created the users
+            with a CREATE USER statement or you are using an existing database, then the following
+            should be run for both users.
+          </p>
+
+          <section class="step" id="task1">
+            <div class="step-index">1</div>
+            <div class="step-body">
+              <h3>Login to Database Actions</h3>
+              <p>Start by opening Database Actions and signing in with the appropriate user.</p>
+              <div class="shot">
+                <img src="assets/placeholder.png" alt="Screenshot placeholder for Database Actions" />
               </div>
-            </section>
-
-            <section class="step" id="task2">
-              <div class="step-number">2</div>
-              <div>
-                <h3>Create database users</h3>
-                <p>Code blocks include a copy button and can be used for SQL, shell commands or config snippets.</p>
-                <div class="code">
-                  <button type="button" data-copy="code-1">Copy</button>
-                  <pre><code id="code-1">CREATE USER NATIONALPARKS IDENTIFIED BY "YourPasswordHere";
-GRANT CONNECT, RESOURCE TO NATIONALPARKS;
-ALTER USER NATIONALPARKS QUOTA UNLIMITED ON DATA;</code></pre>
-                </div>
-              </div>
-            </section>
-
-            <section class="step" id="task3">
-              <div class="step-number">3</div>
-              <div>
-                <h3>Grant database privileges</h3>
-                <p>Each step can contain text, image, callout and code. The layout stays wide enough for readable documentation.</p>
-                <div class="note">
-                  Tipp: Dieser Bereich ist bewusst breiter angelegt, damit die Seite weniger gedrückt wirkt.
-                </div>
-              </div>
-            </section>
-
-            <section class="step" id="task4">
-              <div class="step-number">4</div>
-              <div>
-                <h3>Copy an ONNX Model</h3>
-                <p>Placeholders for larger images work well here as well.</p>
-              </div>
-            </section>
-
-            <section class="step" id="task5">
-              <div class="step-number">5</div>
-              <div>
-                <h3>Import Schemas</h3>
-                <p>Use the same structure for every chapter or task.</p>
-              </div>
-            </section>
-
-            <section class="step" id="task6">
-              <div class="step-number">6</div>
-              <div>
-                <h3>Import APEX Demo Workspace</h3>
-                <p>Repeat this pattern for a full tutorial series or internal documentation portal.</p>
-              </div>
-            </section>
-
-            <section class="note" id="ack">
-              <strong>Acknowledgements:</strong> add credits, links, or a license note here.
-            </section>
-
-            <div class="footer-space"></div>
+            </div>
           </section>
 
-          <aside class="panel">
-            <h4>What changed</h4>
-            <p>Die neue Version nutzt die Seite besser aus und wirkt deutlich lebendiger.</p>
-            <ul>
-              <li>farbige Sidebar</li>
-              <li>breiter Content-Bereich</li>
-              <li>Cards pro Schritt</li>
-              <li>Copy-Buttons für Code</li>
-              <li>Responsives Layout</li>
-            </ul>
-          </aside>
-        </div>
-      </article>
+          <section class="step" id="task2">
+            <div class="step-index">2</div>
+            <div class="step-body">
+              <h3>For the NATIONALPARKS user</h3>
+              <p>Copy and run the SQL privileges below.</p>
+              <div class="code-block">
+                <button class="copy-btn" type="button" data-copy="code-np">Copy</button>
+                <pre><code id="code-np">-- ADD ROLES
+GRANT CONNECT TO NATIONALPARKS;
+GRANT RESOURCE TO NATIONALPARKS;
+GRANT CREATE SESSION TO NATIONALPARKS;
+GRANT CREATE TABLE TO NATIONALPARKS;
+GRANT CREATE VIEW TO NATIONALPARKS;
+GRANT CREATE PROCEDURE TO NATIONALPARKS;
+GRANT CREATE SEQUENCE TO NATIONALPARKS;
+GRANT CREATE TRIGGER TO NATIONALPARKS;</code></pre>
+              </div>
+            </div>
+          </section>
+
+          <section class="step" id="task3">
+            <div class="step-index">3</div>
+            <div class="step-body">
+              <h3>For the INCIDENT user</h3>
+              <p>Use the same pattern for the second database user.</p>
+              <div class="code-block">
+                <button class="copy-btn" type="button" data-copy="code-inc">Copy</button>
+                <pre><code id="code-inc">-- ADD ROLES
+GRANT CONNECT TO INCIDENT;
+GRANT RESOURCE TO INCIDENT;
+GRANT CREATE SESSION TO INCIDENT;
+GRANT CREATE TABLE TO INCIDENT;
+GRANT CREATE VIEW TO INCIDENT;
+GRANT CREATE PROCEDURE TO INCIDENT;
+GRANT CREATE SEQUENCE TO INCIDENT;
+GRANT CREATE TRIGGER TO INCIDENT;</code></pre>
+              </div>
+            </div>
+          </section>
+
+          <section class="callout">
+            <strong>Note:</strong> Run the above statements in SQL Worksheet as a user with the appropriate privileges
+            (for example SYS or a user with ADMIN rights).
+          </section>
+
+          <section class="step" id="task4">
+            <div class="step-index">4</div>
+            <div class="step-body">
+              <h3>Copy an ONNX Model</h3>
+              <p>Insert the next lab content here.</p>
+            </div>
+          </section>
+
+          <section class="step" id="task5">
+            <div class="step-index">5</div>
+            <div class="step-body">
+              <h3>Import Schemas</h3>
+              <p>Continue with the remaining instructions and screenshots.</p>
+            </div>
+          </section>
+
+          <section class="step" id="task6">
+            <div class="step-index">6</div>
+            <div class="step-body">
+              <h3>Import APEX Demo Workspace and Application</h3>
+              <p>Each task can follow this same structure.</p>
+            </div>
+          </section>
+
+          <section class="step" id="lab3">
+            <div class="step-index">L3</div>
+            <div class="step-body">
+              <h3>Lab 3: Introduction</h3>
+              <p>Placeholder section for the next chapter.</p>
+            </div>
+          </section>
+
+          <section class="step" id="lab4">
+            <div class="step-index">L4</div>
+            <div class="step-body">
+              <h3>Lab 4: Vector Embeddings</h3>
+              <p>Placeholder section for the next chapter.</p>
+            </div>
+          </section>
+
+          <section class="step" id="lab5">
+            <div class="step-index">L5</div>
+            <div class="step-body">
+              <h3>Lab 5: Exhaustive Search</h3>
+              <p>Placeholder section for the next chapter.</p>
+            </div>
+          </section>
+
+          <section class="ack" id="ack">
+            <h3>Acknowledgements</h3>
+            <p>Add credits, links or license notes here.</p>
+          </section>
+        </article>
+      </div>
     </main>
   </div>
 
-  <script>
-    const links = Array.from(document.querySelectorAll('.nav a'));
-    const sections = links
-      .map(a => document.querySelector(a.getAttribute('href')))
-      .filter(Boolean);
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id));
-      });
-    }, { rootMargin: '-30% 0px -60% 0px', threshold: 0.1 });
-
-    sections.forEach(section => observer.observe(section));
-
-    document.querySelectorAll('[data-copy]').forEach(button => {
-      button.addEventListener('click', async () => {
-        const id = button.getAttribute('data-copy');
-        const code = document.getElementById(id).innerText;
-        await navigator.clipboard.writeText(code);
-        const old = button.textContent;
-        button.textContent = 'Kopiert';
-        setTimeout(() => button.textContent = old, 1400);
-      });
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
