@@ -1,7 +1,5 @@
 const links = Array.from(document.querySelectorAll('.nav a'));
-const sections = links
-  .map((a) => document.querySelector(a.getAttribute('href')))
-  .filter(Boolean);
+const sections = links.map((a) => document.querySelector(a.getAttribute('href'))).filter(Boolean);
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -18,20 +16,15 @@ document.querySelectorAll('[data-copy]').forEach((button) => {
     const targetId = button.getAttribute('data-copy');
     const codeEl = document.getElementById(targetId);
     if (!codeEl) return;
-
     try {
       await navigator.clipboard.writeText(codeEl.innerText);
       const old = button.textContent;
       button.textContent = 'Kopiert';
-      window.setTimeout(() => {
-        button.textContent = old;
-      }, 1400);
-    } catch (err) {
+      setTimeout(() => button.textContent = old, 1400);
+    } catch (e) {
       const old = button.textContent;
       button.textContent = 'Fehler';
-      window.setTimeout(() => {
-        button.textContent = old;
-      }, 1400);
+      setTimeout(() => button.textContent = old, 1400);
     }
   });
 });

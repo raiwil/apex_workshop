@@ -18,47 +18,38 @@
       </div>
 
       <div class="sidebar-section">
-        <div class="section-header">Lab 2: Create User & Populate Tables <span>⌄</span></div>
+        <div class="section-header">Getting Started <span>⌄</span></div>
         <nav class="nav">
           <a href="#intro" class="active">Introduction</a>
-          <a href="#task1">Task 1: Login to Database Actions</a>
-          <a href="#task2">Task 2: Create database users</a>
-          <a href="#task3">Task 3: Grant database privileges</a>
-          <a href="#task4">Task 4: Copy an ONNX Model</a>
-          <a href="#task5">Task 5: Import Schemas</a>
-          <a href="#task6">Task 6: Import APEX Demo Workspace and Application</a>
-          <a href="#ack">Acknowledgements</a>
+          <a href="#notes">Workshop Notes</a>
+          <a href="#chapter1">1 Workshop Start</a>
+          <a href="#chapter2">2 APEX – First Steps</a>
+          <a href="#chapter3">3 MyEmployees Adjustments</a>
+          <a href="#chapter4">4 Layout – UI in APEX</a>
+          <a href="#chapter5">5 Authentication & Authorization</a>
+          <a href="#chapter6">6 Geographical Information</a>
+          <a href="#chapter7">7 RESTful Services</a>
+          <a href="#chapter8">8 Reports</a>
+          <a href="#chapter9">9 Calendar</a>
+          <a href="#chapter10">10 JavaScript in APEX</a>
+          <a href="#chapter11">11 Charts</a>
+          <a href="#chapter12">12 Working with Files</a>
+          <a href="#chapter13">13 Data Loading</a>
+          <a href="#chapter14">14 Mobile Applications</a>
+          <a href="#chapter15">15 Approvals & Workflow</a>
+          <a href="#chapter16">16 Updates over Joins</a>
+          <a href="#chapter17">17 Translations</a>
+          <a href="#chapter18">18 Lifecycle Management</a>
+          <a href="#chapter19">19 AI in APEX</a>
+          <a href="#chapter20">20 Printing/PDF</a>
+          <a href="#chapter21">21 Miscellaneous</a>
+          <a href="#chapter22">22 Links & More</a>
         </nav>
       </div>
 
-      <div class="sidebar-section collapsed">
-        <div class="section-header">Lab 3: Introduction <span>⌄</span></div>
-        <nav class="nav">
-          <a href="#lab3">Overview</a>
-        </nav>
-      </div>
-
-      <div class="sidebar-section collapsed">
-        <div class="section-header">Lab 4: Vector Embeddings <span>⌄</span></div>
-        <nav class="nav">
-          <a href="#lab4">Overview</a>
-        </nav>
-      </div>
-
-      <div class="sidebar-section collapsed">
-        <div class="section-header">Lab 5: Exhaustive Search <span>⌄</span></div>
-        <nav class="nav">
-          <a href="#lab5">Overview</a>
-        </nav>
-      </div>
-
-      <div class="sidebar-footer">
-        <div class="theme-toggle" aria-label="Theme controls">
-          <span>☼</span>
-          <span class="toggle-track"><span class="toggle-knob"></span></span>
-          <span>☾</span>
-        </div>
-        <div class="copyright">© 2025 APEX Workshop</div>
+      <div class="sidebar-card">
+        <strong>Usage</strong>
+        <p>Open <code>index.html</code> locally or publish the folder to GitHub Pages.</p>
       </div>
     </aside>
 
@@ -66,132 +57,205 @@
       <div class="page">
         <header class="topbar">
           <div class="breadcrumbs">
-            <a href="#">Getting Started</a>
+            <a href="#intro">Getting Started</a>
             <span>›</span>
-            <a href="#">Lab 2: Create User & Populate Tables</a>
-            <span>›</span>
-            <span>Task 3: Grant database privileges</span>
+            <span>APEX Hands-On Workshop</span>
           </div>
         </header>
 
         <article class="article">
-          <p class="eyebrow" id="intro">Lab 2</p>
-          <h2>Task 3: Grant database privileges</h2>
-
+          <p class="eyebrow" id="intro">Oracle APEX Workshop Guide</p>
+          <h2>APEX Hands-On Workshop</h2>
           <p class="lead">
-            If you created the NATIONALPARKS and INCIDENT users in the OCI console as described above,
-            then the following roles and enable script have already been run. If you created the users
-            with a CREATE USER statement or you are using an existing database, then the following
-            should be run for both users.
+            A static documentation layout populated with the guide's structure, chapter list, and a
+            condensed version of the workshop content.
           </p>
 
-          <section class="step" id="task1">
-            <div class="step-index">1</div>
-            <div class="step-body">
-              <h3>Login to Database Actions</h3>
-              <p>Start by opening Database Actions and signing in with the appropriate user.</p>
-              <div class="shot">
-                <img src="assets/placeholder.png" alt="Screenshot placeholder for Database Actions" />
+          <section class="hero">
+            <div>
+              <h3>What this page contains</h3>
+              <p>
+                The sidebar mirrors the workshop structure from the guide, while the main content
+                gives you a ready-made landing page for the chapters, notes, and links.
+              </p>
+            </div>
+            <div class="hero-note">
+              Based on APEX 24.2.11
+            </div>
+          </section>
+
+          <section class="note-block" id="notes">
+            <h3>Workshop Notes</h3>
+            <p>
+              The guide is presented as a mix of explanations, demonstrations, and exercises. Brown
+              boxes indicate presenter topics, aqua boxes indicate exercises, darker aqua boxes are
+              optional or self-study, and light purple boxes contain tips and notices.
+            </p>
+            <div class="grid-2">
+              <div class="note-card">
+                <strong>Sequence matters</strong>
+                <span>Chapters 2 & 3 create the base application. Later chapters build on that result.</span>
+              </div>
+              <div class="note-card">
+                <strong>Page numbers</strong>
+                <span>APEX page numbers are part of the exercise flow and should match the guide where possible.</span>
+              </div>
+              <div class="note-card">
+                <strong>Code snippets</strong>
+                <span>Red-highlighted snippets in the guide are meant to be copied into SQL or page properties.</span>
+              </div>
+              <div class="note-card">
+                <strong>Light purple boxes</strong>
+                <span>Side notes cover topics like Dark/Light mode, Friendly URLs, JavaScript, and more.</span>
               </div>
             </div>
           </section>
 
-          <section class="step" id="task2">
-            <div class="step-index">2</div>
-            <div class="step-body">
-              <h3>For the NATIONALPARKS user</h3>
-              <p>Copy and run the SQL privileges below.</p>
-              <div class="code-block">
-                <button class="copy-btn" type="button" data-copy="code-np">Copy</button>
-                <pre><code id="code-np">-- ADD ROLES
-GRANT CONNECT TO NATIONALPARKS;
-GRANT RESOURCE TO NATIONALPARKS;
-GRANT CREATE SESSION TO NATIONALPARKS;
-GRANT CREATE TABLE TO NATIONALPARKS;
-GRANT CREATE VIEW TO NATIONALPARKS;
-GRANT CREATE PROCEDURE TO NATIONALPARKS;
-GRANT CREATE SEQUENCE TO NATIONALPARKS;
-GRANT CREATE TRIGGER TO NATIONALPARKS;</code></pre>
-              </div>
+          <section class="chapter" id="chapter1">
+            <h3>1 Workshop Start – Introduction</h3>
+            <p>Introductory slides explain Oracle Application Express at a high level and set the context for the workshop.</p>
+          </section>
+
+          <section class="chapter" id="chapter2">
+            <h3>2 APEX – First Steps</h3>
+            <ul>
+              <li>Learn the main APEX areas: App Builder, SQL Workshop, Team Development, and Gallery.</li>
+              <li>Create EMP and DEPT sample tables from the sample datasets.</li>
+              <li>Build the first application with the wizard, then add a Faceted Search page.</li>
+              <li>Explore the Application Builder, page designer, and light/dark mode options.</li>
+            </ul>
+            <div class="code-block">
+              <button type="button" data-copy="code2">Copy</button>
+              <pre><code id="code2">CREATE USER example IDENTIFIED BY "password";
+GRANT CONNECT, RESOURCE TO example;</code></pre>
             </div>
           </section>
 
-          <section class="step" id="task3">
-            <div class="step-index">3</div>
-            <div class="step-body">
-              <h3>For the INCIDENT user</h3>
-              <p>Use the same pattern for the second database user.</p>
-              <div class="code-block">
-                <button class="copy-btn" type="button" data-copy="code-inc">Copy</button>
-                <pre><code id="code-inc">-- ADD ROLES
-GRANT CONNECT TO INCIDENT;
-GRANT RESOURCE TO INCIDENT;
-GRANT CREATE SESSION TO INCIDENT;
-GRANT CREATE TABLE TO INCIDENT;
-GRANT CREATE VIEW TO INCIDENT;
-GRANT CREATE PROCEDURE TO INCIDENT;
-GRANT CREATE SEQUENCE TO INCIDENT;
-GRANT CREATE TRIGGER TO INCIDENT;</code></pre>
-              </div>
-            </div>
+          <section class="chapter" id="chapter3">
+            <h3>3 MyEmployees Application Adjustments</h3>
+            <ul>
+              <li>Add navigation from the employees report to the employee form.</li>
+              <li>Change date formats in report and form, and replace the department select list with a radio group.</li>
+              <li>Add a list of values for the job item and use validations, read-only rules, and dynamic actions.</li>
+              <li>Understand session state, computations, processes, and branches.</li>
+            </ul>
           </section>
 
-          <section class="callout">
-            <strong>Note:</strong> Run the above statements in SQL Worksheet as a user with the appropriate privileges
-            (for example SYS or a user with ADMIN rights).
+          <section class="chapter" id="chapter4">
+            <h3>4 Layout – UI in APEX</h3>
+            <ul>
+              <li>The guide explains themes, template styles, template components, and page-level UI attributes.</li>
+              <li>It shows how to use the Theme Roller, copy report templates, and build custom template components.</li>
+              <li>Object-level CSS classes and JavaScript can be used to tune individual items and regions.</li>
+            </ul>
           </section>
 
-          <section class="step" id="task4">
-            <div class="step-index">4</div>
-            <div class="step-body">
-              <h3>Copy an ONNX Model</h3>
-              <p>Insert the next lab content here.</p>
-            </div>
+          <section class="chapter" id="chapter5">
+            <h3>5 Authentication & Authorization</h3>
+            <ul>
+              <li>Create custom authentication with the EMP table and a simple authentication function.</li>
+              <li>Make the start page public and control menu visibility with authorization schemes.</li>
+              <li>Use authorization to guard pages, buttons, and report columns.</li>
+              <li>Filter report rows by current user and department.</li>
+            </ul>
           </section>
 
-          <section class="step" id="task5">
-            <div class="step-index">5</div>
-            <div class="step-body">
-              <h3>Import Schemas</h3>
-              <p>Continue with the remaining instructions and screenshots.</p>
-            </div>
+          <section class="chapter" id="chapter6">
+            <h3>6 Store and show geographical information</h3>
+            <ul>
+              <li>Create a department form and report, add spatial columns and geocode addresses.</li>
+              <li>Add a map region and refresh it automatically after dialog close.</li>
+              <li>The guide references Oracle eLocation Service for mapping.</li>
+            </ul>
           </section>
 
-          <section class="step" id="task6">
-            <div class="step-index">6</div>
-            <div class="step-body">
-              <h3>Import APEX Demo Workspace and Application</h3>
-              <p>Each task can follow this same structure.</p>
-            </div>
+          <section class="chapter" id="chapter7">
+            <h3>7 Integrate RESTful Services</h3>
+            <ul>
+              <li>Define a REST data source and show population data on the department form.</li>
+              <li>Use REST synchronization for local storage and refresh workflows.</li>
+              <li>The guide also notes nested JSON support and REST source catalogs.</li>
+            </ul>
           </section>
 
-          <section class="step" id="lab3">
-            <div class="step-index">L3</div>
-            <div class="step-body">
-              <h3>Lab 3: Introduction</h3>
-              <p>Placeholder section for the next chapter.</p>
-            </div>
+          <section class="chapter" id="chapter8">
+            <h3>8 Reports</h3>
+            <p>Explains classic reports, interactive reports, interactive grids, cards, faceted search, and smart filters.</p>
           </section>
 
-          <section class="step" id="lab4">
-            <div class="step-index">L4</div>
-            <div class="step-body">
-              <h3>Lab 4: Vector Embeddings</h3>
-              <p>Placeholder section for the next chapter.</p>
-            </div>
+          <section class="chapter" id="chapter9">
+            <h3>9 Calendar</h3>
+            <p>Creates a calendar from an OCCUPANCIES table, tunes the query, and adds color coding via CSS and settings.</p>
           </section>
 
-          <section class="step" id="lab5">
-            <div class="step-index">L5</div>
-            <div class="step-body">
-              <h3>Lab 5: Exhaustive Search</h3>
-              <p>Placeholder section for the next chapter.</p>
-            </div>
+          <section class="chapter" id="chapter10">
+            <h3>10 JavaScript in APEX</h3>
+            <p>Uses the browser console, dynamic actions, event tracing, and JavaScript initialization to extend APEX apps.</p>
           </section>
 
-          <section class="ack" id="ack">
-            <h3>Acknowledgements</h3>
-            <p>Add credits, links or license notes here.</p>
+          <section class="chapter" id="chapter11">
+            <h3>11 Charts</h3>
+            <p>Builds a pie chart and bar chart, links them together, and refreshes parts of the page without reloads.</p>
+          </section>
+
+          <section class="chapter" id="chapter12">
+            <h3>12 Working with Files</h3>
+            <p>Shows file upload, download, image upload/display, and ZIP downloads from a report or button.</p>
+          </section>
+
+          <section class="chapter" id="chapter13">
+            <h3>13 Data Loading</h3>
+            <p>Uses Data Load Definitions and a generated page to upload files and map them to database tables.</p>
+          </section>
+
+          <section class="chapter" id="chapter14">
+            <h3>14 Mobile Applications</h3>
+            <p>Covers responsive grids, column toggle reports, reflow reports, PWA setup, and push notifications.</p>
+          </section>
+
+          <section class="chapter" id="chapter15">
+            <h3>15 Approvals & Workflow</h3>
+            <p>Introduces approvals, human tasks, workflow designer concepts, and the related APEX APIs.</p>
+          </section>
+
+          <section class="chapter" id="chapter16">
+            <h3>16 Individual Form Handling – Updates over Joins</h3>
+            <p>Demonstrates join-based editing with an Interactive Grid and alternative trigger-based designs.</p>
+          </section>
+
+          <section class="chapter" id="chapter17">
+            <h3>17 Translations</h3>
+            <p>Adds additional languages using application translations, XLIFF export/import, and globalization settings.</p>
+          </section>
+
+          <section class="chapter" id="chapter18">
+            <h3>18 Application Lifecycle Management</h3>
+            <p>Shows working copies, merge workflows, and lifecycle handling with Git and SQLcl.</p>
+          </section>
+
+          <section class="chapter" id="chapter19">
+            <h3>19 AI in APEX</h3>
+            <p>Summarizes AI-assisted development, AI-powered applications, and vector search support in APEX 24.1+.</p>
+          </section>
+
+          <section class="chapter" id="chapter20">
+            <h3>20 Printing/PDF with APEX</h3>
+            <p>Covers print server options, layout/query integration, and document generation choices.</p>
+          </section>
+
+          <section class="chapter" id="chapter21">
+            <h3>21 Miscellaneous</h3>
+            <p>Includes JSON documents, master-detail, collections, tree navigation, QR codes, email templates, tabs, automations, plug-ins, and application search.</p>
+          </section>
+
+          <section class="chapter" id="chapter22">
+            <h3>22 Links & More Learning Content</h3>
+            <p>Ends with learning resources, tutorials, documentation, API references, blogs, office hours, roadmap, and shortcuts.</p>
+          </section>
+
+          <section class="footer-block">
+            <strong>Ready for expansion</strong>
+            <span>This version gives you a reusable static HTML shell that already reflects the guide's outline and main topics.</span>
           </section>
         </article>
       </div>
