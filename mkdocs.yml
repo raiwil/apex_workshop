@@ -1,0 +1,78 @@
+site_name: APEX Hands-On Workshop
+site_description: Markdown conversion of the Oracle APEX workshop guide
+site_url: https://raiwil.github.io/apex_workshop/
+repo_url: https://github.com/raiwil/apex_workshop
+repo_name: raiwil/apex_workshop
+
+theme:
+  name: material
+  language: de
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: deep orange
+      accent: orange
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+    - scheme: slate
+      primary: deep orange
+      accent: orange
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+
+nav:
+  - Start: index.md
+  - Workshop Notes: workshop-notes.md
+  - Chapters:
+      - '1. Workshop Start - Introduction': 01-workshop-start-introduction.md
+      - '2. APEX - First Steps': 02-apex-first-steps.md
+      - '3. MyEmployees Application Adjustments': 03-myemployees-application-adjustments.md
+      - '4. Layout - UI in APEX': 04-layout-ui-in-apex.md
+      - '5. Authentication & Authorization': 05-authentication-authorization.md
+      - '6. Store and show geographical information': 06-geographical-information.md
+      - '7. Integrate RESTful Services': 07-restful-services.md
+      - '8. Reports': 08-reports.md
+      - '9. Calendar': 09-calendar.md
+      - '10. JavaScript in APEX': 10-javascript-in-apex.md
+      - '11. Charts': 11-charts.md
+      - '12. Working with Files': 12-working-with-files.md
+      - '13. Data Loading': 13-data-loading.md
+      - '14. Mobile Applications': 14-mobile-applications.md
+      - '15. Approvals & Workflow': 15-approvals-workflow.md
+      - '16. Individual Form Handling - Updates over Joins': 16-individual-form-handling.md
+      - '17. Translations': 17-translations.md
+      - '18. Application Lifecycle Management': 18-application-lifecycle-management.md
+      - '19. AI in APEX': 19-ai-in-apex.md
+      - '20. Printing/PDF with APEX': 20-printing-pdf.md
+      - '21. Miscellaneous': 21-miscellaneous.md
+      - '22. Links & More Learning Content': 22-links-more-learning-content.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_css:
+  - stylesheets/extra.css
