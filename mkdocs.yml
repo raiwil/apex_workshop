@@ -1,0 +1,73 @@
+site_name: APEX Hands-On Workshop
+site_description: Markdown/MkDocs-Version des Oracle APEX Hands-On Workshop
+site_url: https://example.com
+theme:
+  name: material
+  language: de
+  palette:
+    scheme: slate
+    primary: brown
+    accent: orange
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+extra_css:
+  - stylesheets/extra.css
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+nav:
+  - Start: index.md
+  - 1 Workshop Start: chapters/01-workshop-start.md
+  - 2 APEX - First Steps:
+      - Überblick: chapters/02-first-steps.md
+      - 2.1 Tools: chapters/02-1-tools.md
+      - 2.2 EMP & DEPT Tables: chapters/02-2-tables.md
+      - 2.3 MyEmployees Wizard: chapters/02-3-wizard.md
+      - 2.4 Faceted Search: chapters/02-4-faceted-search.md
+      - 2.5 Application Builder: chapters/02-5-builder.md
+  - 3 MyEmployees Adjustments:
+      - Überblick: chapters/03-adjustments.md
+      - 3.1 Navigation: chapters/03-1-navigation.md
+      - 3.2 Hiredate Format: chapters/03-2-hiredate-format.md
+      - 3.3 Radio Group: chapters/03-3-radio-group.md
+      - 3.4 LOV Job: chapters/03-4-lov-job.md
+      - 3.5 Behavior depending on values: chapters/03-5-behavior.md
+      - 3.6 Session State: chapters/03-6-session-state.md
+      - 3.7 Computations / Processes / Branches: chapters/03-7-processes-branches.md
+  - 4 Layout / UI: chapters/04-layout-ui.md
+  - 5 Authentication / Authorization: chapters/05-auth.md
+  - 6 Geographic info: chapters/06-geo.md
+  - 7 RESTful Services: chapters/07-rest.md
+  - 8 Reports: chapters/08-reports.md
+  - 9 Calendar: chapters/09-calendar.md
+  - 10 JavaScript in APEX: chapters/10-javascript.md
+  - 11 Charts: chapters/11-charts.md
+  - 12 Working with Files: chapters/12-files.md
+  - 13 Data Loading: chapters/13-data-loading.md
+  - 14 Mobile Applications: chapters/14-mobile.md
+  - 15 Approvals & Workflow: chapters/15-approvals-workflow.md
+  - 16 Updates over Joins: chapters/16-joins.md
+  - 17 Translations: chapters/17-translations.md
+  - 18 Application Lifecycle Management: chapters/18-alm.md
+  - 19 AI in APEX: chapters/19-ai.md
+  - 20 Printing/PDF: chapters/20-printing.md
+  - 21 Miscellaneous: chapters/21-misc.md
+  - 22 Links & More: chapters/22-links.md

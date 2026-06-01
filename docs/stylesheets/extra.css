@@ -1,0 +1,55 @@
+:root {
+  --md-primary-fg-color: #3a2f2a;
+  --md-primary-fg-color--light: #4a3d38;
+  --md-primary-fg-color--dark: #241c18;
+  --md-accent-fg-color: #d85c2a;
+}
+
+.md-header {
+  background: linear-gradient(90deg, #2a221e 0%, #3c312c 100%);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.md-nav--primary .md-nav__title {
+  font-weight: 700;
+}
+
+.livelabs-hero {
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(58,47,42,.95), rgba(40,33,29,.95));
+  color: #fff;
+  padding: 1.25rem 1.5rem;
+  margin: 1rem 0 1.25rem 0;
+  box-shadow: 0 12px 30px rgba(0,0,0,.18);
+}
+
+.livelabs-hero h1,
+.livelabs-hero h2,
+.livelabs-hero h3 {
+  color: #fff;
+  margin-top: 0;
+}
+
+.chapter-card {
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 16px;
+  padding: 1rem 1.1rem;
+  background: rgba(255,255,255,.03);
+  margin: 1rem 0;
+}
+
+.soft-note {
+  border-left: 4px solid #d39b6a;
+  background: rgba(211,155,106,.1);
+  padding: .75rem 1rem;
+  border-radius: 0 12px 12px 0;
+}
+
+.muted {
+  opacity: .82;
+}
+
+img {
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.12);
+}
