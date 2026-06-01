@@ -1,21 +1,30 @@
 ---
 title: APEX Hands-On Workshop
-description: MkDocs conversion of the APEX 24.2.11 workshop guide
 ---
 
-# APEX Hands-On Workshop
+# Welcome to the APEX Hands-On Workshop
 
 ![Cover](assets/cover.png){ .cover-image }
 
-This site is a Markdown and MkDocs conversion of the uploaded APEX workshop guide. It keeps the chapter flow, the workshop notes, and the topic progression from first steps through AI and printing.
+This workshop intends to introduce Oracle APEX to beginners and show them a broad range of possibilities with this tool. Therefore, we skip some potential best practices that might be used. So, for example, it could be a benefit not to use tables directly from the APEX pages but corresponding table APIs instead. Or it might be productive to define UI Defaults for Database Objects before using them. Overall, this workshop cannot transport everything and will not transform a beginner into a product-guru in one day. There’s so much more possible with APEX.
 
-## Quick start
+Have fun and feel free to distribute this document to colleagues and others 
+who are interested in Oracle APEX.
+
+Some of he screenshots are from older releases and may look slightly different when using another release.
+
+
+If you have any feedback for us on this guide, please send it to rainer.willems@oracle.com. You may find spelling mistakes and something may not work because we may not have tested it again with the current release. Or you have a comment that something important is missing. Even if you just want to tell us what you think of this guide, we look forward to hearing from you.
+
+Best Regards
+Arne & Rainer
+
+# Quick start
 
 - Read the [Workshop Notes](workshop-notes.md) first.
 - Use the chapter pages in the sidebar for the step-by-step flow.
-- The original PDF pages are embedded as previews inside the chapter pages.
 
-## Chapters
+# Chapters
 
 <div class="grid cards" markdown>
 
