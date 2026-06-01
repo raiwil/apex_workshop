@@ -32,7 +32,7 @@ theme:
 
 nav:
   - Start: index.md
-  - Workshop Notes: docs/workshop-notes.md
+  - Workshop Notes: workshop-notes.md
   - Chapters:
       - '1. Workshop Start - Introduction': 01-workshop-start-introduction.md
       - '2. APEX - First Steps': 02-apex-first-steps.md
