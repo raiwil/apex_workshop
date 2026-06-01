@@ -28,3 +28,16 @@ document.querySelectorAll('[data-copy]').forEach((button) => {
     }
   });
 });
+
+
+document.querySelectorAll('.section-header').forEach(header => {
+
+  header.addEventListener('click', () => {
+
+    const section = header.closest('.sidebar-section');
+
+    section.classList.toggle('collapsed');
+
+  });
+
+});
