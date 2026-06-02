@@ -31,6 +31,10 @@ Two foreign keys are also created so that employees can only work in departments
 We will use **Sample Datasets**, but there are some other options (Quick SQL, Data Generator).
 
 !! Excercise "Create Table (Sample Datasets)"
+    fewf, grwtg
+    grewgwerg
+    gergerwtg
+    gwrwegwrthg
 
 ## 1.4 Create First Application with the Wizard - MyEmployees
 
