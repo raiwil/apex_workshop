@@ -73,3 +73,21 @@
   max-width: 1400px;
   margin: 0 auto;
 }
+
+
+.md-typeset .admonition.bytheway,
+.md-typeset details.bytheway {
+    border-color: #8b5cf6;
+    background-color: #f6f0ff;
+}
+
+.md-typeset .bytheway > .admonition-title,
+.md-typeset .bytheway > summary {
+    background-color: rgba(139, 92, 246, 0.15);
+}
+
+.md-typeset .bytheway > .admonition-title::before,
+.md-typeset .bytheway > summary::before {
+    background-color: #8b5cf6;
+}
+

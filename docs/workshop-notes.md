@@ -21,7 +21,7 @@ Some exercises depend on earlier ones. The guide calls out these dependencies ex
 
 'Select * from emp;'
 
-[Dokument](https://www.oracle.com)
+[Link zu Oracle](https://www.oracle.com){target="_blank"}
 
 
 ```sql title="Abfrage Tabelle EMP"
@@ -31,7 +31,7 @@ FROM emp;
 
 > Ich bin ein Zitat
 
-!!! note "Wichtiger Hinweis"
+!!! note "Übung"
     Bitte zuerst die Datenbankverbindung prüfen.
 
 !!! tip
@@ -46,6 +46,9 @@ FROM emp;
 !!! info
     Zusätzliche Information.
 
-!!! danger
+!!! danger 
     Vorsicht!
-    
+
+
+!!! bytheway "By the way"
+    Diese Box erscheint in Lila.
