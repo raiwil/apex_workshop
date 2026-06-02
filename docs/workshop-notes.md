@@ -1,9 +1,5 @@
 # Workshop Notes
 
-The PDF uses a visual language to distinguish explanations, exercises, and side notes.
-
-![Workshop Notes page 1](assets/pages/page-004.png){ .chapter-image }
-![Workshop Notes page 2](assets/pages/page-005.png){ .chapter-image }
 
 ## Color and box meaning
 
@@ -23,6 +19,14 @@ Some exercises depend on earlier ones. The guide calls out these dependencies ex
 - Chapter 7 depends on the result from chapter 6.
 - Chapter 10 uses the calendar from chapter 9.
 
-## Practical note
+'Select * from emp;'
 
-The document also explains APEX page numbering, object names, debugging hints, and how to read the screenshots so that you can reproduce the exercise flow even when your own environment looks a little different.
+[Dokument](https://www.oracle.com)
+
+
+'''sql
+select * from emp;
+'''
+
+> Ich bin ein Zitat
+
