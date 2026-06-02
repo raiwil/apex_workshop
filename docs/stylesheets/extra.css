@@ -4,11 +4,6 @@
   --md-primary-fg-color--light: #3a312d;
   --md-primary-fg-color--dark: #171412;
   --md-accent-fg-color: #f36f21;
-  --md-admonition-icon--bytheway: url('data:image/svg+xml;...');
-  --md-admonition-icon--presented: url('data:image/svg+xml;...');
-  --md-admonition-icon--excercise: url('data:image/svg+xml;...');
-  --md-admonition-icon--sampleapp: url('data:image/svg+xml;...');
-  
 }
 
 
@@ -90,8 +85,8 @@
 .md-typeset .bytheway > .admonition-title::before,
 .md-typeset .bytheway > summary::before {
     background-color: #8b5cf6;
-    -webkit-mask-image: var(--md-admonition-icon--tip);
-            mask-image: var(--md-admonition-icon--tip);
+    -webkit-mask-image: url("../assets/icons/lightbulb.svg");
+            mask-image: url("../assets/icons/lightbulb.svg");
 }
 
 /* =====================================================
@@ -112,8 +107,8 @@
 .md-typeset .presented > .admonition-title::before,
 .md-typeset .presented > summary::before {
     background-color: #a87352;
-    -webkit-mask-image: var(--md-admonition-icon--example);
-            mask-image: var(--md-admonition-icon--example);
+    -webkit-mask-image: url("../assets/icons/presentation.svg");
+            mask-image: url("../assets/icons/presentation.svg");
 }
 /* =====================================================
    EXERCISE - Hands-On Übung
@@ -133,8 +128,8 @@
 .md-typeset .exercise > .admonition-title::before,
 .md-typeset .exercise > summary::before {
     background-color: #4f9fb9;
-    -webkit-mask-image: var(--md-admonition-icon--question);
-            mask-image: var(--md-admonition-icon--question);
+    -webkit-mask-image: url("../assets/icons/pencil.svg");
+            mask-image: url("../assets/icons/pencil.svg");
 }
 /* =====================================================
    SAMPLE APP - Beispielanwendung
@@ -154,6 +149,6 @@
 .md-typeset .sampleapp > .admonition-title::before,
 .md-typeset .sampleapp > summary::before {
     background-color: #5c9c6d;
-    -webkit-mask-image: var(--md-admonition-icon--info);
-            mask-image: var(--md-admonition-icon--info);
+    -webkit-mask-image: url("../assets/icons/apps.svg");
+            mask-image: url("../assets/icons/apps.svg");
 }
