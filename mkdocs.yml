@@ -20,15 +20,15 @@ theme:
     - scheme: default
       primary: deep orange
       accent: orange
-      toggle:
-        icon: material/weather-night
-        name: Dark mode
-    - scheme: slate
-      primary: deep orange
-      accent: orange
-      toggle:
-        icon: material/weather-sunny
-        name: Light mode
+  #    toggle:
+  #      icon: material/weather-night
+  #      name: Dark mode
+  #  - scheme: slate
+  #    primary: deep orange
+  #    accent: orange
+  #    toggle:
+  #      icon: material/weather-sunny
+  #      name: Light mode
 
 nav:
   - Start: index.md
