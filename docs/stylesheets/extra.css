@@ -91,3 +91,64 @@
     background-color: #8b5cf6;
 }
 
+/* ==========================
+   PRESENTED (Braun)
+   ========================== */
+
+.md-typeset .admonition.presented,
+.md-typeset details.presented {
+    border-color: #c89b7a;
+    background-color: #e7d6cc;
+}
+
+.md-typeset .presented > .admonition-title,
+.md-typeset .presented > summary {
+    background-color: #dcc5b8;
+}
+
+.md-typeset .presented > .admonition-title::before,
+.md-typeset .presented > summary::before {
+    background-color: #a87352;
+}
+
+
+/* ==========================
+   EXERCISE (Hellblau)
+   ========================== */
+
+.md-typeset .admonition.exercise,
+.md-typeset details.exercise {
+    border-color: #8bbfd0;
+    background-color: #d8edf3;
+}
+
+.md-typeset .exercise > .admonition-title,
+.md-typeset .exercise > summary {
+    background-color: #c5e4ed;
+}
+
+.md-typeset .exercise > .admonition-title::before,
+.md-typeset .exercise > summary::before {
+    background-color: #4f9fb9;
+}
+
+
+/* ==========================
+   SAMPLE APP (Hellgrün)
+   ========================== */
+
+.md-typeset .admonition.sampleapp,
+.md-typeset details.sampleapp {
+    border-color: #9dc5a4;
+    background-color: #dceee0;
+}
+
+.md-typeset .sampleapp > .admonition-title,
+.md-typeset .sampleapp > summary {
+    background-color: #cfe5d4;
+}
+
+.md-typeset .sampleapp > .admonition-title::before,
+.md-typeset .sampleapp > summary::before {
+    background-color: #5c9c6d;
+}

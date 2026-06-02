@@ -52,3 +52,12 @@ FROM emp;
 
 !!! bytheway "By the way"
     Diese Box erscheint in Lila.
+
+!!! presented "By the way"
+    Boxes with a brown background indicate topics the presenter will show.
+
+!!! exercise "Exercise"
+    Create a new application using the Create Application Wizard.
+
+!!! sampleapp "Sample App"
+    Open the Starter Apps sample application.
