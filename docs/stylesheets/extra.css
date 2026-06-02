@@ -81,7 +81,9 @@
 
 .md-typeset .bytheway > .admonition-title::before,
 .md-typeset .bytheway > summary::before {
-  background-color: #8b5cf6;
+    background-color: #8b5cf6;
+    -webkit-mask-image: var(--md-admonition-icon--tip);
+            mask-image: var(--md-admonition-icon--tip);
 }
 
 /* =====================================================
@@ -101,9 +103,10 @@
 
 .md-typeset .presented > .admonition-title::before,
 .md-typeset .presented > summary::before {
-  background-color: #a87352;
+    background-color: #a87352;
+    -webkit-mask-image: var(--md-admonition-icon--example);
+            mask-image: var(--md-admonition-icon--example);
 }
-
 /* =====================================================
    EXERCISE - Hands-On Übung
    ===================================================== */
@@ -121,9 +124,10 @@
 
 .md-typeset .exercise > .admonition-title::before,
 .md-typeset .exercise > summary::before {
-  background-color: #4f9fb9;
+    background-color: #4f9fb9;
+    -webkit-mask-image: var(--md-admonition-icon--question);
+            mask-image: var(--md-admonition-icon--question);
 }
-
 /* =====================================================
    SAMPLE APP - Beispielanwendung
    ===================================================== */
@@ -141,5 +145,7 @@
 
 .md-typeset .sampleapp > .admonition-title::before,
 .md-typeset .sampleapp > summary::before {
-  background-color: #5c9c6d;
+    background-color: #5c9c6d;
+    -webkit-mask-image: var(--md-admonition-icon--info);
+            mask-image: var(--md-admonition-icon--info);
 }
