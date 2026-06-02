@@ -30,7 +30,7 @@ Two foreign keys are also created so that employees can only work in departments
 
 We will use **Sample Datasets**, but there are some other options (Quick SQL, Data Generator).
 
-!!! excercise "Create Table (Sample Datasets)"
+!!! exercise "Create Table (Sample Datasets)"
     In the **SQL Workshop** we choose the **Sample Datasets** in the **Utilities**
 
     ![Utilities](assets/gettingstarted/utilities.png){ style="display:block;margin:auto;" }
@@ -46,11 +46,6 @@ We will use **Sample Datasets**, but there are some other options (Quick SQL, Da
 Now the tables are created and this could be checked in the **Object Browser**.
 
 !!! bytheway "Dark and Light Mode"
-    By the way,
-    clicking on your initial on the bottem left you can easily choose the mode of the application builder between Light and Dark Mode or a time-dependent automatic mode.
-
-
-!!! exercise "Exercise"
     <div class="two-columns">
        <div>
           By the way,
