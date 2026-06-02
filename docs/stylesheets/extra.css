@@ -1,4 +1,4 @@
-/* Oracle / LiveLabs inspired styling */
+/* Oracle LiveLabs inspired styling */
 :root {
   --md-primary-fg-color: #241f1d;
   --md-primary-fg-color--light: #3a312d;
@@ -68,7 +68,7 @@
 
 
 /* =====================================================
-   PURPLE - By the way
+   By the way - Hints
    ===================================================== */
 
 .md-typeset .admonition.bytheway,
