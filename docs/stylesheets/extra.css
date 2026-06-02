@@ -48,3 +48,25 @@
 .md-content {
   max-width: 1000px;
 }
+
+
+/* Rechte Inhaltsübersicht ausblenden */
+.md-sidebar--secondary {
+  display: none;
+}
+
+/* Contentbereich breiter machen */
+.md-grid {
+  max-width: 1600px; /* Standard ist ca. 1220px */
+}
+
+/* Hauptinhalt breiter */
+.md-content {
+  max-width: none;
+}
+
+/* Verfügbaren Platz nutzen */
+.md-content__inner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
