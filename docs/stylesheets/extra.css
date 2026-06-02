@@ -4,7 +4,14 @@
   --md-primary-fg-color--light: #3a312d;
   --md-primary-fg-color--dark: #171412;
   --md-accent-fg-color: #f36f21;
+  --md-admonition-icon--bytheway: url('data:image/svg+xml;...');
+  --md-admonition-icon--presented: url('data:image/svg+xml;...');
+  --md-admonition-icon--excercise: url('data:image/svg+xml;...');
+  --md-admonition-icon--sampleapp: url('data:image/svg+xml;...');
+  
 }
+
+
 
 .md-header {
   background: linear-gradient(90deg, #221c19 0%, #2c2522 100%);
@@ -63,6 +70,7 @@
 .md-sidebar--secondary {
   display: none !important;
 }
+
 
 /* =====================================================
    PURPLE - By the way
