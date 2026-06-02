@@ -38,117 +38,108 @@
 .md-typeset .grid.cards > .card,
 .md-typeset .grid.cards > .mdx-card {
   border-radius: 18px;
-  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
 .md-typeset .grid.cards a {
   color: inherit;
 }
 
-.md-content {
-  max-width: 1000px;
-}
-
-
-/* Rechte Inhaltsübersicht ausblenden */
-.md-sidebar--secondary {
-    visibility: hidden;
-    width: 0;
-    min-width: 0;
-    display: none;
-}
-
-/* Contentbereich breiter machen */
+/* Layout breiter machen */
 .md-grid {
-  max-width: 1800px; /* Standard ist ca. 1220px */
+  max-width: 1800px;
 }
 
-/* Hauptinhalt breiter */
 .md-content {
   max-width: none;
 }
 
-/* Verfügbaren Platz nutzen */
 .md-content__inner {
   max-width: 1400px;
   margin: 0 auto;
 }
 
+/* Rechte Inhaltsübersicht ausblenden */
+.md-sidebar--secondary {
+  display: none !important;
+}
+
+/* =====================================================
+   PURPLE - By the way
+   ===================================================== */
 
 .md-typeset .admonition.bytheway,
 .md-typeset details.bytheway {
-    border-color: #8b5cf6;
-    background-color: #f6f0ff;
+  border-color: #8b5cf6;
+  background-color: #f8f4ff;
 }
 
 .md-typeset .bytheway > .admonition-title,
 .md-typeset .bytheway > summary {
-    background-color: rgba(139, 92, 246, 0.15);
+  background-color: #ece3ff;
 }
 
 .md-typeset .bytheway > .admonition-title::before,
 .md-typeset .bytheway > summary::before {
-    background-color: #8b5cf6;
+  background-color: #8b5cf6;
 }
 
-/* ==========================
-   PRESENTED (Braun)
-   ========================== */
+/* =====================================================
+   PRESENTED - Trainer Demonstration
+   ===================================================== */
 
 .md-typeset .admonition.presented,
 .md-typeset details.presented {
-    border-color: #c89b7a;
-    background-color: #e7d6cc;
+  border-color: #d4b8a5;
+  background-color: #f1e4dc;
 }
 
 .md-typeset .presented > .admonition-title,
 .md-typeset .presented > summary {
-    background-color: #dcc5b8;
+  background-color: #ead8cd;
 }
 
 .md-typeset .presented > .admonition-title::before,
 .md-typeset .presented > summary::before {
-    background-color: #a87352;
+  background-color: #a87352;
 }
 
-
-/* ==========================
-   EXERCISE (Hellblau)
-   ========================== */
+/* =====================================================
+   EXERCISE - Hands-On Übung
+   ===================================================== */
 
 .md-typeset .admonition.exercise,
 .md-typeset details.exercise {
-    border-color: #8bbfd0;
-    background-color: #d8edf3;
+  border-color: #a8cfdb;
+  background-color: #e7f4f8;
 }
 
 .md-typeset .exercise > .admonition-title,
 .md-typeset .exercise > summary {
-    background-color: #c5e4ed;
+  background-color: #d9edf3;
 }
 
 .md-typeset .exercise > .admonition-title::before,
 .md-typeset .exercise > summary::before {
-    background-color: #4f9fb9;
+  background-color: #4f9fb9;
 }
 
-
-/* ==========================
-   SAMPLE APP (Hellgrün)
-   ========================== */
+/* =====================================================
+   SAMPLE APP - Beispielanwendung
+   ===================================================== */
 
 .md-typeset .admonition.sampleapp,
 .md-typeset details.sampleapp {
-    border-color: #9dc5a4;
-    background-color: #dceee0;
+  border-color: #b6d4bc;
+  background-color: #e6f2e8;
 }
 
 .md-typeset .sampleapp > .admonition-title,
 .md-typeset .sampleapp > summary {
-    background-color: #cfe5d4;
+  background-color: #d8eadb;
 }
 
 .md-typeset .sampleapp > .admonition-title::before,
 .md-typeset .sampleapp > summary::before {
-    background-color: #5c9c6d;
+  background-color: #5c9c6d;
 }
