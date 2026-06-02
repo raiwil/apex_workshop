@@ -13,6 +13,7 @@ Some of he screenshots are from older releases and may look slightly different w
 If you have any feedback for us on this guide, please send it to rainer.willems@oracle.com. You may find spelling mistakes and something may not work because we may not have tested it again with the current release. Or you have a comment that something important is missing. Even if you just want to tell us what you think of this guide, we look forward to hearing from you.
 
 Best Regards
+
 Arne & Rainer
 
 
