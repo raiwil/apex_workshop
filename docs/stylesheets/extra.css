@@ -112,25 +112,6 @@
 }
 /* =====================================================
    EXERCISE - Hands-On Übung
-
-
-.md-typeset .admonition.exercise,
-.md-typeset details.exercise {
-  border-color: #a8cfdb;
-  background-color: #e7f4f8;
-}
-
-.md-typeset .exercise > .admonition-title,
-.md-typeset .exercise > summary {
-  background-color: #dcecf9;
-}
-
-.md-typeset .exercise > .admonition-title::before,
-.md-typeset .exercise > summary::before {
-    background-color: #4f9fb9;
-    -webkit-mask-image: url("../assets/icons/pencil.svg");
-            mask-image: url("../assets/icons/pencil.svg");
-
    ===================================================== */
 
 .md-typeset .admonition.exercise,
@@ -141,7 +122,7 @@
 
 .md-typeset .exercise > .admonition-title,
 .md-typeset .exercise > summary {
-  background-color: #d9edf3;
+  background-color: #dcecf9;
 }
 
 .md-typeset .exercise > .admonition-title::before,
@@ -150,6 +131,8 @@
     -webkit-mask-image: url("../assets/icons/pencil.svg");
             mask-image: url("../assets/icons/pencil.svg");
 }
+
+
 /* =====================================================
    SAMPLE APP - Beispielanwendung
    ===================================================== */
