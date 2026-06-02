@@ -52,12 +52,15 @@
 
 /* Rechte Inhaltsübersicht ausblenden */
 .md-sidebar--secondary {
-  display: none;
+    visibility: hidden;
+    width: 0;
+    min-width: 0;
+    display: none;
 }
 
 /* Contentbereich breiter machen */
 .md-grid {
-  max-width: 1600px; /* Standard ist ca. 1220px */
+  max-width: 1800px; /* Standard ist ca. 1220px */
 }
 
 /* Hauptinhalt breiter */
