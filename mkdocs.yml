@@ -35,7 +35,6 @@ nav:
   - Workshop Notes: workshop-notes.md
   - Chapters:
       - '1. Getting started and taking the first steps': 01-getting-started.md
-      - '2. APEX - First Steps': 02-apex-first-steps.md
       - '3. MyEmployees Application Adjustments': 03-myemployees-application-adjustments.md
       - '4. Layout - UI in APEX': 04-layout-ui-in-apex.md
       - '5. Authentication & Authorization': 05-authentication-authorization.md
