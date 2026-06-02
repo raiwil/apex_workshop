@@ -152,3 +152,13 @@
     -webkit-mask-image: url("../assets/icons/apps.svg");
             mask-image: url("../assets/icons/apps.svg");
 }
+
+
+.two-columns {
+  display: flex;
+  gap: 2rem;
+}
+
+.two-columns > div {
+  flex: 1;
+}

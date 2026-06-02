@@ -30,7 +30,7 @@ Two foreign keys are also created so that employees can only work in departments
 
 We will use **Sample Datasets**, but there are some other options (Quick SQL, Data Generator).
 
-!!! Excercise "Create Table (Sample Datasets)"
+!!! excercise "Create Table (Sample Datasets)"
     In the **SQL Workshop** we choose the **Sample Datasets** in the **Utilities**
 
     ![Utilities](assets/gettingstarted/utilities.png){ style="display:block;margin:auto;" }
@@ -43,7 +43,23 @@ We will use **Sample Datasets**, but there are some other options (Quick SQL, Da
     
     After clicking **Next** we just choose **Install Dataset** in the next window and then **Exit** (Please don't use the Create Application Button). 
      
-Now the tables are created and this could be checked in the **Object Browser**
+Now the tables are created and this could be checked in the **Object Browser**.
+
+!!! bytheway "Dark and Light Mode"
+    By the way,
+    clicking on your initial on the bottem left you can easily choose the mode of the application builder between Light and Dark Mode or a time-dependent automatic mode.
+
+
+!!! exercise "Exercise"
+    <div class="two-columns">
+       <div>
+          By the way,
+          clicking on your initial on the bottem left you can easily choose the mode of the application builder between Light and Dark Mode or a time-dependent automatic mode.
+       </div>
+    <div>
+        ![Mode](assets/btw/darkmode.png){ style="display:block;margin:auto;" }
+    </div>
+    </div>
 
 ## 1.4 Create First Application with the Wizard - MyEmployees
 
