@@ -52,14 +52,23 @@ Now the tables are created and this could be checked in the **Object Browser**.
           clicking on your initial on the bottem left you can easily choose the mode of the application builder between Light and Dark Mode or a time-dependent automatic mode.
        </div>
     <div>
-        ![Mode](assets/btw/darkmode.png){ style="display:block;margin:auto;" }
+        ![Model](assets/btw/darkmode.png){ style="display:block;margin:auto;" }
     </div>
     </div>
 
 ## 1.4 Create First Application with the Wizard - MyEmployees
 
 We will use the wizard to create an application with an initial homepage and a report/form for the employees. After that, we will add a second page in Page Designer. This will be our starting point for the upcoming exercises. Everything that’s created here can be changed later.
+In the **App Builder** we click on **Create**.
+
+![AppBuilder Create](assets/gettingstarted/appbuilder-create.png){ style="display:block;margin:auto;" }
+
+There are various ways to create an application.
+
+Just giving a name (MyEmployees) and clicking on the Create Application button would create an empty application. We will click on Use Create App Wizard. The ID is System Generated and must be unique in an APEX Instance.
 
 ## 1.5 Add a page (Faceted Search)
 
 ## 1.6 APEX Application Builder
+
+Petra ist toll
