@@ -24,9 +24,28 @@ Some exercises depend on earlier ones. The guide calls out these dependencies ex
 [Dokument](https://www.oracle.com)
 
 
-'''sql
-select * from emp;
-'''
+```sql title="Abfrage Tabelle EMP"
+SELECT *
+FROM emp;
+```
 
 > Ich bin ein Zitat
 
+!!! note "Wichtiger Hinweis"
+    Bitte zuerst die Datenbankverbindung prüfen.
+
+!!! tip
+    Das ist ein Tipp.
+
+!!! warning
+    Warning
+
+!!! success
+    Erfolgreich ausgeführt
+
+!!! info
+    Zusätzliche Information.
+
+!!! danger
+    Vorsicht!
+    
