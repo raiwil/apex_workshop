@@ -48,7 +48,7 @@ Now the tables are created and this could be checked in the **Object Browser**.
 !!! bytheway "Dark and Light Mode"
     <div class="two-columns">
        <div>
-          By the way,
+          *By the way*,<br>
           clicking on your initial on the bottem left you can easily choose the mode of the application builder between Light and Dark Mode or a time-dependent automatic mode.
        </div>
     <div>
