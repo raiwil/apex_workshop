@@ -53,7 +53,7 @@ FROM emp;
 !!! bytheway "By the way"
     Diese Box erscheint in Lila.
 
-!!! presented "By the way"
+!!! presented "Presented"
     Boxes with a brown background indicate topics the presenter will show.
 
 !!! exercise "Exercise"
@@ -61,3 +61,4 @@ FROM emp;
 
 !!! sampleapp "Sample App"
     Open the Starter Apps sample application.
+
