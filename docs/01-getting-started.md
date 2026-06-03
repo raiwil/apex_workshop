@@ -59,38 +59,41 @@ Now the tables are created and this could be checked in the **Object Browser**.
 ## 1.4 Create First Application with the Wizard - MyEmployees
 
 We will use the wizard to create an application with an initial homepage and a report/form for the employees. After that, we will add a second page in Page Designer. This will be our starting point for the upcoming exercises. Everything that’s created here can be changed later.
-In the **App Builder** we click on **Create**.
 
-![AppBuilder Create](assets/gettingstarted/appbuilder-create.png){ style="display:block;margin:auto;" }
+!!! exercise "Create first application with the Wizard"
 
-There are various ways to create an application.
+    In the **App Builder** we click on **Create**.
 
-Just giving a name (<span class="myentry">MyEmployees</span>) and clicking on the **Create Application** button would create an empty application. We will click on **Use Create App Wizard**. The ID is System Generated and must be unique in an APEX Instance.
+    ![AppBuilder Create](assets/gettingstarted/appbuilder-create.png){ style="display:block;margin:auto;" }
 
-![AppBuilder Create](assets/gettingstarted/createanapplication.png){ style="display:block;margin:auto;" }
+    There are various ways to create an application.
 
-!!! tip "Create App Using Generative AI
-    The entry **Create App Using Genrative AI** is only available, when you've configured an **Generative AI Service** in the Workspace Utilities. The same is valid for the APEX Assistants in the Code Editors.
+    Just giving a name (<span class="myentry">MyEmployees</span>) and clicking on the **Create Application** button would create an empty application. We will click on **Use Create App Wizard**. The ID is System Generated and must be unique in an APEX Instance.
 
-We can change the logo and the default Appearance. We **Add Page**.
+    ![AppBuilder Create](assets/gettingstarted/createanapplication.png){ style="display:block;margin:auto;" }
 
-![AppBuilder Create](assets/gettingstarted/createanapplication2.png){ style="display:block;margin:auto;" }
+    !!! tip "Create App Using Generative AI
+        The entry **Create App Using Genrative AI** is only available, when you've configured an **Generative AI Service** in the Workspace Utilities. The same is valid for the APEX Assistants in the Code Editors.
 
-We can create an empty page or choose a region for the new page. We use a **Form** region.
+    We can change the logo and the default Appearance. We **Add Page**. 
 
-![AppBuilder Create](assets/gettingstarted/addpage.png){ style="display:block;margin:auto;" }
+    ![AppBuilder Create](assets/gettingstarted/createanapplication2.png){ style="display:block;margin:auto;" }
 
-Name the Page <span class="myentry">Employee</span> and choose our just created table <span class="myentry">EMP</span>. To get a report to see and select the employees we check the **Include Report** checkbox.
+    We can create an empty page or choose a region for the new page. We use a **Form** region.
 
-![AppBuilder Create](assets/gettingstarted/createformpage.png){ style="display:block;margin:auto;" }
+    ![AppBuilder Create](assets/gettingstarted/addpage.png){ style="display:block;margin:auto;" }
 
-Keep the rest of the properties in the wizard as they are and click **Create Application**
+    Name the Page <span class="myentry">Employee</span> and choose our just created table <span class="myentry">EMP</span>. To get a report to see and select the employees we check the **Include Report** checkbox.
 
-![AppBuilder Create](assets/gettingstarted/createanapplication2.png){ style="display:block;margin:auto;" }
+    ![AppBuilder Create](assets/gettingstarted/createformpage.png){ style="display:block;margin:auto;" }
 
-After a few seconds the application is created and you can see the pages. **Run Application** to see the result. Username and Password are identical to those you’ve chosen to connect to the development environment, as the default Authentication Scheme is Oracle APEX Accounts.
+    Keep the rest of the properties in the wizard as they are and click **Create Application**
 
-![AppBuilder Create](assets/gettingstarted/runmyemployees.png){ style="display:block;margin:auto;" }
+    ![AppBuilder Create](assets/gettingstarted/createanapplication2.png){ style="display:block;margin:auto;" }
+
+    After a few seconds the application is created and you can see the pages. **Run Application** to see the result. Username and Password are identical to those you’ve chosen to connect to the development environment, as the default Authentication Scheme is Oracle APEX Accounts.
+
+    ![AppBuilder Create](assets/gettingstarted/runmyemployees.png){ style="display:block;margin:auto;" }
 
 
 ## 1.5 Add a page (Faceted Search)
