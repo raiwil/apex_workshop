@@ -130,7 +130,7 @@ We now will add an additional page to the application, to see how this is done w
 
     ![AppBuilder Create](assets/gettingstarted/panes.png){ style="display:block;margin:auto;" }
 
-    ![AppBuilder Create](assets/gettingstarted/toolbar.png){ style="display:block;margin:auto;" }
+    ![AppBuilder Create](assets/gettingstarted/toolbar.png){  width="70%" style="display:block;margin:auto;" }
 
     - Pages
     - Regions
@@ -143,7 +143,7 @@ We now will add an additional page to the application, to see how this is done w
     - Help
     - Developer Toolbar
 
-    ![AppBuilder Create](assets/gettingstarted/developertoolbar.png){ style="display:block;margin:auto;" }
+    ![AppBuilder Create](assets/gettingstarted/developertoolbar.png){  width="70%" style="display:block;margin:auto;" }
      
     !!! bytheway "Location of Developer Toolbar"
         <div class="two-columns">
