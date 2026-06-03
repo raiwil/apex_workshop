@@ -98,5 +98,20 @@ We will use the wizard to create an application with an initial homepage and a r
 
 ## 1.5 Add a page (Faceted Search)
 
+We now will add an additional page to the application, to see how this is done without the wizard.
+
+!!! exercise
+    You see the application with the already created pages by the wizard and click **Create Page**. Later we will see, that that’s also possible in the Page Designer.
+
+    ![AppBuilder Create](assets/gettingstarted/createpage.png){ style="display:block;margin:auto;" }
+
+    Now we choose **Faceted Search** as component for the new page.
+
+    ![AppBuilder Create](assets/gettingstarted/createpage2.png){ style="display:block;margin:auto;" }
+
+    **Page Number** ***4*** should be pre-initialized and we **name** the page ***EmpFacets***. As **Data Source** we use the **Local Database** and here our table ***EMP***.
+
+    ![AppBuilder Create](assets/gettingstarted/createpage3.png){ style="display:block;margin:auto;" }
+
 ## 1.6 APEX Application Builder
 

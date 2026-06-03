@@ -1,11 +1,10 @@
 # Workshop Notes
 
-This hands-on workshop will be a mix of explanations, demonstrations, and taking your own steps (especially after the workshop).
+This hands-on workshop will be a mix of explanations, demonstrations, and taking your own steps.
 
 
 !!! presented "Presented"
     Boxes with a brown background indicate in bullet points some topics the presenter will show and explain at this point. These are listed here as a reminder of what has been seen.
-.
 
 !!! exercise "Exercise"
     Boxes with this aqua background represent the exercises. These are demonstrated step by step, and relevant things are explained. After that, or in parallel, there is time to reproduce these steps yourself. 
@@ -17,6 +16,8 @@ There are some code snippets available. These are available as follows to easy c
 SELECT *
 FROM emp;
 ```
+
+Property-Names, Button Labels or similar mentioned in the text are **bold** and entries for properties are marked like <span class="myentry">this</span>.
 
 Some of the exercises build on each other. Thus, exercises for a chapter should always be performed in sequence. Chapters 1 & 2 create a basic application that serves as the basis for all further exercises. 
 Furthermore, the Chapter with the RESTful Service Integration requires the result of the exercise for geographical information and the JavaScript example is built on top of the calendar excercise. 
@@ -31,7 +32,15 @@ In the screenshots of the exercises, you will see these numbers (that are automa
     Sometimes we have a tip or notice (that is not necessarily directly related to the current exercise in this workshop). This is then shown in light purple.
 
 
--------
+
+<!--
+```sql title="Abfrage Tabelle EMP"
+SELECT *
+FROM emp;
+```
+[Link zu Oracle](https://www.oracle.com){target="_blank"}
+
+> Ich bin ein Zitat
 
 !!! note "Note"
     Bitte zuerst die Datenbankverbindung prüfen.
@@ -52,20 +61,6 @@ In the screenshots of the exercises, you will see these numbers (that are automa
     Vorsicht!
 
 
-
-
-
-
-
-
-<!--
-```sql title="Abfrage Tabelle EMP"
-SELECT *
-FROM emp;
-```
-[Link zu Oracle](https://www.oracle.com){target="_blank"}
-
-> Ich bin ein Zitat
 
 
 -->
