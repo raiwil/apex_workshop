@@ -72,7 +72,7 @@ We will use the wizard to create an application with an initial homepage and a r
 
     ![AppBuilder Create](assets/gettingstarted/createanapplication.png){ style="display:block;margin:auto;" }
 
-    !!! tip "Create App Using Generative AI
+    !!! tip "Create App Using Generative AI"
         The entry **Create App Using Genrative AI** is only available, when you've configured an **Generative AI Service** in the Workspace Utilities. The same is valid for the APEX Assistants in the Code Editors.
 
     We can change the logo and the default Appearance. We **Add Page**. 
