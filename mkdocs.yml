@@ -34,27 +34,28 @@ nav:
   - Start: index.md
   - Workshop Notes: workshop-notes.md
   - Chapters:
-      - '1. Getting started and taking the first steps': 01-getting-started.md
-      - '3. MyEmployees Application Adjustments': 03-myemployees-application-adjustments.md
-      - '4. Layout - UI in APEX': 04-layout-ui-in-apex.md
-      - '5. Authentication & Authorization': 05-authentication-authorization.md
-      - '6. Store and show geographical information': 06-geographical-information.md
-      - '7. Integrate RESTful Services': 07-restful-services.md
-      - '8. Reports': 08-reports.md
-      - '9. Calendar': 09-calendar.md
-      - '10. JavaScript in APEX': 10-javascript-in-apex.md
-      - '11. Charts': 11-charts.md
-      - '12. Working with Files': 12-working-with-files.md
-      - '13. Data Loading': 13-data-loading.md
-      - '14. Mobile Applications': 14-mobile-applications.md
-      - '15. Approvals & Workflow': 15-approvals-workflow.md
-      - '16. Individual Form Handling - Updates over Joins': 16-individual-form-handling.md
-      - '17. Translations': 17-translations.md
-      - '18. Application Lifecycle Management': 18-application-lifecycle-management.md
-      - '19. AI in APEX': 19-ai-in-apex.md
-      - '20. Printing/PDF with APEX': 20-printing-pdf.md
+      - '1. Getting started': 01-getting-started.md
+      - '2. Application Adjustments': 02-application-adjustments.md
+      - '3. Authentication' : 03-authentication.md
+      - '4. Authorization': 04-authorization.md
+      - '5. Maps': 05-maps.md
+      - '6. RESTful Services': 06-restful-services.md
+      - '7. Reports': 07-reports.md
+      - '8. Charts': 08-charts.md
+      - '9. Files & Images': 09-files-images.md
+      - '10. Calendars': 10-calendars.md
+      - '11. JavaScript': 11-javascript.md
+      - '12. Layout': 12-layout.md
+      - '13. AI in APEX': 13-ai-in-apex.md
+      - '14. Administration': 14-administration.md
+      - '15. Application Lifecycle Management': 15-application-lifecycle-management.md
+      - '16. Translations': 16-translations.md
+      - '17. Data Loading': 17-data-loading.md
+      - '18. Approvals & Workflows': 18-approvals-workflows.md
+      - '19. Mobile Applications': 19-mobile-applications.md
+      - '20. Forms - Updates over Joins': 20-forms.md
       - '21. Miscellaneous': 21-miscellaneous.md
-      - '22. Links & More Learning Content': 22-links-more-learning-content.md
+      - '22. Links & Learning Resources': 22-links-learning-resources.md
 
 plugins:
   - search

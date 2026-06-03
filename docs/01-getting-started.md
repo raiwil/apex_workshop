@@ -100,7 +100,7 @@ We will use the wizard to create an application with an initial homepage and a r
 
 We now will add an additional page to the application, to see how this is done without the wizard.
 
-!!! exercise
+!!! exercise "Add a Faceted Search Page"
     You see the application with the already created pages by the wizard and click **Create Page**. Later we will see, that that’s also possible in the Page Designer.
 
     ![AppBuilder Create](assets/gettingstarted/createpage.png){ style="display:block;margin:auto;" }
@@ -126,7 +126,6 @@ We now will add an additional page to the application, to see how this is done w
 
 !!! presented "Page Designer"
     Based on the just created application an overview of the Page Designer will be given.
-    You will see and learn about the 
 
     ![AppBuilder Create](assets/gettingstarted/panes.png){ style="display:block;margin:auto;" }
 
