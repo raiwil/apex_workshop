@@ -31,9 +31,25 @@ In the screenshots of the exercises, you will see these numbers (that are automa
     Sometimes we have a tip or notice (that is not necessarily directly related to the current exercise in this workshop). This is then shown in light purple.
 
 
+-------
 
+!!! note "Note"
+    Bitte zuerst die Datenbankverbindung prüfen.
 
+!!! tip "Tip"
+    Das ist ein Tipp.
 
+!!! warning "Warning"
+    Warning
+
+!!! success "Success"
+    Erfolgreich ausgeführt
+
+!!! info "Info"
+    Zusätzliche Information.
+
+!!! danger "Danger"
+    Vorsicht!
 
 
 
@@ -50,25 +66,6 @@ FROM emp;
 [Link zu Oracle](https://www.oracle.com){target="_blank"}
 
 > Ich bin ein Zitat
-
-!!! note "Übung"
-    Bitte zuerst die Datenbankverbindung prüfen.
-
-!!! tip
-    Das ist ein Tipp.
-
-!!! warning
-    Warning
-
-!!! success
-    Erfolgreich ausgeführt
-
-!!! info
-    Zusätzliche Information.
-
-!!! danger 
-    Vorsicht!
-
 
 
 -->
