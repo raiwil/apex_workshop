@@ -172,3 +172,11 @@
   font-weight: 600;
 }
 
+.md-typeset ul,
+.md-typeset ol {
+  line-height: 1.4;
+}
+
+.md-typeset li {
+  margin-bottom: 0.15rem;
+}
