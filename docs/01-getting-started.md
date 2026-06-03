@@ -68,7 +68,7 @@ We will use the wizard to create an application with an initial homepage and a r
 
     There are various ways to create an application.
 
-    Just giving a name (<span class="myentry">MyEmployees</span>) and clicking on the **Create Application** button would create an empty application. We will click on **Use Create App Wizard**. The ID is System Generated and must be unique in an APEX Instance.
+    Just giving a name (`MyEmployees`) and clicking on the **Create Application** button would create an empty application. We will click on **Use Create App Wizard**. The ID is System Generated and must be unique in an APEX Instance.
 
     ![AppBuilder Create](assets/gettingstarted/createanapplication.png){ style="display:block;margin:auto;" }
 
@@ -83,7 +83,7 @@ We will use the wizard to create an application with an initial homepage and a r
 
     ![AppBuilder Create](assets/gettingstarted/addpage.png){ style="display:block;margin:auto;" }
 
-    Name the Page <span class="myentry">Employee</span> and choose our just created table <span class="myentry">EMP</span>. To get a report to see and select the employees we check the **Include Report** checkbox.
+    Name the Page `Employee` and choose our just created table `EMP`. To get a report to see and select the employees we check the **Include Report** checkbox.
 
     ![AppBuilder Create](assets/gettingstarted/createformpage.png){ style="display:block;margin:auto;" }
 
@@ -121,5 +121,82 @@ We now will add an additional page to the application, to see how this is done w
 
     ![AppBuilder Create](assets/gettingstarted/createpage5.png){ style="display:block;margin:auto;" }
 
-## 1.6 APEX Application Builder
+## 1.6 Page Designer
 
+
+!!! presented "Page Designer"
+    Based on the just created application an overview of the Page Designer will be given.
+    You will see and learn about the 
+
+    ![AppBuilder Create](assets/gettingstarted/panes.png){ style="display:block;margin:auto;" }
+
+    ![AppBuilder Create](assets/gettingstarted/toolbar.png){ style="display:block;margin:auto;" }
+
+    - Pages
+    - Regions
+    - Items
+    - Buttons
+    - Properties (Generic / Specific / Sections)
+    - Multiselect
+    - Layout (Drag & Drop / Properties)
+    - Error Marking
+    - Help
+    - Developer Toolbar
+
+    ![AppBuilder Create](assets/gettingstarted/developertoolbar.png){ style="display:block;margin:auto;" }
+     
+    !!! bytheway "Location of Developer Toolbar"
+        <div class="two-columns">
+            <div>
+                *By the way*,<br>
+                you can decide where the developer toolbar is shown on the screen.
+            </div>
+            <div>
+                ![Model](assets/btw/developertoolbarlocation.png){ style="display:block;margin:auto;" }
+            </div>
+        </div>
+
+
+!!! bytheway "Pane Mode"
+    <div class="two-columns">
+       <div>
+          *By the way*,<br>
+          in Page Designer you sometimes don’t use the Layout pane in the middle. Then choosing elements in the left pane and editing them in the right attributes pane might need a lot of “mouse-meters”. It’s not only possible to change the size of the panes, you can also choose between 2 und 3 panes. The Two-Pane-Mode hides the middle pane
+       </div>
+    <div>
+        ![Model](assets/btw/panemode.png){ style="display:block;margin:auto;" }
+    </div>
+    </div>
+
+!!! bytheway "Multi Select"
+    <div class="two-columns">
+       <div>
+          *By the way*,<br>
+          when selecting more than one object in the navigator, at the property pane, you’ll see blue triangles and blue, empty fields. This indicates that there are different entries for the chosen items. You can still put it here (for all objects at once).
+       </div>
+    <div>
+        ![Model](assets/btw/multiselect.png){ style="display:block;margin:auto;" }
+    </div>
+    </div>
+ 
+!!! bytheway "Conditions"
+    <div class="two-columns">
+       <div>
+          *By the way*,<br>
+          when there’s a red circle on the lower right side of the icon of an object (button, item, process, …) that indicates, that there’s a condition on this object
+       </div>
+    <div>
+        ![Model](assets/btw/conditions.png){ style="display:block;margin:auto;" }
+    </div>
+    </div>
+ 
+!!! bytheway "Changed Items"
+    <div class="two-columns">
+       <div>
+          *By the way*,<br>
+          unsaved settings can be identified by the green line in front of an object.
+       </div>
+    <div>
+        ![Model](assets/btw/changeditems.png){ style="display:block;margin:auto;" }
+    </div>
+    </div>
