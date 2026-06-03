@@ -113,5 +113,13 @@ We now will add an additional page to the application, to see how this is done w
 
     ![AppBuilder Create](assets/gettingstarted/createpage3.png){ style="display:block;margin:auto;" }
 
+    We want to display the results as **Cards** and leave all selected attributes for facets clicked before creating the page.
+
+    ![AppBuilder Create](assets/gettingstarted/createpage4.png){ style="display:block;margin:auto;" }
+
+    Finally, we like to see the Cards in a **Grid** and select, which columns of the table should be shown as the title and the body of the cards. **ENAME** and **JOB** should be preselected here. 
+
+    ![AppBuilder Create](assets/gettingstarted/createpage5.png){ style="display:block;margin:auto;" }
+
 ## 1.6 APEX Application Builder
 

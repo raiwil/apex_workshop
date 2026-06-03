@@ -17,7 +17,7 @@ SELECT *
 FROM emp;
 ```
 
-Property-Names, Button Labels or similar mentioned in the text are **bold** and entries for properties are marked like <span class="myentry">this</span>.
+Property-Names, Button Labels or similar mentioned in the text are **bold** and entries for properties are `like this`.
 
 Some of the exercises build on each other. Thus, exercises for a chapter should always be performed in sequence. Chapters 1 & 2 create a basic application that serves as the basis for all further exercises. 
 Furthermore, the Chapter with the RESTful Service Integration requires the result of the exercise for geographical information and the JavaScript example is built on top of the calendar excercise. 
