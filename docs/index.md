@@ -10,6 +10,8 @@ Have fun and feel free to distribute this workshop to colleagues and others who 
 
 Some of he screenshots are from older releases and may look slightly different when using another release.
 
+The workshop can also be completed independently without guidance. However, in that case, you will miss the explanations and tips that often highlight aspects which cannot all be covered in a single day. And, of course, you cannot ask the website questions the way you can ask an instructor.
+
 If you have any feedback for us on this guide, please send it to rainer.willems@oracle.com. You may find spelling mistakes and something may not work because we may not have tested it again with the current release. Or you have a comment that something important is missing. Even if you just want to tell us what you think of this guide, we look forward to hearing from you.
 
 Best Regards

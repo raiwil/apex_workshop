@@ -60,21 +60,35 @@ In the **Shared Components** (the three geometric shapes) you’ll find the **Gl
 
 ## 2.4 Computations, Processes & Branches
 
-!!! presented "Computations, Processes & Branches"
-    <div class="two-columns" markdown>
-       <div markdown>
-        - Computations
-        - Processes
-            - Invoke API -Call Stored Code declarative
-            - Human Tasks – Approval Processes
-            - Execute Code – PL/SQL
-            - Data Loading
-            - Send-EMail 
-            - Execution Chain – Order of Execution possible in the Background
-                - e.g., Load Data which might take a long time and send an EMail when it’s finished 
-        - Branches (Submit Page Sequences)
-       </div >
-    <div markdown>
-        ![Model](assets/application-adjustments/processes.png){ style="display:block;margin:auto;" }
-    </div>
    
+!!! presented "Computations, Processes & Branches"
+
+    <div class="two-columns">
+
+      <div>
+        <ul>
+          <li>Computations</li>
+          <li>Processes
+            <ul>
+              <li>Invoke API</li>
+              <li>Call Stored Code declarative</li>
+              <li>Human Tasks – Approval Processes</li>
+              <li>Execute Code – PL/SQL</li>
+              <li>Data Loading</li>
+              <li>Send E-Mail</li>
+              <li>Execution Chain – order of execution in the background
+                <ul>
+                  <li>e.g. load data and send an E-Mail when it is finished</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Branches (Submit Page Sequences)</li>
+        </ul>
+      </div>
+
+      <div>
+        <img src="assets/application-adjustments/processes.png" alt="Model">
+      </div>
+
+    </div>
