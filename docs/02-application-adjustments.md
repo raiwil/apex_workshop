@@ -7,7 +7,6 @@
 !!! presented "Action  Menu & Forms" 
     - Where to manipulate the Action Menu of the Interactive Report
     - How a form works
-
       - Primary Key
       - Pre-Rendering
       - Process Form 
@@ -64,11 +63,11 @@ In the **Shared Components** (the three geometric shapes) you’ll find the **Gl
 !!! presented "Computations, Processes & Branches"
     <div class="two-columns">
        <div>
-          * Computations
-          * Processes
-            * Invoke API -Call Stored Code declarative
-            * Human Tasks – Approval Processes
-            * Execute Code – PL/SQL
+          - Computations
+          - Processes
+            - Invoke API -Call Stored Code declarative
+            - Human Tasks – Approval Processes
+            - Execute Code – PL/SQL
             - Data Loading
             - Send-EMail 
             - Execution Chain – Order of Execution possible in the Background
@@ -79,3 +78,13 @@ In the **Shared Components** (the three geometric shapes) you’ll find the **Gl
         ![Model](assets/application-adjustments/processes.png){ style="display:block;margin:auto;" }
     </div>
    
+          - Computations
+          - Processes
+            - Invoke API -Call Stored Code declarative
+            - Human Tasks – Approval Processes
+            - Execute Code – PL/SQL
+            - Data Loading
+            - Send-EMail 
+            - Execution Chain – Order of Execution possible in the Background
+              - e.g., Load Data which might take a long time and send an EMail when it’s finished 
+          - Branches (Submit Page Sequences)
