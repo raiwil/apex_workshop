@@ -8,13 +8,12 @@
     Good to know for the Beginning
     - App Development IDE & Enduser IDE is a web browser -> No client Software needed
     - APEX App Definitions are stored as metadata in the database -> Declarative, No Code generation
-    - Page Generation is in the database with only one request -> Page & Data together   
-    Show Page & Accept Page: APEX processes every request in two phases: Show Page (page rendering) and Accept Page (processing submitted data, validations, and branching).
+    - Page Generation is in the database with only one request -> Page & Data together Show Page & Accept Page: APEX processes every request in two phases: Show Page (page rendering) and Accept Page (processing submitted data, validations, and branching).
     - Session Management: APEX maintains session state to persist user-specific data across page requests, enabling stateful application behavior on top of the stateless HTTP protocol.
     - APEX uniquely spans the App Dev spectrum, from No Code to Low Code to High Control
     - Accessible UI for any device -> responsive apps
     - ORDS as Listener 
-    - Single Database - Multiple Workspaces
+    - Single Database with Multiple Workspaces
 
     
 ## 1.2 UI - Overview
