@@ -19,7 +19,7 @@ To see how linked navigation works in APEX, we will add our own to the automatic
     
     In Page Designer, search for column **ENAME** in Region **Employees** (on page 2). In the properties on the right side, choose   `Link` as **Type**. In the Link-Section click on **No Link defined**                       
     
-    ![Column](assets/application-adjustments/enamecolumn.png){ style="display:block;margin:auto;" }
+    ![column](assets/application-adjustments/enamecolumn.png){ style="display:block;margin:auto;" }
 
     The target is the Form Page `3`. There, we set the primary key (`P3_EMPNO`) with the value of the chosen row in the report (`#EMPNO#`).
 
@@ -36,11 +36,11 @@ Depending on the environment, the data format might not be one you like. It’s 
 
     Choose Column **HIREDATE** in Region **Employees** on Page 2. In the Appearance section set **Format Mask** to `DD.MM.YYYY`.
 
-    ![targemapping](assets/application-adjustments/date_report.png){ style="display:block;margin:auto;" }
+    ![targemapping](assets/application-adjustments/data_report.png){ style="display:block;margin:auto;" }
 
     Do the same in the Form Page (3) at item **P3_HIREDATE**. In the Appearance set **Format Mask** to `DD.MM.YYYY`.
 
-    ![targemapping](assets/application-adjustments/date_form.png){ style="display:block;margin:auto;" }
+    ![targemapping](assets/application-adjustments/data_form.png){ style="display:block;margin:auto;" }
 
 Now the format of the date should look like the typical German format. We’ve here shown the setting of a format for a single column or item. It’s possible to set a default format for the application which is used when no dedicated format is chosen.
 In the **Shared Components** (the three geometric shapes) you’ll find the **Globalization Attributes** in the **Globalization** section. There's an item Application Data Format where you can set the default for the application.
@@ -64,16 +64,14 @@ In the **Shared Components** (the three geometric shapes) you’ll find the **Gl
 !!! presented "Computations, Processes & Branches"
     <div class="two-columns">
        <div>
-          -	Computations
-          - Processes
-
-            - Invoke API -Call Stored Code declarative
-            - Human Tasks – Approval Processes
-            - Execute Code – PL/SQL
+          * Computations
+          * Processes
+            * Invoke API -Call Stored Code declarative
+            * Human Tasks – Approval Processes
+            * Execute Code – PL/SQL
             - Data Loading
             - Send-EMail 
             - Execution Chain – Order of Execution possible in the Background
-          
               - e.g., Load Data which might take a long time and send an EMail when it’s finished 
           - Branches (Submit Page Sequences)
        </div>
