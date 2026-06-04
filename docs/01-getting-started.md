@@ -4,6 +4,18 @@
 
 !!! presented "Introduction with Slides"
     Introduction to Workshop & Oracle Application Express with some [Slides](assets/documents/APEX%20Workshop%2024.2.6.pdf){target="_blank"}.
+
+    Good to know for the Beginning
+    - App Development IDE & Enduser IDE is a web browser -> No client Software needed
+    - APEX App Definitions are stored as metadata in the database -> Declarative, No Code generation
+    - Page Generation is in the database with only one request -> Page & Data together   
+    Show Page & Accept Page: APEX processes every request in two phases: Show Page (page rendering) and Accept Page (processing submitted data, validations, and branching).
+    - Session Management: APEX maintains session state to persist user-specific data across page requests, enabling stateful application behavior on top of the stateless HTTP protocol.
+    - APEX uniquely spans the App Dev spectrum, from No Code to Low Code to High Control
+    - Accessible UI for any device -> responsive apps
+    - ORDS as Listener 
+    - Single Database - Multiple Workspaces
+
     
 ## 1.2 UI - Overview
 
@@ -109,7 +121,7 @@ We now will add an additional page to the application, to see how this is done w
 
     ![AppBuilder Create](assets/gettingstarted/createpage2.png){ style="display:block;margin:auto;" }
 
-    **Page Number** ***4*** should be pre-initialized and we **name** the page ***EmpFacets***. As **Data Source** we use the **Local Database** and here our table ***EMP***.
+    **Page Number** `4` should be pre-initialized and we **name** the page `EmpFacets`. As **Data Source** we use the **Local Database** and here our table `EMP`.
 
     ![AppBuilder Create](assets/gettingstarted/createpage3.png){ style="display:block;margin:auto;" }
 
@@ -117,7 +129,7 @@ We now will add an additional page to the application, to see how this is done w
 
     ![AppBuilder Create](assets/gettingstarted/createpage4.png){ style="display:block;margin:auto;" }
 
-    Finally, we like to see the Cards in a **Grid** and select, which columns of the table should be shown as the title and the body of the cards. **ENAME** and **JOB** should be preselected here. 
+    Finally, we like to see the Cards in a **Grid** and select, which columns of the table should be shown as the title and the body of the cards. `ENAME` and `JOB` should be preselected here. 
 
     ![AppBuilder Create](assets/gettingstarted/createpage5.png){ style="display:block;margin:auto;" }
 
