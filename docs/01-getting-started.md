@@ -2,10 +2,11 @@
 
 ## 1.1 Introduction
 
-!!! presented "Introduction with Slides"
+!!! presented "Introduction"
     Introduction to Workshop & Oracle Application Express with some [Slides](assets/documents/APEX%20Workshop%2024.2.6.pdf){target="_blank"}.
 
     Good to know for the Beginning
+    
     - App Development IDE & Enduser IDE is a web browser -> No client Software needed
     - APEX App Definitions are stored as metadata in the database -> Declarative, No Code generation
     - Page Generation is in the database with only one request -> Page & Data together Show Page & Accept Page: APEX processes every request in two phases: Show Page (page rendering) and Accept Page (processing submitted data, validations, and branching).
