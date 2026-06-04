@@ -66,29 +66,22 @@ In the **Shared Components** (the three geometric shapes) you’ll find the **Gl
     <div class="two-columns">
 
       <div>
-        <ul>
-          <li>Computations</li>
-          <li>Processes
-            <ul>
-              <li>Invoke API</li>
-              <li>Call Stored Code declarative</li>
-              <li>Human Tasks – Approval Processes</li>
-              <li>Execute Code – PL/SQL</li>
-              <li>Data Loading</li>
-              <li>Send E-Mail</li>
-              <li>Execution Chain – order of execution in the background
-                <ul>
-                  <li>e.g. load data and send an E-Mail when it is finished</li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li>Branches (Submit Page Sequences)</li>
-        </ul>
+      **Computations**
+      
+      **Processes**
+
+      - Invoke API (Call Stored Code declarative)
+      - Human Tasks – Approval Processes
+      - Execute Code – PL/SQL
+      - Data Loading 
+      - Send E-Mail
+      - Execution Chain – order of execution in the background
+       
+      **Branches (Submit Page Sequences)
       </div>
 
       <div>
-        <img src="assets/application-adjustments/processes.png" alt="Model">
+          ![targemapping](assets/application-adjustments/processes.png.png){ style="display:block;margin:auto;" }
       </div>
 
     </div>
