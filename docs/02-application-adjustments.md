@@ -61,8 +61,8 @@ In the **Shared Components** (the three geometric shapes) you’ll find the **Gl
 ## 2.4 Computations, Processes & Branches
 
 !!! presented "Computations, Processes & Branches"
-    <div class="two-columns">
-       <div>
+    <div class="two-columns" markdown>
+       <div markdown>
         - Computations
         - Processes
             - Invoke API -Call Stored Code declarative
@@ -73,8 +73,8 @@ In the **Shared Components** (the three geometric shapes) you’ll find the **Gl
             - Execution Chain – Order of Execution possible in the Background
                 - e.g., Load Data which might take a long time and send an EMail when it’s finished 
         - Branches (Submit Page Sequences)
-       </div>
-    <div>
+       </div >
+    <div markdown>
         ![Model](assets/application-adjustments/processes.png){ style="display:block;margin:auto;" }
     </div>
    
