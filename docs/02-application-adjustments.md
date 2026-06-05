@@ -65,12 +65,11 @@ On page 3, the item **P3_DEPTNO** is set as a `Select List`. We’ll change this
   <div>
     Running the application now should show the department in the Employees Form as Radio Group
   </div>
-  <div>>
+  <div>
     ![ui-radiogroup](assets/application-adjustments/ui-radiogroup.png){ style="display:block;margin:auto;" }
   </div>
 </div>  
   
-
 !!! tip "Item Types"
 
     <div class="two-columns">
@@ -126,17 +125,18 @@ The job item in the form is currently a simple Text Field. Now we add a List of 
     <div class="two-columns">
 
       <div>
+     
       **Computations**
       
       **Processes**
 
-      - Invoke API (Call Stored Code declarative)
+      - Invoke API - Call Stored Code declarative
       - Human Tasks – Approval Processes
       - Execute Code – PL/SQL
       - Data Loading 
       - Send E-Mail
-      - Execution Chain – order of execution in the background
-       **
+      - Execution Chain – order of execution (in the background possible)
+
       **Branches (Submit Page Sequences)**
       </div>
 
