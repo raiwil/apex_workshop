@@ -64,9 +64,8 @@ On page 3, the item **P3_DEPTNO** is set as a `Select List`. We’ll change this
 <div class="two-columns">
 
       <div>
-      Running the application now should show the department in the Employees Form as Radio Group
+        Running the application now should show the department in the Employees Form as Radio Group
       </div>
-
       <div>
           ![ui-radiogroup](assets/application-adjustments/ui-radiogroup.png){ style="display:block;margin:auto;" }
       </div>
@@ -77,11 +76,11 @@ On page 3, the item **P3_DEPTNO** is set as a `Select List`. We’ll change this
 
     <div class="two-columns">
 
-      <div>
+      <div style="flex: 30%;">
       Marking the **Type** property and choosing the **Help** Tab in the middle pane, you get a short overview about he available predefined item types.
       </div>
 
-      <div>
+      <div style="flex: 70%;">
           ![contexthelp](assets/application-adjustments/contexthelp.png){ style="display:block;margin:auto;" }
       </div>
 
