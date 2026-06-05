@@ -46,7 +46,70 @@ In the **Shared Components** (the three geometric shapes) you’ll find the **Gl
 	 
 ### 2.1.3 Change Item from Select List to Radio Group
 
+On page 3, the item **P3_DEPTNO** is set as a `Select List`. We’ll change this now to have a `Radio Group` instead.
+
+![lov](assets/application-adjustments/lov_department.png){ style="display:block;margin:auto;" }
+
+!!! exercise "Change Item Type"
+
+    Via the Developer Toolbar, you can quickly reach the properties of an item. Click on **Quick Edit** and then direct onto the item. Clicking on the spanner will bring you to the Live Template Options. If you are in the Page Designer, you don't have to go through the Developer Toolbar. This is just an effective way for developers to jump from the running application to the right place in the Page Designer.
+
+    ![quickedit](assets/application-adjustments/quickedit.png){ style="display:block;margin:auto;" }
+
+    When **P3_DEPTNO** in Page Designer is selected, choose `Radio Group` instead of `Select List` as **Type**.
+    In the List of Values section suppress the **Display of Extra Values** and the **Display Null Value** property.
+
+    ![radiogroup](assets/application-adjustments/radiogroup.png){ style="display:block;margin:auto;" }
+
+<div class="two-columns">
+
+      <div>
+      Running the application now should show the department in the Employees Form as Radio Group
+      </div>
+
+      <div>
+          ![contexthelp](assets/application-adjustments/contexthelp.png){ style="display:block;margin:auto;" }
+      </div>
+
+</div>    
+
+!!! tip "Item Types"
+
+    <div class="two-columns">
+
+      <div>
+      Marking the **Type** property and choosing the **Help** Tab in the middle pane, you get a short overview about he available predefined item types.
+      </div>
+
+      <div>
+          ![ui-radiogroup](assets/application-adjustments/ui-radiogroup.png){ style="display:block;margin:auto;" }
+      </div>
+
+    </div>
+
+    
+    
 ### 2.1.4 Add a List of Values to the Job
+
+The job item in the form is currently a simple Text Field. Now we add a List of Values to this item to let the users select a job from existing jobs in a Select List.
+
+!!! exercise "Add a List of Values"
+    Choose item **P3_JOB** on page 3 (via Page Designer or Quick Edit) und set `Select List` as Item **Type**. Immediately, some red color appears for errors. Not only the exclamation mark at the top but also the item in the tree-view and the layout. Click on the exclamation mark, and at the error you want to fix (which is here only one thing)
+
+    ![lov_error](assets/application-adjustments/lov_error.png){ style="display:block;margin:auto;" }
+
+    Choose `SQL Query` as the **Type** for the List of Values. As **SQL Query** choose the Code Snippet and write `no job assigned` as **Null Display Value**
+
+    ```sql title="Query for LoV"
+       SELECT distinct job as d, job as r 
+         FROM emp
+        WHERE job IS NOT NULL
+        ORDER BY 1
+    ```
+     ![lov_query](assets/application-adjustments/lov_query.png){ style="display:block;margin:auto;" }
+
+    There are two columns in a List of Values Query: one is the Display Column, and the other is the Return Column. Look in the context help to see an example.
+
 
 ## 2.2 Behaviour depending on values
 
@@ -76,12 +139,12 @@ In the **Shared Components** (the three geometric shapes) you’ll find the **Gl
       - Data Loading 
       - Send E-Mail
       - Execution Chain – order of execution in the background
-       
-      **Branches (Submit Page Sequences)
+       **
+      **Branches (Submit Page Sequences)**
       </div>
 
       <div>
-          ![targemapping](assets/application-adjustments/processes.png.png){ style="display:block;margin:auto;" }
+          ![targemapping](assets/application-adjustments/processes.png){ style="display:block;margin:auto;" }
       </div>
 
     </div>
