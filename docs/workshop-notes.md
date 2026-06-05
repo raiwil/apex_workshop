@@ -31,8 +31,9 @@ In the screenshots of the exercises, you will see these numbers (that are automa
 !!! bytheway "By the way"
     Sometimes we have a tip or notice (that is not necessarily directly related to the current exercise in this workshop). This is then shown in light purple.
 
-
-
+!!! tip "Tips"
+    Sometimes we've an important hint
+    
 <!--
 ```sql title="Abfrage Tabelle EMP"
 SELECT *
