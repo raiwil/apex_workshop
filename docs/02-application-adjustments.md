@@ -68,7 +68,7 @@ On page 3, the item **P3_DEPTNO** is set as a `Select List`. We’ll change this
       </div>
 
       <div>
-          ![contexthelp](assets/application-adjustments/contexthelp.png){ style="display:block;margin:auto;" }
+          ![ui-radiogroup](assets/application-adjustments/ui-radiogroup.png){ style="display:block;margin:auto;" }
       </div>
 
 </div>    
@@ -82,7 +82,7 @@ On page 3, the item **P3_DEPTNO** is set as a `Select List`. We’ll change this
       </div>
 
       <div>
-          ![ui-radiogroup](assets/application-adjustments/ui-radiogroup.png){ style="display:block;margin:auto;" }
+          ![contexthelp](assets/application-adjustments/contexthelp.png){ style="display:block;margin:auto;" }
       </div>
 
     </div>
