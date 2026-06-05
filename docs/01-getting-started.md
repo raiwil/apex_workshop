@@ -41,6 +41,19 @@ Two foreign keys are also created so that employees can only work in departments
 
 ![Datamodel](assets/gettingstarted/empdept.png){ style="display:block;margin:auto;" }
 
+<div class="two-columns">
+
+  <div>
+    The exercises will use the well-known tables EMP and DEPT, and we will create them out of the Sample Datasets. For both tables, sequences and triggers are created for the primary key columns. 
+Two foreign keys are also created so that employees can only work in departments that exist and that employees can only have a boss that exists.
+  </div>
+
+  <div>
+    <img src="assets/gettingstarted/empdept.png" alt="empdept">
+  </div>
+
+</div>
+
 We will use **Sample Datasets**, but there are some other options (Quick SQL, Data Generator).
 
 !!! exercise "Create Table (Sample Datasets)"
