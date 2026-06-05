@@ -62,14 +62,12 @@ On page 3, the item **P3_DEPTNO** is set as a `Select List`. We’ll change this
     ![radiogroup](assets/application-adjustments/radiogroup.png){ style="display:block;margin:auto;" }
 
 <div class="two-columns">
-
-      <div>
-        Running the application now should show the department in the Employees Form as Radio Group
-      </div>
-      <div>
-          ![ui-radiogroup](assets/application-adjustments/ui-radiogroup.png){ style="display:block;margin:auto;" }
-      </div>
-
+    <dic>
+       Running the application now should show the department in the Employees Form as Radio Group
+    </div>
+    <div>
+       ![ui-radiogroup](assets/application-adjustments/ui-radiogroup.png){ style="display:block;margin:auto;" }
+    </div>
 </div>    
 
 !!! tip "Item Types"
