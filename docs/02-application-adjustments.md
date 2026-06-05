@@ -61,21 +61,22 @@ On page 3, the item **P3_DEPTNO** is set as a `Select List`. We’ll change this
 
     ![radiogroup](assets/application-adjustments/radiogroup.png){ style="display:block;margin:auto;" }
 
-<div class="two-columns" markdown>
+<div class="two-columns">
   <div>
     Running the application now should show the department in the Employees Form as Radio Group
   </div>
-  <div markdown>
-     ![ui-radiogroup](assets/application-adjustments/ui-radiogroup.png){ style="display:block;margin:auto;" }
+  <div>
+    <img src="../assets/application-adjustments/ui-radiogroup.png" alt="ui-radiogroup" style="display:block;margin:auto;">
   </div>
-</div>  
+</div>
+
   
 !!! tip "Item Types"
 
     <div class="two-columns">
 
       <div style="flex: 30%;">
-      Marking the **Type** property and choosing the **Help** Tab in the middle pane, you get a short overview about he available predefined item types.
+          Marking the **Type** property and choosing the **Help** Tab in the middle pane, you get a short overview about he available predefined item types.
       </div>
 
       <div style="flex: 70%;">
@@ -84,8 +85,19 @@ On page 3, the item **P3_DEPTNO** is set as a `Select List`. We’ll change this
 
     </div>
 
+### 2.1.4 Change Modal Dialog
+
+!!! exercise "Change Modal Dialog"
     
-### 2.1.4 Add a List of Values to the Job
+    The drawing behavior of the model window can be changed at the page level. Click on page 3 in the Page Designer at the top left. In the Appearance section of the properties you can change the **Dialog Template** from `Drawer` to `Modal Dialog` which centers the modal window while Drawer inserts it on the right side. When testing that, potentially you had to Shift-Reload to see the effect of changing the property.
+
+    It is possible to specify the page size for a modal window, but it is also possible to allow the end user to customise the size of the modal window.
+
+    ![modaldialog](assets/application-adjustments/modaldialog.png){ style="display:block;margin:auto;" }
+
+
+
+### 2.1.5 Add a List of Values to the Job
 
 The job item in the form is currently a simple Text Field. Now we add a List of Values to this item to let the users select a job from existing jobs in a Select List.
 
@@ -106,14 +118,118 @@ The job item in the form is currently a simple Text Field. Now we add a List of 
 
     There are two columns in a List of Values Query: one is the Display Column, and the other is the Return Column. Look in the context help to see an example.
 
+When using such a List of Values more than once, it’s better to implement them as a Shared Component and just refer to it here.
+
+<div class="two-columns">
+  <div>
+    Now, when running the application, there should be a Select List at the job item in which you can choose from any existing job in the database, and the **Null Display Value** is named *no job assigned*
+  </div>
+  <div>
+    <img src="../assets/application-adjustments/lov_ui.png" alt="lov_ui" style="display:block;margin:auto;">
+  </div>
+</div>
 
 ## 2.2 Behaviour depending on values
 
+In this exercise, the Form will be changed to reflect a value-dependent behavior. Our goal is to enforce that only SALESMAN can get a commission (column `comm` in the table).
+
 ### 2.2.1 Validations
+
+First, we will add a validation that checks that item P3_COMM (the commission) is null when the job is different from SALESMAN.  In our example data, the jobs are stored in uppercase in the database and searches in the database are by default case-sensitive, so we use here SALESMAN in uppercase too.
+
+!!! exercise "Validate Commission"
+
+     <div class="two-columns">
+      <div style="flex: 50%;">
+          On Page 3 click right on item P3_COMM and choose Create Validation.
+      </div>
+      <div style="flex: 50%;">
+          ![createvalidation](assets/application-adjustments/createvalidation.png){ style="display:block;margin:auto;" }
+      </div>
+    </div>
+
+   The validation (named New by default) is marked red as there are mandatory properties not set at the beginning. These are marked in red too. We **Name** the validation `check_commission`.
+   As “IS NULL” does not exist as a **Type** for the validation, we choose `Expression`. As Language, we use `PL/SQL` and `:P3_COMM IS NULL` will be our **PL/SQL Expression**. (Don’t forget the colon to reference the page item).
+   
+   Additionally, we write an **Error Message**, and we can choose where to display this message (**Diyplay Location**).
+   
+   Now we add a condition (**Server-side Condition**) for when this validation should happen. For that we choose `Ìtem != Value` as **Type**, `P3_JOB`as **Item** and `SALESMAN` as **VALUE**.
+
+    ![validation](assets/application-adjustments/validation.png){ style="display:block;margin:auto;" }
+
+Try to give a non-Salesman a commission and see what happens. 
+But this might not the perfect approach in this case ... 
 
 ### 2.2.2 Conditions
 
+Now we try another way, where we ensure, that no commission can be entered in the form when the job of the employee is not SALESMAN.
+
+!!! exercise "Conditional Read Only"
+    First, we delete the validation from the preceding exercise by right-clicking it and choosing **Delete**.  Alternatively, you can simply select an object and press DEL. Configure the **Read Only** Section of the Item **P3_COMM** with the same settings as before the Server-side Condition for the validation. 
+    
+    ![conditionalreadonly](assets/application-adjustments/conditionalreadonly.png){ style="display:block;margin:auto;" }
+
+    As an alternative, you can do the same settings in the Server-side Condition section, which hides the item conditionally.
+
+Open the form for different employees and see how the item behaves.
+But again, this might not the perfect approach in this case ... 
+
+
 ### 2.2.3 Dynamic Actions
+
+When the job is changed in the form, the item for the commission will not change. In the third approach, we now will hide and show the item depending on the current value of the job dynamically on the client, without interaction with the server. This requires JavaScript. But **Dynamic Action** handle the JavaScript generation for you, so you do not need to write the code yourself.
+
+!!! exercise "Dynamic Actions"
+    
+    <div class="two-columns">
+      <div style="flex: 50%;">
+          Delete the Read Only condition from before. This can be done by just choosing `– Select –` as **Type**
+      </div>
+      <div style="flex: 50%;">
+          ![select](assets/application-adjustments/select.png){ style="display:block;margin:auto;" }
+      </div>
+    </div>
+    <div class="two-columns">
+      <div style="flex: 50%;">
+          Right-click **P3_JOB** (we want to create something happens, when the job is changed) and choose **Create Dynamic Action**.
+      </div>
+      <div style="flex: 50%;">
+          ![createda](assets/application-adjustments/createda.png){ style="display:block;margin:auto;" }
+      </div>
+    </div>
+    
+    Give the action a **Name** (`JobChanged`). The **When** is preset due to the way of creation: It's the `Change` of the **ITEM** `P3_JOB`. 
+    Now we have two cases: the job becomes SALESMAN, or it becomes something else. We could now place two actions behind the event, each checking which case applies and handling it accordingly. Or we could check the case already in the event and then go down either a TRUE or FALSE branch. In the current case, this is the better approach, since the check only has to happen once.
+    Fot that we no use a **Client-side Condition** (we don't want a roundtrip to the database) where we define that **Item* `P3_Job` should be `SALESMAN`
+
+    ![da](assets/application-adjustments/da.png){ style="display:block;margin:auto;" }
+
+    Click on the pre-initiated True-Action **Show** (which is in red due to missing properties). Due to the condition in the Dynamic Event adn the fact, that we are in the True Branch, the **Action** `Show` is the right one and we name this action `ShowComm`, as the **Afffected Element** is **Item** P3_COMM. There's a property **Fire on Initialization** activated, so that there’s no need for some extra steps to show the item when loading the page (and the job is SALESMAN).
+
+    ![action](assets/application-adjustments/action.png){ style="display:block;margin:auto;" }
+
+    <div class="two-columns">
+      <div style="flex: 50%;">
+           Now we need the opposite action the hide the commission, when the job is not SALESMAN. We right click on the ShowComm-True Event and create the Opposite Action (which hides the Item when the job is changed to something different as SALESMAN) using the menu option **Create Opposite Action** .
+      </div>
+      <div style="flex: 50%;">
+          ![opposite](assets/application-adjustments/opposite.png){ style="display:block;margin:auto;" }
+      </div>
+    </div>
+
+    Just rename the created False Action to `HideComm` and wee are ready
+   
+Now play around and watch the commission item in the form when changing the job.
+What has not yet been considered is how to handle a possibly existing commission value,
+
+!!! sampleapp "Sample Dynamic Actions"
+    There are a lot of sample applications available to demonstrate specific topics. The relevant sample applications for a chapter will be mentioned in such green boxes.
+   
+
+    
+
+
+    
 
 ## 2.3 Session State
 

@@ -33,7 +33,7 @@ In the screenshots of the exercises, you will see these numbers (that are automa
 
 !!! tip "Tips"
     Sometimes we've an important hint
-    
+
 <!--
 ```sql title="Abfrage Tabelle EMP"
 SELECT *
@@ -63,5 +63,19 @@ FROM emp;
 
 
 
-
+SamleApps Bildchen 293*80
 -->
+
+
+
+!!! sampleapp "Sample Apps"
+    <div class="two-columns">
+      <div style="flex: 50%;">
+           Oracle APEX enables developers to build Progressive Web Apps (PWAs) that can be installed on any desktop or mobile device to deliver a more native app experience. This application serves as a reference for key PWA features in APEX and how you can use them in your own apps.
+      </div>
+      <div style="flex: 50%;">
+          ![pwa](assets/samples/pwa.png){ style="display:block;margin:auto;" }
+      </div>
+    </div>
+
+
