@@ -240,43 +240,8 @@ What has not yet been considered is how to handle a possibly existing commission
     In 26.1 Trigger Actions are introduced. These provide a simplified way to define reactive behavior in Oracle APEX. Instead of creating a full Dynamic Action with events, conditions, and actions, a Trigger Action allows developers to declaratively specify what should happen when a particular event occurs. They are designed to cover common client-side interaction patterns with less configuration and improved maintainability. Trigger Actions help reduce complexity while still enabling responsive and interactive user interfaces.
    
 
-## 2.3 Item Types 
 
-There are a lot of predefined Item Types:
-
-- **Checkbox** -> Displays a single checkbox that the user can check or uncheck. The defined checked or unchecked value is stored in session state when submitted.
-- **Checkbox Group** -> Displays multiple values as check boxes, enabling the end user to select multiple values. A list of values is required for items displayed as check boxes. The values corresponding to the checked boxes are stored in a single colon-delimited string.
-- **Color Picker** -> Allows users to choose or enter a color. Colors can be selected from a color spectrum.
-- **Combobox** -> Displays a text item with a list of values icon. When the end user clicks the icon, a popup window appears with a suggestion dropdown of values. It supports filtering and freetext input. If multiple values can be selected they are displayed as chips. Combobox is best suited for small lists where end users should be able to add own text. For selections without freetext input Select List, Select One and Select Many are better suited. For large result sets have a look at Popup LOV.
-- **Date Picker** -> Allows users to enter a date. For this you can either use a text field that opens a date picker as a popup, or you can use an inline or native date picker.
-- **Display Image** -> Displays an image stored in a database BLOB columns, or based on an image URL.
-- **Display Map** -> Displays a map based on coordinates in GeoJSON point format.
-- **Display Only** -> Displays a non-enterable text item.
-- **File Upload** -> Displays a File Upload item. This item allows users to upload one or multiple files from their local file system or device.
-- **Geocoded Address** -> This item type provides Geocoding (turning a postal address to a coordinate) functionality. Geocoding is performed by the browser doing a REST request to the Oracle Elocation Geocoding Service (elocation.oracle.com). Thus the browser must be connected to the internet in order for geocoding to work. Geocoding input data comes from other page items, which are mapped to address parts like Street, House Number, Postal Code or City. The Geocoder will show a popup window with a list of possible matches. After choosing a match, the item's session state value will be the address coordinate in GeoJSON format. If Sanitize Address is enabled, address part page items will be overwritten with the sanitized values received from the Geocoding service. For simpler use cases, the Unstructured Address mode allows to map only one text field or text area where end users enter address parts, separated by comma. In this case, the Sanitize Address mode is not available.
-- **Hidden** -> Items that are included within the page source but are not rendered. Hidden item values are saved in session state. They are generally used to store values required by page processing or other page items, but should not be displayed to the end user.
-- **Image Upload** -> Displays an Image Upload item. This item allows users to upload one or multiple images from their local file system or device. Those images can be optionally cropped or resized.
-- **List Manager** -> Displays a text item with a popup list of values icon, Add and Remove buttons, and a list of selected values. You can type in the value or pick from the list of available items. You can then utilize the buttons to manage the values selected. The selected values are stored in a single colon-delimited string.
-- **Markdown Editor** -> Displays a text area supporting markdown input, with text formatting options, support for including images, and a preview option to view the formatted text. The Markdown Editor allows you to write using easy-to-read, easy-to-write plain text, then convert it to structurally valid HTML using the various options provided, and supported syntax.
-- **Number Field** -> Displays a number field. This item type automatically validates that the value is a number.
-- **Password** -> Displays an HTML password form element. As the end user enters text a black dot is displayed for that character, instead of the actual character entered.
-- **Percent Graph** -> Displays the value as a percentage graph. The value retrieved must be between 0 and 100.
-- **Popup LOV** -> Displays a text item with a popup list of values icon. When the end user clicks the icon, a popup window appears with a search field, and a list of supported values. Popup LOV is best suited for large lists since end users can enter search criteria to reduce the available values displayed. For relatively small lists Select List is often better suited.
-- **QR Code** -> This item encodes the selected source value into a QR code and displays it.
-- **Radio Group** -> Displays multiple values as radio group options, enabling the end user to select a single value.
-- **Rich Text Editor** -> Displays a rich text editor with comprehensive text formatting options. End users can enhance the content displayed in a similar fashion to using a word processor, such as Microsoft Word.
-- **Select List** -> Displays an item with a built-in list of values selector. When the end user clicks the item, the list of supported values displays directly inline with the current item. Select List is best suited for relatively small, discrete lists. End-Users can very quickly select a value from the list without needing to change focus to a popup dialog. For large lists Popup LOV is often better suited.
-- **Select Many** -> Displays a LOV-based item that shows suggestions that allow multi-values. When the end user clicks the field, a popup window appears with a list of suggested values. It supports filtering, groups, and template directives.
-- **Select One** -> Displays a text item with a list of values icon. When the end user clicks the field, a popup window appears with a list of suggested values. It supports filtering, groups, and template directives.
-- **Shuttle** -> Displays as a multiple select list that includes two boxes containing lists. The left list displays the source list of values that have not been selected and the right list shows the currently selected values. End users can select one or more values in a list then use the shuttle controls to move the selected values or all values. The current values are stored in a single colon-delimited string.
-- **Star Rating** -> This item displays a numeric value as a number of stars or other icons. The end user can change the value by selecting the desired number of stars. The value can be adjusted by clicking the number of stars with the mouse or by using the keyboard. The icon to be displayed, the background and foreground colors can be adjusted either in the component settings or in the individual item settings. To use individual items and colors, set the attribute Use Component Defaults to No. As icons, you may use any icon from the Icon Font available in your application. For Universal Theme applications, use an icon from the Font APEX library.
-- **Switch** -> Displays as a flip toggle switch.
-- **Text Field** -> Displays a text field.
-- **Text Field with autocomplete** -> Displays a text field that displays a list of possible values, based on the text already entered by the end user, inline with the text item. The list is further refined as the end user types in more text.
-- **Textarea** -> Displays a multiple-row text area.
-
-
-## 2.4 Session State
+## 2.3 Session State
 
 Client-side Conditions evaluate item values directly in the browser using JavaScript. Since the evaluation takes place on the client, no request needs to be sent to the server. This makes client-side conditions very responsive and efficient for controlling the user interface, for example showing or hiding regions, enabling or disabling items, or validating user input while typing.
 
@@ -290,7 +255,7 @@ Understanding the difference between browser values and Session State is essenti
 
 We will experience this firsthand in the chapter on **charts**.
 
-## 2.5 Computations, Processes & Branches
+## 2.4 Computations, Processes & Branches
 
    
 !!! presented "Computations, Processes & Branches"
@@ -319,7 +284,7 @@ We will experience this firsthand in the chapter on **charts**.
 
     </div>
 
-## 2.6 User Interface Attributes
+## 2.5 User Interface Attributes
 
 As a brief preview of the Chapter **Layout**, we will now adjust the menu of our application to make the following exercises easier to follow and more visually intuitive.
 

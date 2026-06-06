@@ -247,18 +247,14 @@
 }
 
 
+
 /* Copy Button */
 
-.md-clipboard {
-  color: #f36e219f !important;
-  opacity: 1;
-}
-
-.md-clipboard:hover {
+.md-code__button {
   color: #f36f21 !important;
+  opacity: 1 !important;
 }
 
-.md-clipboard svg {
-  width: 1.15rem;
-  height: 1.15rem;
+.md-code__button:hover {
+  color: #d85f15 !important;
 }
