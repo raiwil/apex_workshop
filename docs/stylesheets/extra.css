@@ -199,17 +199,20 @@
 }
 
 
+
+
 /* =====================================================
-   Code Blocks - Oracle Style
+   Code Blocks - Soft Workshop Style
    ===================================================== */
 
 /* Dateiname / Header */
 .md-typeset .highlight span.filename,
 .md-typeset .highlight .filename {
-  background: linear-gradient(90deg, #f36f21 0%, #ff8a3d 100%);
-  color: white;
+  background-color: #fff4ed;
+  color: #333333;
   font-weight: 600;
   padding: 0.45rem 0.8rem;
+  border-bottom: 1px solid #f3ddd0;
 }
 
 /* Codebox */
@@ -223,8 +226,9 @@
 
 /* Inline Code */
 .md-typeset code {
-  background-color: #fff4ed;
-  color: #c95d1c;
+  color: #2f7d32;
+  background-color: #eef8f0;
   border-radius: 4px;
-  padding: 0.1rem 0.25rem;
+  padding: 0.1rem 0.3rem;
+  font-weight: 500;
 }
