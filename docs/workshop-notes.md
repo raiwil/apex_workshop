@@ -107,7 +107,7 @@ SamleApps Bildchen 293*80
            This application illustrates how to augment Rich Text Editor content items to allow for inline images.
       </div>
       <div style="flex: 50%;">
-          [image](assets/samples/image.png){ style="display:block;margin:auto;" }
+          ![image](assets/samples/image.png){ style="display:block;margin:auto;" }
       </div>
     </div>
 
@@ -125,7 +125,6 @@ SamleApps Bildchen 293*80
     <div class="two-columns">
       <div style="flex: 50%;">
            This application highlights the native calendaring capabilities of Oracle APEX. It features a monthly calendar with stylized daily tasks. The dates can be changed using drag and drop, which is all declarative and easily created using native APEX wizards.
-           This app is online available to view: [https://oracleapex.com/go/calendar](https://oracleapex.com/go/calendar){target="_blank"} 
       </div>
       <div style="flex: 50%;">
           ![calendar](assets/samples/calendar.png){ style="display:block;margin:auto;" }
@@ -136,7 +135,7 @@ SamleApps Bildchen 293*80
     <div class="two-columns">
       <div style="flex: 50%;">
            This application highlights Cards regions in Oracle APEX. Cards regions are a native region type. They provide developers with a powerful and flexible new way to display data in bite-sized blocks, ideal for use in faceted search, or presenting at-a-glance information.
-           This app is online available to view: [https://oracleapex.com/go/cards](https://oracleapex.com/go/cards){target="_blank"} 
+           This app is online available to view: [https://apex.oracle.com/go/sample_cards](https://apex.oracle.com/go/sample_cards){target="_blank"} 
       </div>
       <div style="flex: 50%;">
           ![cards](assets/samples/cards.png){ style="display:block;margin:auto;" }
@@ -147,7 +146,7 @@ SamleApps Bildchen 293*80
     <div class="two-columns">
       <div style="flex: 50%;">
            This application highlights the charting capabilities of Oracle APEX. It demonstrates how you can enhance your applications to visually represent your data, using declarative and plug-in based charting solutions.
-           This app is online available to view: [https://oracleapex.com/go/charts](https://oracleapex.com/go/charts){target="_blank"} 
+           This app is online available to view: [https://apex.oracle.com/go/sample_charts](https://apex.oracle.com/go/sample_charts){target="_blank"} 
       </div>
       <div style="flex: 50%;">
           ![charts](assets/samples/charts.png){ style="display:block;margin:auto;" }
@@ -180,17 +179,7 @@ SamleApps Bildchen 293*80
            This application showcases the integration with the Oracle Document Generator Pre-built Function on OCI. It features examples of generating PDF documents from a combination of JSON data and MS Word templates.
       </div>
       <div style="flex: 50%;">
-          ![documentgenerator](assets/samples/documenetgenerator.png){ style="display:block;margin:auto;" }
-      </div>
-    </div>
-
-!!! sampleapp "Sample App Dynamic Actions"
-    <div class="two-columns">
-      <div style="flex: 50%;">
-           This application demonstrates a number of different dynamic actions that can be incorporated into an application. These declarative client-side behaviors include simple examples for manipulating the display of components, style examples for changing the appearance of components, and server-side examples which interact with the database.
-      </div>
-      <div style="flex: 50%;">
-          ![da](assets/samples/da.png){ style="display:block;margin:auto;" }
+          ![documentgenerator](assets/samples/documentgenerator.png){ style="display:block;margin:auto;" }
       </div>
     </div>
 
@@ -200,7 +189,7 @@ SamleApps Bildchen 293*80
            This application illustrates the use of email authentication. Usernames must be email addresses and tokens are emailed to users at login time to verify their identities, instead of using passwords.
       </div>
       <div style="flex: 50%;">
-          ![email](assets/samples/email.png){ style="display:block;margin:auto;" }
+          ![email](assets/samples/emailauth.png){ style="display:block;margin:auto;" }
       </div>
     </div>
 
