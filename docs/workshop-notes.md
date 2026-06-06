@@ -183,15 +183,7 @@ SamleApps Bildchen 293*80
       </div>
     </div>
 
-!!! sampleapp "Sample App Email Authentication"
-    <div class="two-columns">
-      <div style="flex: 50%;">
-           This application illustrates the use of email authentication. Usernames must be email addresses and tokens are emailed to users at login time to verify their identities, instead of using passwords.
-      </div>
-      <div style="flex: 50%;">
-          ![email](assets/samples/emailauth.png){ style="display:block;margin:auto;" }
-      </div>
-    </div>
+
 
 !!! sampleapp "Sample App File Upload and Download"
     <div class="two-columns">

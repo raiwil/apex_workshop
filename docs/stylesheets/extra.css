@@ -199,20 +199,32 @@
 }
 
 
-/* code boxen */
+/* =====================================================
+   Code Blocks - Oracle Style
+   ===================================================== */
 
+/* Dateiname / Header */
+.md-typeset .highlight span.filename,
 .md-typeset .highlight .filename {
-  background: #f36f21;
+  background: linear-gradient(90deg, #f36f21 0%, #ff8a3d 100%);
   color: white;
   font-weight: 600;
-  padding: 0.4rem 0.8rem;
+  padding: 0.45rem 0.8rem;
 }
 
-/* Codebereich */
-
+/* Codebox */
 .md-typeset pre {
   background-color: #faf8f7;
   border: 1px solid #e2d6cf;
   border-left: 5px solid #f36f21;
   border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
+}
+
+/* Inline Code */
+.md-typeset code {
+  background-color: #fff4ed;
+  color: #c95d1c;
+  border-radius: 4px;
+  padding: 0.1rem 0.25rem;
 }
