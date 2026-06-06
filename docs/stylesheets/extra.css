@@ -219,7 +219,7 @@
 /* Dateiname / Header */
 .md-typeset .highlight span.filename,
 .md-typeset .highlight .filename {
-  background-color: #f36e2115;
+  background-color: #f36f210d;
   color: #333333;
   font-weight: 600;
   border-radius: 10px;
@@ -230,7 +230,7 @@
 
 /* Codebox */
 .md-typeset pre {
-  background-color: #f36e2115;
+  background-color: #f36f210d;
   border: 1px solid #d2d8d3;
   border-left: 5px solid #f36f21;
   border-radius: 10px;
@@ -239,9 +239,27 @@
 
 /* Inline Code */
 .md-typeset code {
-  background-color: #f36e2115;
+  background-color: #f36f210d;
   color: #333333;
   border-radius: 4px;
   padding: 0.1rem 0.3rem;
   font-weight: 500;
+}
+
+/* Copy Button */
+
+/* Copy Button */
+
+.md-clipboard {
+  color: #777 !important;
+  opacity: 1;
+}
+
+.md-clipboard:hover {
+  color: #f36f21 !important;
+}
+
+.md-clipboard svg {
+  width: 1.2rem;
+  height: 1.2rem;
 }
