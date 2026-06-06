@@ -246,12 +246,11 @@
   font-weight: 500;
 }
 
-/* Copy Button */
 
 /* Copy Button */
 
 .md-clipboard {
-  color: #777 !important;
+  color: #f36e219f !important;
   opacity: 1;
 }
 
@@ -260,6 +259,6 @@
 }
 
 .md-clipboard svg {
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1.15rem;
+  height: 1.15rem;
 }
