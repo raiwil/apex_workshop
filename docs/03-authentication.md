@@ -25,11 +25,11 @@ So far, we have authenticated the application users against those users defined 
 
     First, we add a password column to the table EMP and fill this with the ENAME in lowercase. Run the following to statemets in **SQL Commands** in the **SQL Workshop** (one after the other, running more than one statement at once could be done in **SQL Scripts**)
 
-    ```sql title="Abfrage Tabelle EMP"
+    ```sql 
       ALTER TABLE EMP ADD password VARCHAR2(20)
     ```
     
-    ```sql title="Set Passwords"
+    ```sql 
       UPDATE emp SET password = lower(ename)
     ```
 
@@ -52,7 +52,7 @@ So far, we have authenticated the application users against those users defined 
 
     Give the scheme a **Name** (here `MyEmpAuth`) with **Schema Type** `Custom`. The **Authetication Function Name** will my `myauth` and we define this function in the **PL/SQL Code** Editor.
 
-    ```sql title="Authentication Function myauth"
+    ```sql 
         FUNCTION MyAuth (
            p_username  IN  VARCHAR2,
            p_password  IN  VARCHAR2
