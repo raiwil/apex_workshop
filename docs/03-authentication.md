@@ -15,3 +15,8 @@ There are several predefined authentication schemes available:
 - **Oracle APEX Accounts** -> Oracle APEX Account Credentials are internal user accounts that are created within and managed in the Oracle APEX user repository. When you use this method, your application is authenticated against these accounts.
 - **SAML Sign-In** -> Supports authentication with SAML2 identity providers.
 - **Social Sign-In** -> Supports authentication with Google, Facebook, generic OpenID Connect, and generic OAuth2 identity providers.
+
+## 3.1 Custom Authentication
+
+So far, we have authenticated the application users against those users defined locally in APEX. This is not normally done, except perhaps during development. We now create our own authentication and simply define the employees of our table EMP as users of the application, and, And, rather carelessly, we store the password in plain text in the table.
+
