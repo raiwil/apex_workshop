@@ -205,30 +205,8 @@
    Code Blocks - Soft Workshop Style
    ===================================================== */
 
-/* Dateiname / Header */
-.md-typeset .highlight span.filename,
-.md-typeset .highlight .filename {
-  background-color: #fff4ed;
-  color: #333333;
-  font-weight: 600;
-  padding: 0.45rem 0.8rem;
-  border-bottom: 1px solid #f3ddd0;
-}
-
-/* Codebox */
 .md-typeset pre {
   background-color: #faf8f7;
-  border: 1px solid #e2d6cf;
-  border-left: 5px solid #f36f21;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
-}
-
-/* Inline Code */
-.md-typeset code {
-  color: #2f7d32;
-  background-color: #eef8f0;
-  border-radius: 4px;
-  padding: 0.1rem 0.3rem;
-  font-weight: 500;
+  border-left: 4px solid #f36f21;
+  border-radius: 8px;
 }
