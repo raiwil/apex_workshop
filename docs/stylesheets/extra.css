@@ -201,8 +201,18 @@
 
 /* code boxen */
 
+.md-typeset .highlight .filename {
+  background: #f36f21;
+  color: white;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+}
+
+/* Codebereich */
+
 .md-typeset pre {
   background-color: #faf8f7;
-  border-left: 4px solid #f36f21;
-  border-radius: 8px;
+  border: 1px solid #e2d6cf;
+  border-left: 5px solid #f36f21;
+  border-radius: 10px;
 }
