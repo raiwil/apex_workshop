@@ -43,7 +43,7 @@ So far, we have authenticated the application users against those users defined 
 
     There is already one Scheme, which by the way we've choosen in the Wizard when generating the application. Click **Create**
 
-    ![createschemes](assets/authentication/createschemes.png){ style="display:block;margin:auto;" }
+    ![createscheme](assets/authentication/createscheme.png){ style="display:block;margin:auto;" }
 
     **Based on one a pre-configured scheme from the gallery** we will build one. Press **Next**
 
@@ -91,6 +91,7 @@ To test the new scheme, you first had to disconnect your current application ses
 
 
 !!! bytheway "Switching Authentication"
+    By the way,
     In addition to defining a default Authentication Scheme, Oracle APEX also supports switching authentication schemes at runtime. This allows applications to dynamically choose different authentication mechanisms based on application logic, environment, tenant configuration, or user requirements. As a result, a single application can support multiple authentication strategies while maintaining a consistent user experience.
 
 !!! sampleapp "Sample App Email Authentication"

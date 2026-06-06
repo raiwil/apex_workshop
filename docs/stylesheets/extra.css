@@ -197,3 +197,16 @@
 .md-typeset li {
   margin-bottom: 0.15rem;
 }
+
+
+/* code boxen */
+
+.md-typeset pre {
+  background-color: #f3f8fd;
+  border: 1px solid #d8e8f7;
+  border-radius: 8px;
+}
+
+.md-typeset code {
+  background-color: #eef5fc;
+}
