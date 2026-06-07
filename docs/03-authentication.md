@@ -91,7 +91,7 @@ To test the new scheme, you first had to disconnect your current application ses
 
 
 !!! bytheway "Switching Authentication"
-    By the way,
+    *By the way*,<br>
     In addition to defining a default Authentication Scheme, Oracle APEX also supports switching authentication schemes at runtime. This allows applications to dynamically choose different authentication mechanisms based on application logic, environment, tenant configuration, or user requirements. As a result, a single application can support multiple authentication strategies while maintaining a consistent user experience.
 
 !!! sampleapp "Sample App Email Authentication"
