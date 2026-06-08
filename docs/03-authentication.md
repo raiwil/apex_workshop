@@ -18,12 +18,12 @@ There are several predefined authentication schemes available:
 
 ## 3.1 Custom Authentication
 
-So far, we have authenticated the application users against those users defined locally in APEX. This is not normally done, except perhaps during development. We now create our own authentication and simply define the employees of our table EMP as users of the application, and, And, rather carelessly, we store the password in plain text in the table.
+So far, we have authenticated the application users against those users defined locally in APEX. This is not normally done, except perhaps during development. We now create our own authentication and simply define the employees of our table EMP as users of the application, and rather carelessly, we store the password in plain text in the table.
 
 !!! exercise "Build Custom Authentication"
     Boxes with this aqua background represent the exercises. These are demonstrated step by step, and relevant things are explained. After that, or in parallel, there is time to reproduce these steps yourself. 
 
-    First, we add a password column to the table EMP and fill this with the ENAME in lowercase. Run the following to statemets in **SQL Commands** in the **SQL Workshop** (one after the other, running more than one statement at once could be done in **SQL Scripts**)
+    First, we add a password column to the table EMP and fill this with the ENAME in lowercase. Run the following statements in **SQL Commands** in the **SQL Workshop** (one after the other, running more than one statement at once could be done in **SQL Scripts**)
 
     ```sql 
       ALTER TABLE EMP ADD password VARCHAR2(20)
@@ -41,7 +41,7 @@ So far, we have authenticated the application users against those users defined 
 
     ![authschemes](assets/authentication/authschemes.png){ style="display:block;margin:auto;" }
 
-    There is already one Scheme, which by the way we've choosen in the Wizard when generating the application. Click **Create**
+    There is already one Scheme, which by the way we chose in the Wizard when generating the application. Click **Create**
 
     ![createscheme](assets/authentication/createscheme.png){ style="display:block;margin:auto;" }
 
@@ -50,7 +50,7 @@ So far, we have authenticated the application users against those users defined 
     ![next](assets/authentication/next.png){ style="display:block;margin:auto;" }
 
 
-    Give the scheme a **Name** (here `MyEmpAuth`) with **Schema Type** `Custom`. The **Authetication Function Name** will my `myauth` and we define this function in the **PL/SQL Code** Editor.
+    Give the scheme a **Name** (here `MyEmpAuth`) with **Schema Type** `Custom`. The **Authentication Function Name** will be `myauth` and we define this function in the **PL/SQL Code** Editor.
 
     ```sql 
         FUNCTION MyAuth (

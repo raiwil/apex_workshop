@@ -10,7 +10,7 @@ This hands-on workshop will be a mix of explanations, demonstrations, and taking
     Boxes with this aqua background represent the exercises. These are demonstrated step by step, and relevant things are explained. After that, or in parallel, there is time to reproduce these steps yourself. 
 
 
-There are some code snippets available. These are available as follows to easy copy them into clipboard.
+There are some code snippets available. These are available as follows to easily copy them to the clipboard.
 
 ```sql title="Example for Copy to Clipboard of a Code Snippet"
 SELECT *
@@ -19,8 +19,8 @@ FROM emp;
 
 Property-Names, Button Labels or similar mentioned in the text are **bold** and entries for properties are `like this`.
 
-Some of the exercises build on each other. Thus, exercises for a chapter should always be performed in sequence. Chapters 1 & 2 create a basic application that serves as the basis for all further exercises. 
-Furthermore, the Chapter with the RESTful Service Integration requires the result of the exercise for geographical information and the JavaScript example is built on top of the calendar excercise. 
+Some of the exercises build on each other. Thus, exercises for a chapter should always be performed in sequence. Chapters 1 and 2 create a basic application that serves as the basis for all further exercises. 
+Furthermore, the Chapter with the RESTful Service Integration requires the result of the exercise for geographical information and the JavaScript example is built on top of the calendar exercise. 
 
 An APEX application consists, besides other objects, of pages, each of which is assigned a unique number. All items on a page will (or at least should) have that number in their name (Px_Itemname). 
 In the screenshots of the exercises, you will see these numbers (that are automatically pre-assigned in ascending order) and item names, which might look different for you. So try to use the page numbers during the exercises to have the same numbering of pages, or keep in mind to use another number when creating an item manually or in the provided Code Snippets. 
@@ -33,7 +33,7 @@ In the screenshots of the exercises, you will see these numbers (that are automa
     Sometimes we have a tip or notice (that is not necessarily directly related to the current exercise in this workshop). This is then shown in light purple.
 
 !!! tip "Tips"
-    Sometimes we've an important hint
+    Sometimes we have an important hint
 
 <!--
 ```sql title="Abfrage Tabelle EMP"
@@ -273,7 +273,7 @@ SamleApps Bildchen 293*80
            This application highlights the key features of the Workflow, Approvals, and Tasks capabilities in Oracle APEX. It lets users manage changes to employees' salaries and jobs, provision a laptop for an employee, and manage employees' self-appraisals. All use cases involve human tasks requiring an action by an appropriate individual, some of which require an approval or rejection.
       </div>
       <div style="flex: 50%;">
-          ![worksflow](assets/samples/workflow.png){ style="display:block;margin:auto;" }
+          ![workflow](assets/samples/workflow.png){ style="display:block;margin:auto;" }
       </div>
     </div>
 

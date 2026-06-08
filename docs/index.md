@@ -8,7 +8,7 @@ This workshop intends to introduce Oracle APEX to beginners and show them a broa
 
 Have fun and feel free to distribute this workshop to colleagues and others who are interested in Oracle APEX.
 
-Some of he screenshots are from older releases and may look slightly different when using another release.
+Some of the screenshots are from older releases and may look slightly different when using another release.
 
 The workshop can also be completed independently without guidance. However, in that case, you will miss the explanations and tips that often highlight aspects which cannot all be covered in a single day. And, of course, you cannot ask the website questions the way you can ask an instructor.
 
