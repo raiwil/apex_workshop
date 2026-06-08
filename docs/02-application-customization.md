@@ -108,7 +108,7 @@ The job item in the form is currently a simple Text Field. Now we add a List of 
 
     Choose `SQL Query` as the **Type** for the List of Values. As **SQL Query** choose the Code Snippet and write `no job assigned` as **Null Display Value**
 
-    ```sql title="Query for LoV"
+    ```sql
        SELECT distinct job as d, job as r 
          FROM emp
         WHERE job IS NOT NULL
@@ -223,7 +223,7 @@ Now play around and watch the commission item in the form when changing the job.
 What has not yet been considered is how to handle a possibly existing commission value.
 
 !!! bytheway "Dynamic Action Event Input"
-    By the way,
+    *By the way*,<br>
     In 24.1, a Dynamic Action event called Input was introduced. The event fires every time the value of an element changes. This differs from the Change event used in the exercises, which only fires after the user finishes the input—for example, by pressing Enter or selecting a value from a list of values.
 
 
@@ -238,7 +238,7 @@ What has not yet been considered is how to handle a possibly existing commission
     </div>
 
 !!! bytheway "Trigger Actions"
-    By the way,
+    *By the way*,<br>
     in 26.1 Trigger Actions are introduced. These provide a simplified way to define reactive behavior in Oracle APEX. Instead of creating a full Dynamic Action with events, conditions, and actions, a Trigger Action allows developers to declaratively specify what should happen when a particular event occurs. They are designed to cover common client-side interaction patterns with less configuration and improved maintainability. Trigger Actions help reduce complexity while still enabling responsive and interactive user interfaces.
    
 
