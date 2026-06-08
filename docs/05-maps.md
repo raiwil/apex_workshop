@@ -104,7 +104,7 @@ Changing an address in the form and coming back to the page with the report and 
 
     For the new Refresh Action (or the other ;)) change the *Region** in the Affected Elements section from Departments to `MyMap`.
 
-    ![duplicate](assets/maps/duplicate.png){ style="display:block;margin:auto;" }
+    ![regionaffected](assets/maps/regionaffected.png){ style="display:block;margin:auto;" }
 
     It might be a good idea to name the actions accordingly. 
 
