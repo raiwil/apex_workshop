@@ -112,15 +112,7 @@ SamleApps Bildchen 293*80
       </div>
     </div>
 
-!!! sampleapp "Sample App Application Search"
-    <div class="two-columns">
-      <div style="flex: 50%;">
-           This application showcases the Application Search feature, introduced with APEX 22.2. Search Configurations and Search Regions allow developers to add robust search engine functionality to their APEX applications.
-      </div>
-      <div style="flex: 50%;">
-          ![search](assets/samples/search.png){ style="display:block;margin:auto;" }
-      </div>
-    </div>
+
 
 !!! sampleapp "Sample App Calendar"
     <div class="two-columns">
@@ -132,16 +124,7 @@ SamleApps Bildchen 293*80
       </div>
     </div>
 
-!!! sampleapp "Sample App Cards"
-    <div class="two-columns">
-      <div style="flex: 50%;">
-           This application highlights Cards regions in Oracle APEX. Cards regions are a native region type. They provide developers with a powerful and flexible new way to display data in bite-sized blocks, ideal for use in faceted search, or presenting at-a-glance information.
-           This app is online available to view: [https://apex.oracle.com/go/sample_cards](https://apex.oracle.com/go/sample_cards){target="_blank"} 
-      </div>
-      <div style="flex: 50%;">
-          ![cards](assets/samples/cards.png){ style="display:block;margin:auto;" }
-      </div>
-    </div>
+
 
 !!! sampleapp "Sample App Charts"
     <div class="two-columns">
@@ -196,15 +179,7 @@ SamleApps Bildchen 293*80
       </div>
     </div>
 
-!!! sampleapp "Sample App Interactive Grids"
-    <div class="two-columns">
-      <div style="flex: 50%;">
-           This application showcases the features and functionality of the Oracle APEX Interactive Grid. Through its interactive grid sample pages, users can explore its versatile capabilities, such as comprehensive reporting, seamless data editing or intuitive pagination.
-      </div>
-      <div style="flex: 50%;">
-          ![ig](assets/samples/ig.png){ style="display:block;margin:auto;" }
-      </div>
-    </div>
+
 
 
 
@@ -218,15 +193,7 @@ SamleApps Bildchen 293*80
       </div>
     </div>
 
-!!! sampleapp "Sample App Reporting"
-    <div class="two-columns">
-      <div style="flex: 50%;">
-           This application highlights the reporting capabilities of Oracle APEX. You can create Interactive Reports, Interactive Grids, Faceted Search Reports, Cards Reports, and Classic Reports declaratively using SQL.
-      </div>
-      <div style="flex: 50%;">
-          ![reporting](assets/samples/reporting.png){ style="display:block;margin:auto;" }
-      </div>
-    </div>
+
 
 
 
