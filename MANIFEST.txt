@@ -6,7 +6,7 @@ docs/03-authentication.md
 docs/04-authorization.md
 docs/05-maps.md
 docs/06-restful-services.md
-docs/07-reports.md
+docs/07-reporting-and-search.md
 docs/08-charts.md
 docs/09-files-images.md
 docs/10-calendars.md
