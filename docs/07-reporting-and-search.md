@@ -17,10 +17,10 @@ This is a demo chapter only without exercises.
 **Classic Reports**
 
 <div class="two-columns">
-  <div>
+  <div style="flex: 70%;">
     A classic report is a list of data based on the formatted result of a SQL query or a table/view. Column Sorting is an out of the box feature. For Classic Reports there are several Template Options available to generate other types of output than default lists. 
   </div>
-  <div>
+  <div style="flex: 30%;">
     <img src="../assets/reporting/classic.png" alt="classic" style="display:block;margin:auto;">
   </div>
 </div>
@@ -29,10 +29,10 @@ This is a demo chapter only without exercises.
 **Interactive Reports**
 
 <div class="two-columns">
-  <div>
+  <div style="flex: 70%;">
     An Interactive Report is a powerful reporting component in Oracle APEX that enables end users to analyze and customize data without requiring developer intervention. Users can sort, filter, search, highlight, aggregate, compute, and group data directly within the report. Interactive Reports also support saved report layouts, control breaks, charts, and data downloads in various formats. This makes them an ideal choice for ad-hoc analysis and self-service reporting.
   </div>
-  <div>
+  <div style="flex: 30%;">
     <img src="../assets/reporting/ir.png" alt="ir" style="display:block;margin:auto;">
   </div>
 </div>
@@ -85,6 +85,7 @@ Media content can be sourced from a BLOB column, a URL, videos embedded in an iF
   </div>
   <div>
     <img src="../assets/reporting/facets.png" alt="facets" style="display:block;margin:auto;">
+  </div>   
 </div>
 
 **Smart Filters**

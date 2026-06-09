@@ -90,19 +90,19 @@ On the report page for the departments, we will now add a map region to show all
 
     ![gallery](assets/maps/gallery.png){ style="display:block;margin:auto;" }
 
-   Alternatively, you can create such a region with a right-mouse click in the Content Body, choosing **Create Region**, and setting `Map` as **Region Type**.
+    Alternatively, you can create such a region with a right-mouse click in the Content Body, choosing **Create Region**, and setting `Map` as **Region Type**.
 
-   Give the region a **Name** (`MyMap`).
+    Give the region a **Name** (`MyMap`).
  
-   ![mapregion](assets/maps/mapregion.png){ style="display:block;margin:auto;" }
+    ![mapregion](assets/maps/mapregion.png){ style="display:block;margin:auto;" }
 
-   Now have a look at the layer which is predefined with some sample data. **Name** and **Label** the layer `location` and choose as source the `Local Database`and there the table `DEPT`. Now there should be two errors marked red  at the exclamation  mark at the top.
+    Now have a look at the layer which is predefined with some sample data. **Name** and **Label** the layer `location` and choose as source the `Local Database`and there the table `DEPT`. Now there should be two errors marked red  at the exclamation  mark at the top.
 
-   ![mapregion](assets/maps/mapregion.png){ style="display:block;margin:auto;" }
+    ![mapregion](assets/maps/mapregion.png){ style="display:block;margin:auto;" }
 
-   Navigating to these errors via scrolling down in the properties or choosing the error message window, you'll find the Column Mapping responsible for the errors. In this section we choose as **Geometry Column Data Type** `SDO_GEOMETRY` and our new column`GEOLOCATION`as **Geometry Column**. And it might be a good idea to define the **Primary Key Column**
+    Navigating to these errors via scrolling down in the properties or choosing the error message window, you'll find the Column Mapping responsible for the errors. In this section we choose as **Geometry Column Data Type** `SDO_GEOMETRY` and our new column`GEOLOCATION`as **Geometry Column**. And it might be a good idea to define the **Primary Key Column**
 
-   ![columnmapping](assets/maps/columnmapping.png){ style="display:block;margin:auto;" }
+    ![columnmapping](assets/maps/columnmapping.png){ style="display:block;margin:auto;" }
 
 ## 5.5 Refresh map automatically when data changed
 
