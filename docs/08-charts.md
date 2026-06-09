@@ -123,12 +123,12 @@ Currently the whole page is reloaded, but it's just needed to reload the one bar
 
     ![submit](assets/charts/submit.png){ style="display:block;margin:auto;" }
 
-    Last, we add a button to reset the selection. In the contect menu of the **Employees* region choose **Create Button**.
+    Last, we add a button to reset the selection. In the contect menu of the **Employees** region choose **Create Button**.
     For **Button Name** and **Label** we set `Reset`.
 
     ![button](assets/charts/button.png){ style="display:block;margin:auto;" }
 
-    In the section **Behavior** with the **Type** `Standard`, you can choose as **Action** a `Trigger Action` (the simplified Dynamic Actions, mentioned in chapter 2).
+    In the section **Behavior** with the **Type** `Standard`, you can choose as **Action** a `Trigger Action` (the simplified Dynamic Actions mentioned in chapter 2).
 
     ![triggeraction](assets/charts/triggeraction.png){ style="display:block;margin:auto;" }
 
@@ -144,9 +144,9 @@ Currently the whole page is reloaded, but it's just needed to reload the one bar
        <div>
           *By the way*,<br>
           The charting in APEX is based on the Oracle JavaScript Extension Toolkit (JET) Data Visualizations. For more information on Oracle JET and the Data Visualizations components, please refer to the [Jet Cookbook](https://www.oracle.com/webfolder/technetwork/jet/jetCookbook.html?component=home&demo=rootVisualizations){ target="_blank" } and the [ojChart API Guide](https://www.oracle.com/webfolder/technetwork/jet/jsdocs/oj.ojChart.htmlojChart){ target="_blank" }.
-          Not every property of JET-charts can be set via the APEX UI. It's possible to manipulate these properties via Java Script. In the JavaScript Initialization Code in the Help you'll see a small example of how this can be done
+          Not every property of JET-charts can be set via the APEX UI. It's possible to manipulate these properties via Java Script. In the JavaScript Initialization Code (could be found under the **Attributes** tab of a charts region) in the Help you'll see a small example of how this can be done
        </div>
     <div>
-        ![Mode](assets/btw/darkmode.png){ style="display:block;margin:auto;" }   ***** NEW Screenshot ****
+        ![Mode](assets/charts/javascriptfunction.png.png){ style="display:block;margin:auto;" }   ***** NEW Screenshot ****
     </div>
     </div>
