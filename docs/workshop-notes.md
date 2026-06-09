@@ -33,7 +33,7 @@ In the screenshots of the exercises, you will see these numbers (that are automa
     Sometimes we have a tip or notice (that is not necessarily directly related to the current exercise in this workshop). This is then shown in light purple.
 
 !!! tip "Tips"
-    Sometimes we have an important hint
+    Sometimes we have an hint, especially when there is a dedicated hands-on lab (Oracle LiveLab) for practicing that topic in the guide.
 
 <!--
 ```sql title="Abfrage Tabelle EMP"
@@ -206,16 +206,7 @@ SamleApps Bildchen 293*80
       </div>
     </div>
 
-!!! sampleapp "Sample App Maps"
-    <div class="two-columns">
-      <div style="flex: 50%;">
-           This application contains numerous examples of visualizing coordinate data on a map. Use Map Markers, Lines or Polygons, or the Heat Map feature. The APEX Map Region can easily be combined with Oracle Spatial functionality (which is included in every Oracle Database) to perform a 'Within Distance Search', 'Nearest Neighbor Search', or other spatial analysis.
-           This app is online available to view: [https://oracleapex.com/go/maps](https://oracleapex.com/go/maps){target="_blank"} 
-      </div>
-      <div style="flex: 50%;">
-          ![maps](assets/samples/maps.png){ style="display:block;margin:auto;" }
-      </div>
-    </div>
+
 
 !!! sampleapp "Sample App Master Detail"
     <div class="two-columns">
@@ -237,15 +228,7 @@ SamleApps Bildchen 293*80
       </div>
     </div>
 
-!!! sampleapp "Sample App REST Services"
-    <div class="two-columns">
-      <div style="flex: 50%;">
-           This application showcases how to access external REST services from Oracle APEX. The app works on the sample RESTful Service, oracle.example.hr. The examples in this application illustrate how to create a simple tabular report on REST service data, how to filter, and how to add pagination.
-      </div>
-      <div style="flex: 50%;">
-          ![rest](assets/samples/rest.png){ style="display:block;margin:auto;" }
-      </div>
-    </div>
+
 
 !!! sampleapp "Sample Trees"
     <div class="two-columns">

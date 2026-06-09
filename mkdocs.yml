@@ -35,7 +35,7 @@ nav:
   - Workshop Notes: workshop-notes.md
   - Chapters:
       - '1. Getting started': 01-getting-started.md
-      - '2. Application Customization': 02-application-adjustments.md
+      - '2. Application Customization': 02-application-customization.md
       - '3. Authentication' : 03-authentication.md
       - '4. Authorization': 04-authorization.md
       - '5. Maps': 05-maps.md

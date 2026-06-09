@@ -286,6 +286,10 @@ We will experience this firsthand in the chapter on **charts**.
 
     </div>
 
+!!! tip "LiveLab"
+    There's an Oracle LiveLab **Implement custom authentication in APEX** available.
+    [Click here](https://livelabs.oracle.com/ords/r/dbpm/livelabs/view-workshop?wid=3315){target="_blank"}
+
 ## 2.5 User Interface Attributes
 
 As a brief preview of the Chapter **Layout**, we will now adjust the menu of our application to make the following exercises easier to follow and more visually intuitive.

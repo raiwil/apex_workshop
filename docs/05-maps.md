@@ -1,5 +1,17 @@
 # 5. Maps
 
+!!! sampleapp "Sample App Maps"
+    <div class="two-columns">
+      <div style="flex: 50%;">
+           This application contains numerous examples of visualizing coordinate data on a map. Use Map Markers, Lines or Polygons, or the Heat Map feature. The APEX Map Region can easily be combined with Oracle Spatial functionality (which is included in every Oracle Database) to perform a 'Within Distance Search', 'Nearest Neighbor Search', or other spatial analysis.
+           This app is online available to view: [https://oracleapex.com/go/maps](https://oracleapex.com/go/maps){target="_blank"} 
+      </div>
+      <div style="flex: 50%;">
+          ![maps](assets/samples/maps.png){ style="display:block;margin:auto;" }
+      </div>
+    </div>
+
+
 ## 5.1 Build a Report with a Form about departments
 
 We want to show geographical information of our departments and therefore we first built a page for that. 
@@ -109,3 +121,7 @@ Changing an address in the form and coming back to the page with the report and 
     It might be a good idea to name the actions accordingly. 
 
 Now change an existing address or add a new department, and the map should be refreshed automatically, like the report. However, we can't see the nice camera flyover to the points just yet.
+
+!!! tip "LiveLab"
+    There's an Oracle LiveLab **Getting Started with Maps and Spatial in APEX** available.
+    [Click here](https://livelabs.oracle.com/ords/r/dbpm/livelabs/view-workshop?wid=936){target="_blank"}

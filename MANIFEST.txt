@@ -1,7 +1,7 @@
 .github/workflows/pages.yml
 README.md
 docs/01-getting-started.md
-docs/02-application-adjustments.md
+docs/02-application-customization.md
 docs/03-authentication.md
 docs/04-authorization.md
 docs/05-maps.md
