@@ -74,6 +74,17 @@ Media content can be sourced from a BLOB column, a URL, videos embedded in an iF
 ![cards](assets/reporting/cards.png){ style="display:block;margin:auto;" } 
 
 
+!!! sampleapp "Sample App Brookstrut"
+    <div class="two-columns">
+      <div style="flex: 50%;">
+           The Brookstrut sample application analyzes a simplified stored data model and includes a feature to generate random data, accommodating everything from small to extra large data sets. It showcases Oracle APEX's capabilities in data reporting, navigation, and data presentation. This tool allows you to explore various Oracle APEX components, including faceted search, interactive reports, content row reports, and calendars.
+      </div>
+      <div style="flex: 50%;">
+          ![brookstrut](assets/samples/brookstrut.png){ style="display:block;margin:auto;" }
+      </div>
+    </div>
+
+
 ## 7.2 Search Capabilities
 
 **Faceted Search**

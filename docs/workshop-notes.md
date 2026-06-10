@@ -69,173 +69,25 @@ SamleApps Bildchen 293*80
 
 
 
-!!! sampleapp "Sample App APEX PWA Reference"
-    <div class="two-columns">
-      <div style="flex: 50%;">
-           Oracle APEX enables developers to build Progressive Web Apps (PWAs) that can be installed on any desktop or mobile device to deliver a more native app experience. This application serves as a reference for key PWA features in APEX and how you can use them in your own apps. 
-           This app is online available to view: [https://oracleapex.com/go/pwa](https://oracleapex.com/go/pwa){target="_blank"} 
-      </div>
-      <div style="flex: 50%;">
-          ![pwa](assets/samples/pwa.png){ style="display:block;margin:auto;" }
-      </div>
-    </div>
-
-!!! sampleapp "Sample App APEXToGo"
-    <div class="two-columns">
-      <div style="flex: 50%;">
-           This application showcases the features of a mobile web application built with Oracle APEX. It demonstrates mobile design capabilities and leverages Progressive Web Apps (PWAs) technologies to provide an enhanced user experience, offering a seamless and native-like experience.
-           This app is online available to view: [https://oracleapex.com/ords/r/apex_pm/apextogo/](https://oracleapex.com/ords/r/apex_pm/apextogo/){target="_blank"} 
-           
-      </div>
-      <div style="flex: 50%;">
-          ![apextogo](assets/samples/apextogo.png){ style="display:block;margin:auto;" }
-      </div>
-    </div>
-
-!!! sampleapp "Sample App Brookstrut"
-    <div class="two-columns">
-      <div style="flex: 50%;">
-           The Brookstrut sample application analyzes a simplified stored data model and includes a feature to generate random data, accommodating everything from small to extra large data sets. It showcases Oracle APEX's capabilities in data reporting, navigation, and data presentation. This tool allows you to explore various Oracle APEX components, including faceted search, interactive reports, content row reports, and calendars.
-      </div>
-      <div style="flex: 50%;">
-          ![brookstrut](assets/samples/brookstrut.png){ style="display:block;margin:auto;" }
-      </div>
-    </div>
-
-!!! sampleapp "Sample App Image Support for Rich Text Editor"
-    <div class="two-columns">
-      <div style="flex: 50%;">
-           This application illustrates how to augment Rich Text Editor content items to allow for inline images.
-      </div>
-      <div style="flex: 50%;">
-          ![image](assets/samples/image.png){ style="display:block;margin:auto;" }
-      </div>
-    </div>
-
-
-
-!!! sampleapp "Sample App Calendar"
-    <div class="two-columns">
-      <div style="flex: 50%;">
-           This application highlights the native calendaring capabilities of Oracle APEX. It features a monthly calendar with stylized daily tasks. The dates can be changed using drag and drop, which is all declarative and easily created using native APEX wizards.
-      </div>
-      <div style="flex: 50%;">
-          ![calendar](assets/samples/calendar.png){ style="display:block;margin:auto;" }
-      </div>
-    </div>
-
-
-
-!!! sampleapp "Sample App Charts"
-    <div class="two-columns">
-      <div style="flex: 50%;">
-           This application highlights the charting capabilities of Oracle APEX. It demonstrates how you can enhance your applications to visually represent your data, using declarative and plug-in based charting solutions.
-           This app is online available to view: [https://apex.oracle.com/go/sample_charts](https://apex.oracle.com/go/sample_charts){target="_blank"} 
-      </div>
-      <div style="flex: 50%;">
-          ![charts](assets/samples/charts.png){ style="display:block;margin:auto;" }
-      </div>
-    </div>
-
-!!! sampleapp "Sample App Collections"
-    <div class="two-columns">
-      <div style="flex: 50%;">
-           Sample Collections enables you to store rows of data for use within an Oracle APEX session. This database application illustrates how to use PL/SQL to create and manage collection-based session state.
-      </div>
-      <div style="flex: 50%;">
-          ![collections](assets/samples/collections.png){ style="display:block;margin:auto;" }
-      </div>
-    </div>
-
-!!! sampleapp "Sample App Data Loading"
-    <div class="two-columns">
-      <div style="flex: 50%;">
-           This application is built on simple EMP and DEPT tables to highlight how developers can define pages to allow end users to upload spreadsheet data into an existing table.
-      </div>
-      <div style="flex: 50%;">
-          ![dataloading](assets/samples/dataloading.png){ style="display:block;margin:auto;" }
-      </div>
-    </div>
-
-!!! sampleapp "Sample App Document Generator"
-    <div class="two-columns">
-      <div style="flex: 50%;">
-           This application showcases the integration with the Oracle Document Generator Pre-built Function on OCI. It features examples of generating PDF documents from a combination of JSON data and MS Word templates.
-      </div>
-      <div style="flex: 50%;">
-          ![documentgenerator](assets/samples/documentgenerator.png){ style="display:block;margin:auto;" }
-      </div>
-    </div>
-
-
-
-!!! sampleapp "Sample App File Upload and Download"
-    <div class="two-columns">
-      <div style="flex: 50%;">
-           Learn how to create Oracle APEX applications that include file upload and download. Upload files using dialogs as well as dedicated pages. See how to download files stored in Oracle database BLOB columns within database tables. Specifically see how to produce file download links in interactive reports, classic reports, forms, and dynamically created HTML content.
-      </div>
-      <div style="flex: 50%;">
-          ![files](assets/samples/files.png){ style="display:block;margin:auto;" }
-      </div>
-    </div>
 
 
 
 
 
-!!! sampleapp "Sample App Master Detail"
-    <div class="two-columns">
-      <div style="flex: 50%;">
-           This application highlights the native master detail capabilities of Oracle APEX. The application contains four different master detail page layouts. The first two layouts display master detail in a single page using editable Interactive Grids. The last two layouts display master detail in two pages with mix of editable Interactive Grids, form items, classic reports and modal popups.
-      </div>
-      <div style="flex: 50%;">
-          ![masterdetail](assets/samples/masterdetail.png){ style="display:block;margin:auto;" }
-      </div>
-    </div>
 
 
 
 
 
-!!! sampleapp "Sample Trees"
-    <div class="two-columns">
-      <div style="flex: 50%;">
-           Learn how to create a tree control using a SQL query. This application shows various methods of integrating tree controls into your Oracle APEX application.
-      </div>
-      <div style="flex: 50%;">
-          ![trees](assets/samples/trees.png){ style="display:block;margin:auto;" }
-      </div>
-    </div>
 
-!!! sampleapp "Sample App Vector Search"
-    <div class="two-columns">
-      <div style="flex: 50%;">
-           This application shows how to leverage Vector Search in Oracle Database 26ai. Learn how to generate vector embeddings and how to do vector search, using APEX Search Configurations. The application also highlights the differences to traditional Oracle Text search, and showcases how to combine both methods.
-      </div>
-      <div style="flex: 50%;">
-          ![vectorsearch](assets/samples/vectorsearch.png){ style="display:block;margin:auto;" }
-      </div>
-    </div>
 
-!!! sampleapp "Sample App Workflow, Approvals and Tasks"
-    <div class="two-columns">
-      <div style="flex: 50%;">
-           This application highlights the key features of the Workflow, Approvals, and Tasks capabilities in Oracle APEX. It lets users manage changes to employees' salaries and jobs, provision a laptop for an employee, and manage employees' self-appraisals. All use cases involve human tasks requiring an action by an appropriate individual, some of which require an approval or rejection.
-      </div>
-      <div style="flex: 50%;">
-          ![workflow](assets/samples/workflow.png){ style="display:block;margin:auto;" }
-      </div>
-    </div>
 
-!!! sampleapp "Universal Theme Reference"
-    <div class="two-columns">
-      <div style="flex: 50%;">
-           This app introduces you to Universal Theme by providing an easy way to browse through the various templates, template options, and theme styles. The examples demonstrate how you can easily control the layout of your pages, to create a great looking application.
-           This app is online available to view: [https://oracleapex.com/ut](https://oracleapex.com/ut){target="_blank"} 
-      </div>
-      <div style="flex: 50%;">
-          ![ut](assets/samples/ut.png){ style="display:block;margin:auto;" }
-      </div>
-    </div>
+
+
+
+
+
+
+
 
 

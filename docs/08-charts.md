@@ -143,10 +143,10 @@ Currently the whole page is reloaded, but it's just needed to reload the one bar
     <div class="two-columns">
        <div>
           *By the way*,<br>
-          The charting in APEX is based on the Oracle JavaScript Extension Toolkit (JET) Data Visualizations. For more information on Oracle JET and the Data Visualizations components, please refer to the [Jet Cookbook](https://www.oracle.com/webfolder/technetwork/jet/jetCookbook.html?component=home&demo=rootVisualizations){ target="_blank" } and the [ojChart API Guide](https://www.oracle.com/webfolder/technetwork/jet/jsdocs/oj.ojChart.htmlojChart){ target="_blank" }.
+          The charting in APEX is based on the Oracle JavaScript Extension Toolkit (JET) Data Visualizations. For more information on Oracle JET and the Data Visualizations components, please refer to the [Jet Cookbook](https://www.oracle.com/webfolder/technetwork/jet/jetCookbook.html?component=home&demo=rootVisualizations){ target="_blank" } and the [ojChart API Guide](https://www.oracle.com/webfolder/technetwork/jet/jsdocs/oj.ojChart.html){ target="_blank" }.
           Not every property of JET-charts can be set via the APEX UI. It's possible to manipulate these properties via Java Script. In the JavaScript Initialization Code (could be found under the **Attributes** tab of a charts region) in the Help you'll see a small example of how this can be done
        </div>
     <div>
-        ![Mode](assets/charts/javascriptfunction.png.png){ style="display:block;margin:auto;" }   ***** NEW Screenshot ****
+        ![Mode](assets/charts/javascriptfunction.png){ style="display:block;margin:auto;" }
     </div>
     </div>
