@@ -126,7 +126,7 @@ Now we do the same for pictures, which are just files that can be directly shown
     <div class="two-columns">
       <div>
         That's now very similar to adding the document before. First replace the line `image,` in the **SQL Query** of the report on page 2 with the follwing snippet.
-        ```javascript
+        ```sql
            dbms_lob.getlength(image) as image,
         ```
         As before we just want to know if there's an image and define the display now. 
