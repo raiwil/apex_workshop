@@ -39,23 +39,22 @@ Each collection consists of a named set of members. A member can contain up to 5
 The **APEX_COLLECTION** package provides the API for creating collections and for inserting, updating, deleting, and querying collection members.
 
 !!! sampleapp "Sample App Collections"
-    <div class="two-columns">
-      <div style="flex: 50%;">
-           Sample Collections enables you to store rows of data for use within an Oracle APEX session. This database application illustrates how to use PL/SQL to create and manage collection-based session state.
-      </div>
-      <div style="flex: 50%;">
-          ![collections](assets/samples/collections.png){ style="display:block;margin:auto;" }
-      </div>
-    </div>
 
 
 ## 21.4 Tree Navigation
 
-APEX provides the **Tree** region type for displaying hierarchical data structures. A tree can be used to represent parent-child relationships, such as organizational structures, product categories, file systems, or menu hierarchies.
+<div class="two-columns">
+    <div style="flex: 50%;">
+       APEX provides the **Tree** region type for displaying hierarchical data structures. A tree can be used to represent parent-child relationships, such as organizational structures, product categories, file systems, or menu hierarchies.
 
-Nodes can be expanded and collapsed by the user, making it easy to navigate large hierarchical datasets. Selecting a node can trigger navigation to another page, display related information, or execute custom actions.
+       Nodes can be expanded and collapsed by the user, making it easy to navigate large hierarchical datasets. Selecting a node can trigger navigation to another page, display related information, or execute custom actions.
 
-The Tree region can be based on SQL queries that return hierarchical data and supports various options for controlling the appearance and behavior of the tree.
+        The Tree region can be based on SQL queries that return hierarchical data and supports various options for controlling the appearance and behavior of the tree.
+    </div>
+    <div style="flex: 50%;">
+       <img src="../assets/misc/tree.png" alt="tree" style="display:block;margin:auto;">
+   </div>
+</div>
 
 !!! sampleapp "Sample Trees"
     <div class="two-columns">
@@ -70,12 +69,18 @@ The Tree region can be based on SQL queries that return hierarchical data and su
 
 ## 21.5 QR Codes
 
-APEX provides a QR Code item type that makes it easy to generate and display scannable QR codes within an application. QR codes can contain different types of information, including text, URLs, phone numbers, email addresses, SMS messages, and geographic locations.
+<div class="two-columns">
+    <div style="flex: 75%;">
+       APEX provides a QR Code item type that makes it easy to generate and display scannable QR codes within an application. QR codes can contain different types of information, including text, URLs, phone numbers, email addresses, SMS messages, and geographic locations.
 
-In addition to the item type, APEX provides the **APEX_BARCODE** API, which can be used to generate QR codes programmatically. This allows QR codes to be embedded in reports, emails, printable documents, or other parts of an application.
-
-To create a QR code on a page, simply add an item of type QR Code, specify the source value (either static or dynamic), and choose the desired size. APEX then generates the QR code automatically at runtime.
-
+       In addition to the item type, APEX provides the **APEX_BARCODE** API, which can be used to generate QR codes programmatically. This allows QR codes to be embedded in reports, emails, printable documents, or other parts of an application.
+       
+       To create a QR code on a page, simply add an item of type QR Code, specify the source value (either static or dynamic), and choose the desired size. APEX then generates the QR code automatically at runtime.
+    </div>
+    <div style="flex: 25%;">
+       <img src="../assets/misc/qrcode.png" alt="qrcode" style="display:block;margin:auto;">
+   </div>
+</div>
 
 ## 21.6 EMails & EMail-Templates
 
@@ -92,13 +97,20 @@ The current mail queue and the email sending history can be monitored using the 
 
 ## 21.7 Tabs and Region Switching
 
-APEX provides several ways to organize content and allow users to switch between different views on the same page.
-
-One option is the **Tab Container**. By enabling the **Tab Container** setting in a parent region, multiple child regions can be displayed as tabs. Users can switch between the tabs to view the content of the associated regions without leaving the page.
-
-Another option is the **Region Display Selector (RDS)** region type. An RDS automatically generates a tab-like navigation for selected regions on the page. This provides a simple way to organize related content and reduce page clutter while allowing users to quickly switch between different regions.
-
-Both approaches improve usability by presenting large amounts of information in a compact and easy-to-navigate layout.
+<div class="two-columns">
+    <div style="flex: 75%;">
+       APEX provides several ways to organize content and allow users to switch between different views on the same page.
+       
+       One option is the **Tab Container**. By enabling the **Tab Container** setting in a parent region, multiple child regions can be displayed as tabs. Users can switch between the tabs to view the content of the associated regions without leaving the page.
+       
+       Another option is the **Region Display Selector (RDS)** region type. An RDS automatically generates a tab-like navigation for selected regions on the page. This provides a simple way to organize related content and reduce page clutter while allowing users to quickly switch between different regions.
+       
+       Both approaches improve usability by presenting large amounts of information in a compact and easy-to-navigate layout.
+    </div>
+    <div style="flex: 25%;">
+       <img src="../assets/misc/regiontabs.png" alt="qrcode" style="display:block;margin:auto;">
+   </div>
+</div>
 
 
 ## 21.8 Automations
@@ -113,6 +125,9 @@ All automation executions are logged, making it easy to review execution details
 
 Automations are implemented using Oracle Scheduler jobs. Therefore, the database privilege **CREATE JOB** is required for the parsing schema. This tight integration with the database enables reliable and scalable background processing directly from Oracle APEX.
 
+![automations](assets/misc/automations.png){ style="display:block;margin:auto;" }
+
+
 ## 21.9 Plug-Ins
 
 Plug-ins allow developers to extend APEX with custom functionality that is not available natively in the platform. They provide a mechanism for adding reusable components and integrating third-party technologies into APEX applications.
@@ -121,7 +136,7 @@ APEX supports several types of plug-ins, including **Item**, **Region**, **Dynam
 
 Plug-ins are managed in **Shared Components** under the **Other Components** section. They can be imported, exported, and shared across applications within a workspace.
 
-A large collection of community-developed plug-ins is available on the APEX community site [**APEX World**](https://apex.world/){target="_blank"})
+A large collection of community-developed plug-ins is available on the APEX community site [**APEX World**](https://apex.world/ords/r/apex_world/apex-world/plug-ins){target="_blank"})
 
 Oracle also provides a catalog of sample and supported plug-ins on the [APEX website](https://apex.oracle.com/en/solutions/apps/#plug_ins
 ){target="_blank"}
@@ -141,6 +156,8 @@ The following print engines are supported:
 * **APEX Office Print (AOP)** (license or subscription required) generates documents in PDF and Microsoft Office formats such as Word, Excel, and PowerPoint. It combines template files with application data, typically provided as JSON.
 
 Starting with APEX 24.1, Oracle APEX also supports **Oracle Document Generator**, an OCI-based document generation service. Using DOCX templates and JSON data, it can generate PDF documents in a manner similar to Oracle Analytics Publisher and APEX Office Print. An OCI tenancy is required to use this service.
+
+![docgeneration](assets/misc/docgeneration.png){ style="display:block;margin:auto;" }
 
 Document generation is integrated into APEX through **Report Queries** and **Report Layouts**, which are defined in **Shared Components**. Applications can invoke document generation declaratively using the built-in **Download Report** process type and related dynamic actions. For programmatic access, APEX provides the **APEX_PRINT** API.
 

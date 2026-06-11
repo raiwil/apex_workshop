@@ -42,6 +42,12 @@ FROM emp;
 ```
 [Link zu Oracle](https://www.oracle.com){target="_blank"}
 
+Bild mkdocs 
+          ![masterdetail](assets/samples/masterdetail.png){ style="display:block;margin:auto;" }
+
+Bild sonst 
+    <img src="../assets/gettingstarted/empdept.png" alt="empdept" style="display:block;margin:auto;">
+
 > Ich bin ein Zitat
 
 !!! note "Note"

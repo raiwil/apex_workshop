@@ -10,3 +10,39 @@
           ![workflow](assets/samples/workflow.png){ style="display:block;margin:auto;" }
       </div>
     </div>
+
+**Workflow Engine**
+
+Starting with APEX 23.2, a built-in Workflow Engine is available as part of the platform. Workflows can be designed visually using the **Workflow Designer**, which is integrated into the Application Builder.
+
+APEX can automatically generate **Workflow Console** pages that allow administrators and users to monitor, manage, and interact with workflow instances. These generated pages can be customized like any other APEX page.
+
+Workflow functionality can be integrated declaratively into applications using the provided **Workflow** process and dynamic action components. For programmatic access, Oracle APEX provides the **APEX_WORKFLOW** API, which allows developers to start workflows, manage workflow instances, and interact with workflow activities from application code.
+
+The APEX Workflow Engine focuses on simplicity, extensibility, and seamless integration with the APEX platform. It is not intended to implement the BPMN 2.0 standard. Organizations requiring BPMN 2.0 support can consider **Flows for APEX**, an open-source workflow solution developed by APEX enthusiats ([flowsforapex.org/](https://https://flowsforapex.org/){target="_blank"}).
+
+**Workflow Activities**
+
+Workflow Activities are the building blocks of a workflow definition. Each activity represents a unit of work that is executed when the workflow reaches that step. Within the APEX architecture, workflow activities are implemented as **process-type plug-ins**, which allows workflows to reuse existing APEX functionality.
+
+Every workflow contains:
+
+* Exactly one **Start Activity**
+* One or more **End Activities**
+* One or more intermediate activities connected by transitions
+
+The following native APEX process types can be used as workflow activities:
+
+* Execute Code
+* Send E-Mail
+* Human Task – Create Approval
+* Send Push Notification
+
+In addition, APEX provides workflow-specific activities such as:
+
+* Workflow Start
+* Workflow End
+* Wait
+* Workflow Switch
+
+Together, these activities enable developers to model approval processes, business workflows, notifications, escalations, and other process-driven application scenarios without requiring a separate workflow server.
