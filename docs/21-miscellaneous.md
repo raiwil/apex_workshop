@@ -39,19 +39,27 @@ Each collection consists of a named set of members. A member can contain up to 5
 The **APEX_COLLECTION** package provides the API for creating collections and for inserting, updating, deleting, and querying collection members.
 
 !!! sampleapp "Sample App Collections"
+    <div class="two-columns">
+      <div style="flex: 50%;">
+           Sample Collections enables you to store rows of data for use within an Oracle APEX session. This database application illustrates how to use PL/SQL to create and manage collection-based session state.
+      </div>
+      <div style="flex: 50%;">
+          ![masterdetail](assets/samples/collections.png){ style="display:block;margin:auto;" }
+      </div>
+    </div>
 
 
 ## 21.4 Tree Navigation
 
 <div class="two-columns">
-    <div style="flex: 50%;">
+    <div style="flex: 75%;">
        APEX provides the **Tree** region type for displaying hierarchical data structures. A tree can be used to represent parent-child relationships, such as organizational structures, product categories, file systems, or menu hierarchies.
 
        Nodes can be expanded and collapsed by the user, making it easy to navigate large hierarchical datasets. Selecting a node can trigger navigation to another page, display related information, or execute custom actions.
 
         The Tree region can be based on SQL queries that return hierarchical data and supports various options for controlling the appearance and behavior of the tree.
     </div>
-    <div style="flex: 50%;">
+    <div style="flex: 25%;">
        <img src="../assets/misc/tree.png" alt="tree" style="display:block;margin:auto;">
    </div>
 </div>
@@ -90,7 +98,7 @@ Emails can be created directly in PL/SQL using the **APEX_MAIL** API. Alternativ
 
 Templates can contain placeholders, such as **#SALUTATION#** or **#ORDER_ID#**, which are replaced with runtime values when the email is sent. Instead of calling APEX_MAIL.SEND in PL/SQL, developers can also use the declarative **Send E-Mail** process type and map item values to template placeholders. Email Templates support both HTML and plain text content, making it easy to create professional and responsive emails directly within APEX.
 
-Emails are not sent immediately. They are first placed in the APEX mail queue and are then processed asynchronously by the database job `ORACLE_APEX_MAIL_QUEUE`. If required, queue processing can be triggered immediately using `APEX_MAIL.PUSH_QUEUE`.
+Emails are not sent immediately. They are first placed in the APEX mail queue and are then processed asynchronously by the database job **ORACLE_APEX_MAIL_QUEUE**. If required, queue processing can be triggered immediately using **APEX_MAIL.PUSH_QUEUE**.
 
 The current mail queue and the email sending history can be monitored using the views **APEX_MAIL_QUEUE** and **APEX_MAIL_LOG**.
 
@@ -98,7 +106,7 @@ The current mail queue and the email sending history can be monitored using the 
 ## 21.7 Tabs and Region Switching
 
 <div class="two-columns">
-    <div style="flex: 75%;">
+    <div style="flex: 65%;">
        APEX provides several ways to organize content and allow users to switch between different views on the same page.
        
        One option is the **Tab Container**. By enabling the **Tab Container** setting in a parent region, multiple child regions can be displayed as tabs. Users can switch between the tabs to view the content of the associated regions without leaving the page.
@@ -107,7 +115,7 @@ The current mail queue and the email sending history can be monitored using the 
        
        Both approaches improve usability by presenting large amounts of information in a compact and easy-to-navigate layout.
     </div>
-    <div style="flex: 25%;">
+    <div style="flex: 35%;">
        <img src="../assets/misc/regiontabs.png" alt="qrcode" style="display:block;margin:auto;">
    </div>
 </div>

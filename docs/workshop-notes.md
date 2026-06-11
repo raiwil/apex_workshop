@@ -40,6 +40,12 @@ In the screenshots of the exercises, you will see these numbers (that are automa
 SELECT *
 FROM emp;
 ```
+
+!!! tip "LiveLab"
+    There's an Oracle LiveLab **Implement custom authentication in APEX** available.
+    [Click here](https://livelabs.oracle.com/ords/r/dbpm/livelabs/view-workshop?wid=3315){target="_blank"}
+
+
 [Link zu Oracle](https://www.oracle.com){target="_blank"}
 
 Bild mkdocs 
