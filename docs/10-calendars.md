@@ -47,7 +47,7 @@ In this chapter, we build a calendar in our application and change a little bit 
                   to_date(to_char(next_day(sysdate-7,'MONDAY')+1,'DD.MM.YYYY')||'12:00','DD.MM.YYYY HH24:MI') , 'Customer B - Planning');  
     ``` 
 
-    ![script](assets/files/script.png){ style="display:block;margin:auto;" }
+    ![script](assets/calendar/script.png){ style="display:block;margin:auto;" }
 
     The script will be checked when you click **Run** and you had to click **Run** again. You will get feedback on what happened.
     In the **Object Browser** you can see the created table (OCCUPANCIES) and inspect the inserted data.
@@ -59,15 +59,15 @@ Based on the just-created table, we will now build a calendar to visualize the d
 !!! exercise "Download multiple files"
     Create a new page in your application and choose **Calendar** as region for that new page.
 
-    ![createpage](assets/files/createpage.png){ style="display:block;margin:auto;" }   
+    ![createpage](assets/calendar/createpage.png){ style="display:block;margin:auto;" }   
 
     Choose `9` as the **Page Number and **Name** the page `MyCalendar`. As **Table / View Name** select the just created table `Occupancies`.
 
-    ![createpage2](assets/files/createpage2.png){ style="display:block;margin:auto;" }   
+    ![createpage2](assets/calendar/createpage2.png){ style="display:block;margin:auto;" }   
 
     In the next step we set the properties for the **Display Column**, **Start Date Column** and **End date Column** to the appropriate columns from the table. As we want to see the time we set **Show Time** to `Yes`. Click Create Page and run the page to have a look at the calendar. 
 
-    ![createpage3](assets/files/createpage3.png){ style="display:block;margin:auto;" }   
+    ![createpage3](assets/calendar/createpage3.png){ style="display:block;margin:auto;" }   
 
     Now we will make it a little bit nicer and color the entries depending the rooms.
 
@@ -84,11 +84,11 @@ Based on the just-created table, we will now build a calendar to visualize the d
         FROM OCCUPANCIES
     ```
 
-    ![newquery](assets/files/newquery.png){ style="display:block;margin:auto;" } 
+    ![newquery](assets/calendar/newquery.png){ style="display:block;margin:auto;" } 
 
     Now we go back to the **Attributes** tab and change the property **Display Column** to `CAL_DISPLAY` and the **CSS Class** to `CSS_Class' to `CSS_CLASS`.
 
-    ![attributes](assets/files/attributes.png){ style="display:block;margin:auto;" } 
+    ![attributes](assets/calendar/attributes.png){ style="display:block;margin:auto;" } 
 
 Running the calendar, you now see some nice color coding in the calendar. Look at the top right and change the periods to see what happens.
 
