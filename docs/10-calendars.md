@@ -14,8 +14,8 @@ In this chapter, we build a calendar in our application and change a little bit 
 
 ## 10.1 Create some data for a calendar
 
-!!! exercise "Download multiple files"
-    We first create a table and load some data via a **SQL Script**. In comparison to **SQL Command**, here you can run a set of statements at once. They can be written there or loaded. **Create** a new script und give it the **Script Name** `myscript`. Copy & Paste the following snippet into the code editor. 
+!!! exercise "Run SQL Script"
+    We first create a table and load some data via a **SQL Script**. In comparison to **SQL Command**, here you can run a set of statements at once. They can be written there or loaded. **Create** a new script and give it the **Script Name** `myscript`. Copy & Paste the following snippet into the code editor. 
 
     ``` sql
        CREATE TABLE occupancies
@@ -56,12 +56,12 @@ In this chapter, we build a calendar in our application and change a little bit 
 
 Based on the just-created table, we will now build a calendar to visualize the data.
 
-!!! exercise "Download multiple files"
+!!! exercise "Build Calendar Page"
     Create a new page in your application and choose **Calendar** as region for that new page.
 
     ![createpage](assets/calendar/createpage.png){ style="display:block;margin:auto;" }   
 
-    Choose `9` as the **Page Number and **Name** the page `MyCalendar`. As **Table / View Name** select the just created table `Occupancies`.
+    Choose `9` as the **Page Number** and **Name** the page `MyCalendar`. As **Table / View Name** select the just created table `Occupancies`.
 
     ![createpage2](assets/calendar/createpage2.png){ style="display:block;margin:auto;" }   
 
@@ -71,7 +71,7 @@ Based on the just-created table, we will now build a calendar to visualize the d
 
     Now we will make it a little bit nicer and color the entries depending the rooms.
 
-    Go to the Page Designer (page 9), click the calendar component, and have a look at the **Attributes** tab of the region. In the **Region** tab we change the **Type** in the source from `Table/View` to `SQL Query`. Replace to then seen **SQL Query with this query here:
+    Go to the Page Designer (page 9), click the calendar component, and have a look at the **Attributes** tab of the region. In the **Region** tab we change the **Type** in the source from `Table/View` to `SQL Query`. Replace the **SQL Query** with this query here:
 
     ``` sql
         SELECT ID, ROOM, START_TIME, END_TIME, EVENT_NAME,
@@ -86,7 +86,7 @@ Based on the just-created table, we will now build a calendar to visualize the d
 
     ![newquery](assets/calendar/newquery.png){ style="display:block;margin:auto;" } 
 
-    Now we go back to the **Attributes** tab and change the property **Display Column** to `CAL_DISPLAY` and the **CSS Class** to `CSS_Class' to `CSS_CLASS`.
+    Now we go back to the **Attributes** tab and change the property **Display Column** to `CAL_DISPLAY` and the **CSS Class** to `CSS_CLASS`.
 
     ![attributes](assets/calendar/attributes.png){ style="display:block;margin:auto;" } 
 
