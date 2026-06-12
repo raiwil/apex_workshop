@@ -104,6 +104,7 @@ Templates make extensive use of **substitution strings**, which are placeholders
 
 
 !!! bytheway "HTML DOM ID and Static ID"
+    *By the way*,<br>
     In APEX, a Static ID is a developer-defined identifier that can be assigned to components such as pages, regions, items, and buttons. It provides a stable and meaningful way to reference components from CSS, JavaScript, Dynamic Actions, or automated tests. It's very important when using APEXLang. 
     
     Prior to APEX 26.1, the Static ID was used identify the corresponding HTML element in the browser. Starting with APEX 26.1, APEX introduces a clearer distinction between the Static ID and the HTML DOM ID. While the Static ID remains a logical identifier within APEX, the new HTML DOM ID attribute allows developers to explicitly define the ID that will be rendered in the browser's DOM. This provides greater control when integrating custom JavaScript, CSS, third-party libraries, and automated UI testing tools.
@@ -141,7 +142,7 @@ For a broader overview, Oracle also offers an APEX Office Hours session dedicate
     We want to use this component for single data (**Single (Partial)**) and for multiple lines (**Multiple (Report)**), so we can use this Template Component for a report (Multiple) or for example in an report for a column (Single).
     Normally in HTML conditions are not available, but we can use here conditions. So in the **Partial** field we enter this code snippet.
 
-    ``` HTML
+    ```HTML
           {if APEX$IS_LAZY_LOADING/}
             <div>#NAME# #JOB#</div>
           {else/}
@@ -165,21 +166,21 @@ For a broader overview, Oracle also offers an APEX Office Hours session dedicate
 
     Now we've defined the Partial, which is referenceed from the Multiple settings via '#APEX#PARTIAL#'. Now we change the HTML for **Report Row**, **Report Body** and **Report Container** with the following HTML codes.
     
-    ``` HTML "Report Row"
+    ```HTML "Report Row"
          <li #APEX$ROW_IDENTIFICATION# class="t-card-item">#APEX$PARTIAL#</li>
     ```    
 
-    ``` HTML "Report Body"
+    ```HTML "Report Body"
          <ul class="t-card-list">  #APEX$ROWS# </ul>
     ```    
 
-    ``` HTML "Report Container"
+    ```HTML "Report Container"
          <div id="#APEX$DOM_ID#" class="t-card-report">  APEX$REPORT_BODY# </div>
     ```   
 
     ![tc4](assets/layout/tc4.png){ style="display:block;margin:auto;" } 
     
-    In the section custom attributes we can define placeholders visible for the developer for intuitive use in Page Pesigner. We do that via **Synchronize from Templates##.
+    In the section custom attributes we can define placeholders visible for the developer for intuitive use in Page Pesigner. We do that via **Synchronize from Templates**.
     
     ![tc5](assets/layout/tc5.png){ style="display:block;margin:auto;" } 
     
@@ -207,90 +208,90 @@ For a broader overview, Oracle also offers an APEX Office Hours session dedicate
    
     Running this *works* (a kind of), but doesn’t look nice, as the CSS is missing. At page level we copy the following CSS (which by the way have generated with some AI Help) to the attribute **Inline**. 
 
-    ``` CSS
-.t-card-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    ```CSS
+        .t-card-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-}
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
 
-.t-card-item {
-    display: flex;
-    justify-content: center;
-}
-.t-rotatingcard {
-  position: relative;
-  width: 15rem;
-  height: 10rem;
-  perspective: 15rem;
-  font-size: 14px;
-}
+        .t-card-item {
+            display: flex;
+            justify-content: center;
+        }
+        .t-rotatingcard {
+          position: relative;
+          width: 15rem;
+          height: 10rem;
+          perspective: 15rem;
+          font-size: 14px;
+        }
 
-.t-front, .t-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  border-radius: 20px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);
-  transition: transform 2s cubic-bezier(0.25, 0.8, 0.25, 1);
-  backface-visibility: hidden;
-  overflow: hidden;
-  flex-direction: column;
-}
+        .t-front, .t-back {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: auto;
+          border-radius: 20px;
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);
+          transition: transform 2s cubic-bezier(0.25, 0.8, 0.25, 1);
+          backface-visibility: hidden;
+          overflow: hidden;
+          flex-direction: column;
+        }
 
-.t-front:before, .t-front:after, .t-back:before, .t-back:after {
-  position: absolute;
-}
+        .t-front:before, .t-front:after, .t-back:before, .t-back:after {
+          position: absolute;
+        }
 
-.t-front:before, .t-back:before {
-  top: -20px;
-  right: -20px;
-  width: 40px;
-  height: 40px;
-  background-color: rgba(255, 255, 255, 0.08);
-  transform: rotate(45deg);
-  z-index: 1;
-}
+        .t-front:before, .t-back:before {
+          top: -20px;
+          right: -20px;
+          width: 40px;
+          height: 40px;
+          background-color: rgba(255, 255, 255, 0.08);
+          transform: rotate(45deg);
+          z-index: 1;
+        }
 
-.t-front:after, .t-back:after {
-  top: 0;
-  right: 5px;
-  font-size: 24px;
-  transform: rotate(45deg);
-  z-index: 2;
-}
+        .t-front:after, .t-back:after {
+          top: 0;
+          right: 5px;
+          font-size: 24px;
+          transform: rotate(45deg);
+          z-index: 2;
+        }
 
-.t-front {
-  background-color: #90ee90;
-  color: green;
-  transform: rotateX(0deg);
-}
+        .t-front {
+          background-color: #90ee90;
+          color: green;
+          transform: rotateX(0deg);
+        }
 
-.t-back {
-  background-color: #ffcccb;
-  color: red;
-  transform: rotateX(180deg);
-}
+        .t-back {
+          background-color: #ffcccb;
+          color: red;
+          transform: rotateX(180deg);
+        }
 
-.t-rotatingcard:hover .t-back {
-  transform: rotateX(360deg);
-}
+        .t-rotatingcard:hover .t-back {
+          transform: rotateX(360deg);
+        }
 
-.t-rotatingcard:hover .t-front {
-  transform: rotateX(180deg);
-}
+        .t-rotatingcard:hover .t-front {
+          transform: rotateX(180deg);
+        }
 
-.t-name {
-  text-decoration: underline;
-}
+        .t-name {
+          text-decoration: underline;
+        }
     ```
 
    ![css](assets/layout/css.png){ style="display:block;margin:auto;" }   
@@ -302,7 +303,7 @@ Another approach for that is to create a file in the Shared Components – **Sta
      Acceptance through bells and whistles ;)
   </div>
   <div style="flex: 50%;">
-        <img src="../assets/layout/rotatingcards.png" alt="rotatingcardsempdept" style="display:block;margin:auto;">
+        <img src="../assets/layout/rotatingcard.png" alt="rotatingcard" style="display:block;margin:auto;">
   </div>
 </div>
 
