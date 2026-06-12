@@ -128,6 +128,7 @@ A great introduction to Template Components is the blog post [Developing a Respo
 For a broader overview, Oracle also offers an APEX Office Hours session dedicated to Template Components. The recording is available on [YouTube](https://www.youtube.com/watch?v=BiKOTn4bL1A){target="_blank"} and provides a practical introduction to the concepts, architecture, and use cases of this powerful feature.
 
 !!! bytheway "APEX Office Hours"
+    *By the way*,<br>S
     [APEX Office Hours](https://asktom.oracle.com/ords/r/tech/catalog/series-landing-page?p5_oh_id=744){target="_blank"} are free online sessions hosted by the Oracle APEX product team. They provide developers with the opportunity to learn about new features, best practices, and real-world use cases directly from APEX experts. Sessions typically include live demonstrations, technical deep dives, and interactive Q&A segments where participants can ask questions and receive guidance from the product team. Recordings of past Office Hours are available on YouTube and cover a wide range of topics, from introductory concepts to advanced development techniques. They are an excellent resource for staying up to date with the latest Oracle APEX features and development practices.
 
 !!! exercise "Build and use Template Component"
@@ -135,7 +136,7 @@ For a broader overview, Oracle also offers an APEX Office Hours session dedicate
 
     ![tc](assets/layout/tc.png){ style="display:block;margin:auto;" }    
     
-    We do this *From Scratch** and **Name** it `MyTC`.  
+    We do this **From Scratch** and **Name** it `MyTC`.  
 
     ![tc2](assets/layout/tc2.png){ style="display:block;margin:auto;" }   
 
@@ -166,15 +167,15 @@ For a broader overview, Oracle also offers an APEX Office Hours session dedicate
 
     Now we've defined the Partial, which is referenceed from the Multiple settings via '#APEX#PARTIAL#'. Now we change the HTML for **Report Row**, **Report Body** and **Report Container** with the following HTML codes.
     
-    ```HTML "Report Row"
+    ```HTML
          <li #APEX$ROW_IDENTIFICATION# class="t-card-item">#APEX$PARTIAL#</li>
     ```    
 
-    ```HTML "Report Body"
+    ```HTML
          <ul class="t-card-list">  #APEX$ROWS# </ul>
     ```    
 
-    ```HTML "Report Container"
+    ```HTML
          <div id="#APEX$DOM_ID#" class="t-card-report">  APEX$REPORT_BODY# </div>
     ```   
 
