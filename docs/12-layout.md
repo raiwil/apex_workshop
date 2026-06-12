@@ -165,7 +165,7 @@ For a broader overview, Oracle also offers an APEX Office Hours session dedicate
 
     ![tc3](assets/layout/tc3.png){ style="display:block;margin:auto;" } 
 
-    Now we've defined the Partial, which is referenceed from the Multiple settings via '#APEX#PARTIAL#'. Now we change the HTML for **Report Row**, **Report Body** and **Report Container** with the following HTML codes.
+    Now we've defined the Partial, which is referenceed from the Multiple settings via #APEX#PARTIAL#. Now we change the HTML for **Report Row**, **Report Body** and **Report Container** with the following HTML codes.
     
     ```HTML
          <li #APEX$ROW_IDENTIFICATION# class="t-card-item">#APEX$PARTIAL#</li>
@@ -224,74 +224,75 @@ For a broader overview, Oracle also offers an APEX Office Hours session dedicate
             display: flex;
             justify-content: center;
         }
+
         .t-rotatingcard {
-          position: relative;
-          width: 15rem;
-          height: 10rem;
-          perspective: 15rem;
-          font-size: 14px;
+            position: relative;
+            width: 15rem;
+            height: 10rem;
+            perspective: 15rem;
+            font-size: 14px;
         }
 
         .t-front, .t-back {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin: auto;
-          border-radius: 20px;
-          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);
-          transition: transform 2s cubic-bezier(0.25, 0.8, 0.25, 1);
-          backface-visibility: hidden;
-          overflow: hidden;
-          flex-direction: column;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            border-radius: 20px;
+            box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);
+            transition: transform 2s cubic-bezier(0.25, 0.8, 0.25, 1);
+            backface-visibility: hidden;
+            overflow: hidden;
+            flex-direction: column;
         }
 
         .t-front:before, .t-front:after, .t-back:before, .t-back:after {
-          position: absolute;
+            position: absolute;
         }
 
         .t-front:before, .t-back:before {
-          top: -20px;
-          right: -20px;
-          width: 40px;
-          height: 40px;
-          background-color: rgba(255, 255, 255, 0.08);
-          transform: rotate(45deg);
-          z-index: 1;
+            top: -20px;
+            right: -20px;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.08);
+            transform: rotate(45deg);
+            z-index: 1;
         }
 
         .t-front:after, .t-back:after {
-          top: 0;
-          right: 5px;
-          font-size: 24px;
-          transform: rotate(45deg);
-          z-index: 2;
+            top: 0;
+            right: 5px;
+            font-size: 24px;
+            transform: rotate(45deg);
+            z-index: 2;
         }
 
         .t-front {
-          background-color: #90ee90;
-          color: green;
-          transform: rotateX(0deg);
+            background-color: #90ee90;
+            color: green;
+            transform: rotateX(0deg);
         }
 
         .t-back {
-          background-color: #ffcccb;
-          color: red;
-          transform: rotateX(180deg);
+            background-color: #ffcccb;
+            color: red;
+            transform: rotateX(180deg);
         }
 
         .t-rotatingcard:hover .t-back {
-          transform: rotateX(360deg);
+            transform: rotateX(360deg);
         }
 
         .t-rotatingcard:hover .t-front {
-          transform: rotateX(180deg);
+            transform: rotateX(180deg);
         }
 
         .t-name {
-          text-decoration: underline;
+            text-decoration: underline;
         }
     ```
 
