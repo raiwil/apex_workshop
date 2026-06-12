@@ -24,7 +24,7 @@ Though not available in the UI, these additional parameters can be set via JavaS
     In the following example, the calendar is configured to open in the weekly time grid view. Calendar week numbers are displayed, the current time is highlighted using a now indicator, and the visible time range is limited to business hours between 08:00 and 22:00. In addition, time slots are displayed in 30-minute intervals.
     Select the calendar region built before and switch to **Attributes** tab on the right area. Scroll down to the section Advanced insert the following code to the property **Initialization JavaScript Function**.
 
-   ``` JavaScript
+    ``` JavaScript
        function ( pOptions) {
             pOptions.initialView    = 'timeGridWeek';
             pOptions.weekNumbers    = true;
@@ -37,7 +37,7 @@ Though not available in the UI, these additional parameters can be set via JavaS
 
             return pOptions;
         }
-   ```
+    ```
 
 ![javascriptinit](assets/javascript/javascriptinit.png){ style="display:block;margin:auto;" }
 
@@ -52,7 +52,7 @@ Although Dynamic Actions can be created entirely through the APEX builder, they 
 We now want to change the label of the Apply Changes Button in the Employee Form so that the name of the shown employee is used as the label. All objects get an internal ID used in the browser (HTML DOM ID). We can set this ID in die Page Designer to know the ID of the object we want to manipulate via JavaScript.
 
 !!! exercise "Dynamic button label"
-    Navigate to page 3 and set the Static ID of the SAVE Button to MYBUTTON.
+    Navigate to page 3 and set the **HTML DOM ID** of the SAVE Button to `MYBUTTON`.
 
     ![domid](assets/javascript/domid.png){ style="display:block;margin:auto;" }
 
@@ -80,14 +80,14 @@ We now want to change the label of the Apply Changes Button in the Employee Form
 Now run the application a have a look at the button label. 
 That’s just a simple example. Have a look into the [JavaScript API](https://docs.oracle.com/en/database/oracle/apex/26.1/aexjs/index.html){target="_blank"} for more sophisticated tasks.
 
-!!! bytheway "Reuse JavaScript Code"
+!!! bytheway "JavaScript at Page Level"
     <div class="two-columns">
        <div>
           *By the way*,<br>
-          At page level you can add JavaScript Code. Directly or via referenced files. At the same level, you can add your own CSS for the page the same way.
+          At page level you can add JavaScript code. Directly or via referenced files. At the same level, you can add your own CSS for the page the same way.
        </div>
        <div>
-        ![Mode](assets/javascript/jsatpage.png){ style="display:block;margin:auto;" }
+          ![Mode](assets/javascript/jsatpage.png){ style="display:block;margin:auto;" }
        </div>
     </div>
 
@@ -137,7 +137,9 @@ Especially, when several Dynamic Actions are firing, depending on each other, th
        <div>
           *By the way*,<br>
           when developing JavaScript code, it is often helpful to quickly output information using the browser's developer console. However, APEX also provides a built-in debugging framework that offers detailed insights into page processing, Dynamic Actions, AJAX requests, and server-side execution.
+
           Debug mode can be enabled directly from the Developer Toolbar by selecting **Debug**. Once enabled, detailed execution information is collected and can be reviewed using **View Debug**. The debug output shows the sequence of page rendering and processing steps, executed PL/SQL code, SQL statements, and timing information, making it much easier to identify and analyze issues.
+          
           In addition, APEX provides a debugging API that allows developers to write custom debug messages. This can be useful for tracing application logic, monitoring variable values, and simplifying the analysis of complex processes during development and troubleshooting.
        </div>
     </div>
