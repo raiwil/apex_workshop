@@ -129,7 +129,7 @@ For a broader overview, Oracle also offers an APEX Office Hours session dedicate
 !!! bytheway "APEX Office Hours"
     [APEX Office Hours](https://asktom.oracle.com/ords/r/tech/catalog/series-landing-page?p5_oh_id=744){target="_blank"} are free online sessions hosted by the Oracle APEX product team. They provide developers with the opportunity to learn about new features, best practices, and real-world use cases directly from APEX experts. Sessions typically include live demonstrations, technical deep dives, and interactive Q&A segments where participants can ask questions and receive guidance from the product team. Recordings of past Office Hours are available on YouTube and cover a wide range of topics, from introductory concepts to advanced development techniques. They are an excellent resource for staying up to date with the latest Oracle APEX features and development practices.
 
-!!! exercise "Build a Template Component"
+!!! exercise "Build and use Template Component"
     In the **Shared Components** we go to the **Templates**, where we changed the report template before and create a **Template Component**.
 
     ![tc](assets/layout/tc.png){ style="display:block;margin:auto;" }    
@@ -306,9 +306,41 @@ Another approach for that is to create a file in the Shared Components – **Sta
   </div>
 </div>
 
-
 ## 12.4 Layout at Object Level
 
+It’s possible to manipulate layout at object level with adding CSS Classes without modifying or creating Templates. 
+
+!!! exercise "Add CSS & Styles to Items"
+    We will change at the employee form (page 3) the item **P3_SAL**. In the section **Appearance** section in the property **CSS Classes** add the string `my-highlight`. 
+    Now we need to define this class. This coulSd be done – as seen in the chapter before - at page level. So write the following code the the fiels **Inline** in the section **CSS** at page level.
+
+    ``` CSS
+        .my-highlight {
+          background-color: #fffae6;
+          border: 1px solid #f7c948;
+          font-weight: bold;
+        }
+    ```
+    
+    Check the sal item in the application now, there should be a yellow frame around the salary.
+
+    It’s also possible to add individual HTML styles.
+
+    We now go to to the item **P3_COMM** and set in the section **Advanced** in the **Custom Attributes** field the style `style="color:red; font-size:28px;"`
+
+    The commission should now be shown in red und large.
+
+    Last we want to format the name conditional. To do this, we create a **Dynamic Action** with the **Page Load** event. In the **True Action** wie choose **Execute JavaScript Code** as Action and copy the following snippet in the **Code** field.
+
+    ``` CSS
+        if ($v('P3_JOB') == 'PRESIDENT' || $v('P3_JOB') == 'MANAGER') {
+            $('#P3_ENAME').css('background-color', '#ffe6e6');
+          } else {
+            $('#P3_ENAME').css('background-color', '');
+          }
+    ```     
+    
+    The name has now a red background when the job is Manager or President.
 
 
 
