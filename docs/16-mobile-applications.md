@@ -1,4 +1,4 @@
-# 17. Mobile Applications
+# 16. Mobile Applications
 
 !!! sampleapp "Sample App APEX PWA Reference"
     <div class="two-columns">

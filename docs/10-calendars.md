@@ -10,12 +10,12 @@
       </div>
     </div>
 
-In this chapter, we build a calendar in our application and change a little bit the color coding. The Calendar is based on the FullCalendar jQuery library and can only be customized through CSS. 
+In this chapter, we build a calendar in our application and adjust the color coding a little. The Calendar is based on the FullCalendar JavaScript library and can be customized declaratively, through CSS, and through JavaScript initialization code.
 
-## 10.1 Create some data for a calendar
+## 10.1 Create Some Data for a Calendar
 
 !!! exercise "Run SQL Script"
-    We first create a table and load some data via a **SQL Script**. In comparison to **SQL Command**, here you can run a set of statements at once. They can be written there or loaded. **Create** a new script and give it the **Script Name** `myscript`. Copy & Paste the following snippet into the code editor. 
+    We first create a table and load some data via a **SQL Script**. Compared to **SQL Commands**, here you can run a set of statements at once. They can be written there or loaded. Create a new script and give it the **Script Name** `myscript`. Copy and paste the following snippet into the code editor.
 
     ``` sql
        CREATE TABLE occupancies
@@ -49,29 +49,29 @@ In this chapter, we build a calendar in our application and change a little bit 
 
     ![script](assets/calendar/script.png){ style="display:block;margin:auto;" }
 
-    The script will be checked when you click **Run** and you had to click **Run** again. You will get feedback on what happened.
-    In the **Object Browser** you can see the created table (OCCUPANCIES) and inspect the inserted data.
+    The script will be checked when you click **Run**, and you have to click **Run** again. You will get feedback on what happened.
+    In the **Object Browser**, you can see the created table (OCCUPANCIES) and inspect the inserted data.
 
-## 10.2 Built a page with a calendar
+## 10.2 Build a Page with a Calendar
 
 Based on the just-created table, we will now build a calendar to visualize the data.
 
 !!! exercise "Build Calendar Page"
-    Create a new page in your application and choose **Calendar** as region for that new page.
+    Create a new page in your application and choose **Calendar** as the region for that new page.
 
     ![createpage](assets/calendar/createpage.png){ style="display:block;margin:auto;" }   
 
-    Choose `9` as the **Page Number** and **Name** the page `MyCalendar`. As **Table / View Name** select the just created table `Occupancies`.
+    Choose `9` as the **Page Number** and name the page `MyCalendar`. As **Table / View Name**, select the just-created table `OCCUPANCIES`.
 
     ![createpage2](assets/calendar/createpage2.png){ style="display:block;margin:auto;" }   
 
-    In the next step we set the properties for the **Display Column**, **Start Date Column** and **End date Column** to the appropriate columns from the table. As we want to see the time we set **Show Time** to `Yes`. Click Create Page and run the page to have a look at the calendar. 
+    In the next step, set the properties for the **Display Column**, **Start Date Column** and **End Date Column** to the appropriate columns from the table. As we want to see the time, set **Show Time** to `Yes`. Click **Create Page** and run the page to have a look at the calendar.
 
     ![createpage3](assets/calendar/createpage3.png){ style="display:block;margin:auto;" }   
 
-    Now we will make it a little bit nicer and color the entries depending the rooms.
+    Now we will make it a little nicer and color the entries depending on the rooms.
 
-    Go to the Page Designer (page 9), click the calendar component, and have a look at the **Attributes** tab of the region. In the **Region** tab we change the **Type** in the source from `Table/View` to `SQL Query`. Replace the **SQL Query** with this query here:
+    Go to Page Designer (page 9), click the calendar component, and have a look at the **Attributes** tab of the region. In the **Region** tab, change the **Type** in the source from `Table/View` to `SQL Query`. Replace the **SQL Query** with this query:
 
     ``` sql
         SELECT ID, ROOM, START_TIME, END_TIME, EVENT_NAME,
@@ -86,11 +86,11 @@ Based on the just-created table, we will now build a calendar to visualize the d
 
     ![newquery](assets/calendar/newquery.png){ style="display:block;margin:auto;" } 
 
-    Now we go back to the **Attributes** tab and change the property **Display Column** to `CAL_DISPLAY` and the **CSS Class** to `CSS_CLASS`.
+    Now go back to the **Attributes** tab and change the property **Display Column** to `CAL_DISPLAY` and **CSS Class** to `CSS_CLASS`.
 
     ![attributes](assets/calendar/attributes.png){ style="display:block;margin:auto;" } 
 
-Running the calendar, you now see some nice color coding in the calendar. Look at the top right and change the periods to see what happens.
+Run the calendar, and you will now see some nice color coding. Look at the top right and change the periods to see what happens.
 
 
 

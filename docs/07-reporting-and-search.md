@@ -1,6 +1,6 @@
 # 7. Reporting & Search
 
-This is a demo chapter only without exercises.
+This demo chapter contains no exercises.
 
 ## 7.1 Reporting Regions
 
@@ -18,7 +18,7 @@ This is a demo chapter only without exercises.
 
 <div class="two-columns">
   <div style="flex: 70%;">
-    A classic report is a list of data based on the formatted result of a SQL query or a table/view. Column Sorting is an out of the box feature. For Classic Reports there are several Template Options available to generate other types of output than default lists. 
+    A Classic Report is a list of data based on the formatted result of a SQL query or a table/view. Column sorting is an out-of-the-box feature. For Classic Reports, there are several Template Options available to generate output other than default lists.
   </div>
   <div style="flex: 30%;">
     <img src="../assets/reporting/classic.png" alt="classic" style="display:block;margin:auto;">
@@ -43,7 +43,7 @@ This is a demo chapter only without exercises.
 !!! sampleapp "Sample App Interactive Grids"
     <div class="two-columns">
       <div style="flex: 50%;">
-           This application showcases the features and functionality of the Oracle APEX Interactive Grid. Through its interactive grid sample pages, users can explore its versatile capabilities, such as comprehensive reporting, seamless data editing or intuitive pagination.
+           This application showcases the features and functionality of the Oracle APEX Interactive Grid. Through its interactive grid sample pages, users can explore its versatile capabilities, such as comprehensive reporting, seamless data editing, and intuitive pagination.
       </div>
       <div style="flex: 50%;">
           ![ig](assets/samples/ig.png){ style="display:block;margin:auto;" }
@@ -57,19 +57,19 @@ An Interactive Grid combines the reporting capabilities of an Interactive Report
 !!! sampleapp "Sample App Cards"
     <div class="two-columns">
       <div style="flex: 50%;">
-           This application highlights Cards regions in Oracle APEX. Cards regions are a native region type. They provide developers with a powerful and flexible new way to display data in bite-sized blocks, ideal for use in faceted search, or presenting at-a-glance information.
-           This app is online available to view: [https://apex.oracle.com/go/sample_cards](https://apex.oracle.com/go/sample_cards){target="_blank"} 
+           This application highlights Cards regions in Oracle APEX. Cards regions are a native region type. They provide developers with a powerful and flexible way to display data in bite-sized blocks, ideal for use in faceted search or for presenting at-a-glance information.
+           This app is available online at: [https://apex.oracle.com/go/sample_cards](https://apex.oracle.com/go/sample_cards){target="_blank"}
       </div>
       <div style="flex: 50%;">
           ![cards](assets/samples/cards.png){ style="display:block;margin:auto;" }
       </div>
     </div>
 
-Cards is a native report region type in Oracle APEX that displays data in a collection of compact, visually appealing blocks. Card regions are particularly well suited for faceted search applications and dashboards where information needs to be presented in an easy-to-consume format.
+Cards are a native report region type in Oracle APEX that displays data in a collection of compact, visually appealing blocks. Card regions are particularly well suited for faceted search applications and dashboards where information needs to be presented in an easy-to-consume format.
 
 Developers can customize various aspects of a card, including its layout, appearance, icons, badges, media, and actions. Each card can support multiple actions, enabling users to navigate to related pages or execute specific functionality.
 
-Media content can be sourced from a BLOB column, a URL, videos embedded in an iFrame, or Oracle JET data visualizations, making Cards a versatile option for modern application interfaces.
+Media content can be sourced from a BLOB column, a URL, videos embedded in an iframe, or Oracle JET data visualizations, making Cards a versatile option for modern application interfaces.
 
 ![cards](assets/reporting/cards.png){ style="display:block;margin:auto;" } 
 
@@ -77,7 +77,7 @@ Media content can be sourced from a BLOB column, a URL, videos embedded in an iF
 !!! sampleapp "Sample App Brookstrut"
     <div class="two-columns">
       <div style="flex: 50%;">
-           The Brookstrut sample application analyzes a simplified stored data model and includes a feature to generate random data, accommodating everything from small to extra large data sets. It showcases Oracle APEX's capabilities in data reporting, navigation, and data presentation. This tool allows you to explore various Oracle APEX components, including faceted search, interactive reports, content row reports, and calendars.
+           The Brookstrut sample application analyzes a simplified stored data model and includes a feature to generate random data, accommodating everything from small to extra-large data sets. It showcases Oracle APEX's capabilities in data reporting, navigation, and data presentation. This tool allows you to explore various Oracle APEX components, including faceted search, interactive reports, content row reports, and calendars.
       </div>
       <div style="flex: 50%;">
           ![brookstrut](assets/samples/brookstrut.png){ style="display:block;margin:auto;" }
@@ -122,4 +122,4 @@ While Faceted Search is well suited for complex filtering scenarios, Smart Filte
 
 The Application Search feature provides a seamless search experience that feels like a search engine within your application. It allows users to search for data across multiple data sources, making it easy to find the information they need.
 With Application Search, you can create multiple search configurations that search a local data source, REST-enabled SQL, or REST API. This allows you to provide a comprehensive search experience for your users, retrieving relevant information from a variety of sources.
-Search Configurations contain information about a searchable data source and provide an abstraction over concrete search implementations, allowing for flexibility and future improvements. You can create and manage your **Search Configurations** under **Shared Components** → **Navigation and Search** → **Search Configurations**
+Search Configurations contain information about a searchable data source and provide an abstraction over concrete search implementations, allowing for flexibility and future improvements. You can create and manage your **Search Configurations** under **Shared Components** -> **Navigation and Search** -> **Search Configurations**.

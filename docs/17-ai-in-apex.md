@@ -1,4 +1,4 @@
-# 13. AI in APEX
+# 17. AI in APEX
 
 !!! sampleapp "Sample App Vector Search"
     <div class="two-columns">
