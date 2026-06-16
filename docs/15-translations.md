@@ -1,5 +1,4 @@
 # 15. Translations
-
 APEX has long provided a translation framework that enables developers to create multilingual applications. Traditionally, translations were based on XLIFF translation files, which are generated from an application, translated externally, and then imported back into APEX. This approach is well suited for professional translation workflows and large-scale projects, but managing translation files can become cumbersome when applications change frequently.
 
 In the traditional translation approach, translated text is stored in a separate translated application that is generated from the primary application. Whenever translatable content changes in the source application, the translated applications must be synchronized and updated accordingly. While this approach integrates well with established translation workflows, maintaining multiple application versions can increase administrative effort.

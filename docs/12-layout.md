@@ -344,3 +344,25 @@ You can manipulate layout at the object level by adding CSS classes without modi
     ```     
     
     The name now has a red background when the job is Manager or President.
+
+## 12.5 Responsive Grid Layout
+
+Oracle APEX uses a Responsive Grid Layout based on a 12-column grid. Page components such as regions and items can be positioned by choosing where they start and how many columns they span. This makes it easy to create layouts that adapt to different screen sizes while keeping the page structure consistent. The grid can also be nested, allowing regions or items inside a parent grid column to define their own internal 12-column layout.
+
+Positioning within the grid is controlled by the following properties:
+* **Start New Row** - whether the object starts a new row
+* **Column** - the column, from 1 to 12, where the object starts
+* **Column Span** - the number of columns the object spans
+* **New Column** - whether the object starts a new column in the same row (only available when **Start New Row** is set to No)
+
+
+!!! bytheway "Responsive Grid Layout"
+    <div class="two-columns">
+        <div style="flex: 50%;">
+          *By the way*,<br>
+          You can visualize the grid with the Developer Toolbar. Click the information icon in the toolbar and choose **Show Layout Columns** or **Hide Layout Columns**.
+        </div>
+        <div style="flex: 50%;">
+            ![grid](assets/layout/grid.png){ style="display:block;margin:auto;" }   
+        </div>
+    </div>

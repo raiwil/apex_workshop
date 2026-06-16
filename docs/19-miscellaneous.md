@@ -1,6 +1,50 @@
-# 21. Miscellaneous
+# 19. Miscellaneous
 
-## 21.1 JSON
+## 19.1 Mobile Applications
+
+Universal Theme is responsive out of the box. For more control over your application's responsive behavior, use the additional responsive options in Universal Theme.
+
+This is not specific to mobile applications, but it is important when you want an application to be usable on a smartphone without building a separate page for every screen size. Keep in mind that a form with 87 items and 12 buttons may still be technically responsive, but it will not necessarily be user-friendly on a mobile device.
+
+When designing for mobile, start with the task the user wants to complete while away from a desk. Shorter forms, clear buttons, meaningful default values, and fewer visible columns usually have a bigger impact than simply making an existing desktop page fit on a smaller screen. Test important pages on a real phone early, because touch targets, scrolling, keyboard behavior, and network conditions are difficult to judge from a desktop browser alone.
+
+!!! sampleapp "Sample App APEXToGo"
+    <div class="two-columns">
+      <div style="flex: 50%;">
+           This application showcases the features of a mobile web application built with Oracle APEX. It demonstrates mobile design capabilities and uses Progressive Web App (PWA) technology to provide an enhanced, native-like experience.
+           This app is available online at: [https://oracleapex.com/ords/r/apex_pm/apextogo/](https://oracleapex.com/ords/r/apex_pm/apextogo/){target="_blank"}
+
+      </div>
+      <div style="flex: 50%;">
+          ![apextogo](assets/samples/apextogo.png){ style="display:block;margin:auto;" }
+      </div>
+    </div>
+
+For reports, Oracle APEX provides two responsive report types for mobile devices: **Column Toggle Report** and **Reflow Report**. They can help users keep an overview when viewing report data on a smaller screen. However, a report with many columns is often still better redesigned as a card, list, or search-focused page where the user can quickly find and open the relevant record.
+
+Since APEX 21.2, applications can be enabled declaratively as Progressive Web Apps (PWAs). A PWA is a web application that combines responsive web design with selected capabilities usually associated with native apps. When installed, it can be launched from the home screen or app launcher and shown without the surrounding browser window, making it feel more like a regular app. PWAs use a web app manifest and a service worker to support features such as installability and optimized caching. This can improve loading behavior and provide a better experience on unreliable networks, but the pages and data that should work offline still need to be designed deliberately.
+
+For business applications, the biggest value of a PWA is often not that it replaces a native app completely, but that it lowers the friction for frequent users. They can install the application, open it from the same place as their other apps, and return to a focused workflow without first navigating through the browser. This is useful for approval apps, field-service scenarios, inventory checks, event registration, or any process where users need quick access on a phone or tablet.
+
+Offline behavior should be planned carefully. Cached application files can make the application shell load faster, but business data is a different topic: you need to decide which information may be available offline, how old it may be, and what should happen when the user reconnects. For many APEX applications, a reliable online-first experience with good caching is already valuable, while full offline data entry may require additional design and synchronization logic.
+
+!!! sampleapp "Sample App APEX PWA Reference"
+    <div class="two-columns">
+      <div style="flex: 50%;">
+           Oracle APEX enables developers to build Progressive Web Apps (PWAs) that can be installed on any desktop or mobile device to deliver a more native app experience. This application serves as a reference for key PWA features in APEX and how you can use them in your own apps. It is a good place to review install behavior, offline support, caching, and other PWA settings before applying them to your own apps.
+           This app is available online at: [https://oracleapex.com/go/pwa](https://oracleapex.com/go/pwa){target="_blank"}
+      </div>
+      <div style="flex: 50%;">
+          ![pwa](assets/samples/pwa.png){ style="display:block;margin:auto;" }
+      </div>
+    </div>
+
+Push notifications can further improve mobile workflows. In APEX, a PWA can let users subscribe to notifications and then receive short, timely messages on supported browsers and devices, even when the application is not currently open. Typical use cases are task assignments, approval requests, reminders, or status changes where the user should be informed without opening the application first.
+
+Good notifications are actionable and rare enough to stay useful. A message such as "Expense report waiting for approval" or "Service request assigned to you" is much more helpful than a generic "Something changed" notification. Use notifications selectively, make sure the target page opens the right context, and remember that users must explicitly trust the application enough to allow them.
+
+
+## 19.2 JSON
 
 In the chapter on REST Data Sources we already mentioned that APEX can work with nested JSON documents. However, this capability is not limited to REST-based integrations. APEX can also work directly with JSON data stored in the Oracle Database. JSON documents can be stored in JSON columns, managed in JSON collections, or exposed through JSON Relational Duality Views, a feature introduced with Oracle Database 26ai. These data structures can be used both as data sources for APEX applications and as targets for data modifications.
 
@@ -9,7 +53,7 @@ By supporting nested JSON structures natively, APEX enables developers to build 
 This approach is particularly useful for modern applications that require flexible data models, integration with REST services, or the management of complex business entities. Combined with Oracle Database's native JSON functionality, APEX provides a powerful low-code environment for developing applications based on JSON documents.
 
 
-## 21.2 Master Detail
+## 19.3 Master Detail
 
 APEX provides several out-of-the-box options for implementing master-detail interfaces. A master-detail layout can be displayed on a single page, either stacked vertically or arranged side by side. In this case, selecting a master record automatically displays the corresponding detail records.
 
@@ -28,7 +72,7 @@ Both approaches can be implemented declaratively and require little or no custom
     </div>
 
 
-## 21.3 Collections
+## 19.4 Collections
 
 In traditional database applications, temporary tables are often used to store data during a session. In APEX, however, applications are web-based and rely on session state rather than a dedicated database session. As a result, temporary tables are not suitable for storing user-specific application data.
 
@@ -49,7 +93,7 @@ The **APEX_COLLECTION** package provides the API for creating collections and fo
     </div>
 
 
-## 21.4 Tree Navigation
+## 19.5 Tree Navigation
 
 <div class="two-columns">
     <div style="flex: 75%;">
@@ -75,7 +119,7 @@ The **APEX_COLLECTION** package provides the API for creating collections and fo
     </div>
 
 
-## 21.5 QR Codes
+## 19.6 QR Codes
 
 <div class="two-columns">
     <div style="flex: 75%;">
@@ -90,7 +134,7 @@ The **APEX_COLLECTION** package provides the API for creating collections and fo
    </div>
 </div>
 
-## 21.6 EMails & EMail-Templates
+## 19.7 EMails & EMail-Templates
 
 APEX provides the **APEX_MAIL** package for sending emails from APEX applications using PL/SQL. Internally, this functionality relies on the database package **UTL_SMTP**. A prerequisite is that an SMTP server is configured for the APEX instance.
 
@@ -103,7 +147,7 @@ Emails are not sent immediately. They are first placed in the APEX mail queue an
 The current mail queue and the email sending history can be monitored using the views **APEX_MAIL_QUEUE** and **APEX_MAIL_LOG**.
 
 
-## 21.7 Tabs and Region Switching
+## 19.8 Tabs and Region Switching
 
 <div class="two-columns">
     <div style="flex: 65%;">
@@ -121,7 +165,7 @@ The current mail queue and the email sending history can be monitored using the 
 </div>
 
 
-## 21.8 Automations
+## 19.9 Automations
 
 Automations allow APEX applications to monitor data and execute predefined actions automatically. An automation consists of a trigger, an optional condition, and one or more actions that are executed sequentially when the automation runs.
 
@@ -136,7 +180,7 @@ Automations are implemented using Oracle Scheduler jobs. Therefore, the database
 ![automations](assets/misc/automations.png){ style="display:block;margin:auto;" }
 
 
-## 21.9 Plug-Ins
+## 19.10 Plug-Ins
 
 Plug-ins allow developers to extend APEX with custom functionality that is not available natively in the platform. They provide a mechanism for adding reusable components and integrating third-party technologies into APEX applications.
 
@@ -151,7 +195,7 @@ Oracle also provides a catalog of sample and supported plug-ins on the [APEX web
 Plug-ins are a powerful way to enhance the user interface, integrate external libraries, and add specialized functionality while preserving the low-code development model of APEX.
 
 
-## 21.10 Document Generation and Printing
+## 19.11 Document Generation and Printing
 
 APEX supports document generation through external print engines that can be configured in the APEX instance settings. Depending on the selected print engine, applications can generate PDF and other document formats based on SQL query results and document templates.
 
@@ -181,7 +225,6 @@ These features allow developers to generate professional reports, invoices, lett
           ![documentgenerator](assets/samples/documentgenerator.png){ style="display:block;margin:auto;" }
       </div>
     </div>
-
 
 
 

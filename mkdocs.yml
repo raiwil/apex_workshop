@@ -49,13 +49,12 @@ nav:
       - '13. Data Loading': 13-data-loading.md
       - '14. Approvals & Workflows': 14-approvals-workflows.md
       - '15. Translations': 15-translations.md  
-      - '16. Mobile Applications': 16-mobile-applications.md   
-      - '17. AI in APEX': 17-ai-in-apex.md
-      - '18. Application Lifecycle Management': 18-application-lifecycle-management.md
-      - '19. Administration': 19-administration.md
-      - '20. Forms - Updates over Joins': 20-forms.md
-      - '21. Miscellaneous': 21-miscellaneous.md
-      - '22. Links & Learning Resources': 22-links-learning-resources.md
+      - '16. AI in APEX': 16-ai-in-apex.md
+      - '17. Application Lifecycle Management': 17-application-lifecycle-management.md
+      - '18. Administration': 18-administration.md
+      - '19. Miscellaneous': 19-miscellaneous.md
+      - '20. Links & Learning Resources': 20-links-learning-resources.md
+      - '21. Extra-Updates over Joins': 21-extra_updates-over-joins.md
 
 plugins:
   - search
