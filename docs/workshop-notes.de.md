@@ -1,34 +1,34 @@
 # Workshop-Hinweise
 
-Dieser Hands-On Workshop ist eine Mischung aus Erklaerungen, Demonstrationen und praktischen Uebungen.
+Dieser Hands-On Workshop ist eine Mischung aus Erklärungen, Demonstrationen und praktischen Übungen.
 
-!!! presented "Praesentation"
-    Boxen mit braunem Hintergrund enthalten Themen, die an dieser Stelle von der vortragenden Person gezeigt und erklaert werden. Sie dienen als Erinnerung daran, was behandelt wurde.
+!!! presented "Präsentation"
+    Boxen mit braunem Hintergrund enthalten Themen, die an dieser Stelle von der vortragenden Person gezeigt und erklärt werden. Sie dienen als Erinnerung daran, was behandelt wurde.
 
-!!! exercise "Uebung"
-    Boxen mit tuerkisem Hintergrund enthalten die Uebungen. Diese werden Schritt fuer Schritt demonstriert, und relevante Details werden erklaert. Danach, oder parallel dazu, ist Zeit, die Schritte selbst nachzuvollziehen.
+!!! exercise "Übung"
+    Boxen mit türkisfarbenem Hintergrund enthalten die Übungen. Diese werden Schritt für Schritt demonstriert, und relevante Details werden erklärt. Danach, oder parallel dazu, ist Zeit, die Schritte selbst nachzuvollziehen.
 
-Einige Codebeispiele koennen einfach in die Zwischenablage kopiert werden.
+Einige Codebeispiele können einfach in die Zwischenablage kopiert werden.
 
-```sql title="Beispiel fuer Copy to Clipboard eines Code-Snippets"
+```sql title="Beispiel für Copy to Clipboard eines Code-Snippets"
 SELECT *
 FROM emp;
 ```
 
-Eigenschaftsnamen, Button-Beschriftungen und aehnliche Begriffe im Text sind **fett** dargestellt. Eigenschaftswerte werden `so formatiert`.
+Eigenschaftsnamen, Button-Beschriftungen und ähnliche Begriffe im Text sind **fett** dargestellt. Eigenschaftswerte werden `so formatiert`.
 
-Einige Uebungen bauen aufeinander auf. Deshalb sollten die Uebungen eines Kapitels immer in der angegebenen Reihenfolge durchgefuehrt werden. Kapitel 1 und 2 erstellen eine Basisanwendung, die als Grundlage fuer alle weiteren Uebungen dient.
-Ausserdem benoetigt das Kapitel zur RESTful-Service-Integration das Ergebnis der Uebung zu geografischen Informationen, und das JavaScript-Beispiel baut auf der Kalenderuebung auf.
+Einige Übungen bauen aufeinander auf. Deshalb sollten die Übungen eines Kapitels immer in der angegebenen Reihenfolge durchgeführt werden. Kapitel 1 und 2 erstellen eine Basisanwendung, die als Grundlage für alle weiteren Übungen dient.
+Ausserdem benötigt das Kapitel zur RESTful-Service-Integration das Ergebnis der Übung zu geografischen Informationen, und das JavaScript-Beispiel baut auf der Kalenderübung auf.
 
 Eine APEX-Anwendung besteht unter anderem aus Seiten, denen jeweils eine eindeutige Nummer zugeordnet ist. Alle Items auf einer Seite haben, oder sollten zumindest haben, diese Nummer im Namen (`Px_ITEMNAME`).
-In den Screenshots der Uebungen sehen Sie diese Nummern, die automatisch aufsteigend vorbelegt werden, sowie Item-Namen, die bei Ihnen anders aussehen koennen. Versuchen Sie, die Seitennummern aus den Uebungen zu verwenden, damit die Nummerierung gleich bleibt. Wenn Sie manuell ein Item erstellen oder Codebeispiele verwenden, merken Sie sich andernfalls die abweichende Nummer.
+In den Screenshots der Übungen sehen Sie diese Nummern, die automatisch aufsteigend vorbelegt werden, sowie Item-Namen, die bei Ihnen anders aussehen können. Versuchen Sie, die Seitennummern aus den Übungen zu verwenden, damit die Nummerierung gleich bleibt. Wenn Sie manuell ein Item erstellen oder Codebeispiele verwenden, merken Sie sich andernfalls die abweichende Nummer.
 
 !!! sampleapp "Sample Apps"
-    Es gibt viele Beispielanwendungen, die bestimmte Themen demonstrieren. Relevante Beispielanwendungen werden in den jeweiligen Kapiteln in solchen gruenen Boxen erwaehnt.
+    Es gibt viele Beispielanwendungen, die bestimmte Themen demonstrieren. Relevante Beispielanwendungen werden in den jeweiligen Kapiteln in solchen grünen Boxen erwähnt.
 
 !!! bytheway "By the way"
     *By the way*,<br>
-    Manchmal gibt es einen Tipp oder Hinweis, der nicht unbedingt direkt zur aktuellen Uebung gehoert. Solche Hinweise werden in Hellviolett dargestellt.
+    Manchmal gibt es einen Tipp oder Hinweis, der nicht unbedingt direkt zur aktuellen Übung gehört. Solche Hinweise werden in Hellviolett dargestellt.
 
 !!! tip "Tipps"
     Manchmal gibt es einen Hinweis, insbesondere wenn es zu diesem Thema ein eigenes Hands-On Lab, also ein Oracle LiveLab, gibt.
@@ -55,7 +55,7 @@ Bild sonst
 > Ich bin ein Zitat
 
 !!! note "Note"
-    Bitte zuerst die Datenbankverbindung pruefen.
+    Bitte zuerst die Datenbankverbindung prüfen.
 
 !!! tip "Tip"
     Das ist ein Tipp.
@@ -64,10 +64,10 @@ Bild sonst
     Warning
 
 !!! success "Success"
-    Erfolgreich ausgefuehrt
+    Erfolgreich ausgeführt
 
 !!! info "Info"
-    Zusaetzliche Information.
+    Zusätzliche Information.
 
 !!! danger "Danger"
     Vorsicht!

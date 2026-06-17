@@ -3,19 +3,19 @@
 !!! sampleapp "Sample App Calendar"
     <div class="two-columns">
       <div style="flex: 50%;">
-           Diese Anwendung hebt die nativen Kalenderfaehigkeiten von Oracle APEX hervor. Sie enthaelt einen Monatskalender mit stilisierten Tagesaufgaben. Die Daten koennen per Drag-and-drop geaendert werden. Das ist vollstaendig deklarativ und kann einfach mit nativen APEX-Wizards erstellt werden.
+           Diese Anwendung hebt die nativen Kalenderfähigkeiten von Oracle APEX hervor. Sie enthält einen Monatskalender mit stilisierten Tagesaufgaben. Die Daten können per Drag-and-drop geändert werden. Das ist vollständig deklarativ und kann einfach mit nativen APEX-Wizards erstellt werden.
       </div>
       <div style="flex: 50%;">
           ![calendar](assets/samples/calendar.png){ style="display:block;margin:auto;" }
       </div>
     </div>
 
-In diesem Kapitel bauen wir einen Kalender in unserer Anwendung und passen die Farbcodierung etwas an. Der Calendar basiert auf der JavaScript-Bibliothek FullCalendar und kann deklarativ, ueber CSS und ueber JavaScript Initialization Code angepasst werden.
+In diesem Kapitel bauen wir einen Kalender in unserer Anwendung und passen die Farbcodierung etwas an. Der Calendar basiert auf der JavaScript-Bibliothek FullCalendar und kann deklarativ, über CSS und über JavaScript Initialization Code angepasst werden.
 
-## 10.1 Daten fuer einen Kalender erstellen
+## 10.1 Daten für einen Kalender erstellen
 
-!!! exercise "SQL Script ausfuehren"
-    Zuerst erstellen wir eine Tabelle und laden einige Daten ueber ein **SQL Script**. Im Vergleich zu **SQL Commands** kannst du hier eine Menge von Statements auf einmal ausfuehren. Sie koennen dort geschrieben oder geladen werden. Erstelle ein neues Script und gib ihm den **Script Name** `myscript`. Kopiere das folgende Snippet in den Code Editor.
+!!! exercise "SQL Script ausführen"
+    Zuerst erstellen wir eine Tabelle und laden einige Daten über ein **SQL Script**. Im Vergleich zu **SQL Commands** kannst du hier eine Menge von Statements auf einmal ausführen. Sie können dort geschrieben oder geladen werden. Erstelle ein neues Script und gib ihm den **Script Name** `myscript`. Kopiere das folgende Snippet in den Code Editor.
 
     ``` sql
        CREATE TABLE occupancies
@@ -49,29 +49,29 @@ In diesem Kapitel bauen wir einen Kalender in unserer Anwendung und passen die F
 
     ![script](assets/calendar/script.png){ style="display:block;margin:auto;" }
 
-    Das Script wird geprueft, wenn du auf **Run** klickst, und du musst danach erneut auf **Run** klicken. Du bekommst Rueckmeldung, was passiert ist.
-    Im **Object Browser** kannst du die erstellte Tabelle (OCCUPANCIES) sehen und die eingefuegten Daten pruefen.
+    Das Script wird geprüft, wenn du auf **Run** klickst, und du musst danach erneut auf **Run** klicken. Du bekommst Rückmeldung, was passiert ist.
+    Im **Object Browser** kannst du die erstellte Tabelle (OCCUPANCIES) sehen und die eingefügten Daten prüfen.
 
 ## 10.2 Seite mit Kalender bauen
 
 Auf Basis der gerade erstellten Tabelle bauen wir nun einen Kalender, um die Daten zu visualisieren.
 
 !!! exercise "Kalenderseite bauen"
-    Erstelle eine neue Seite in deiner Anwendung und waehle **Calendar** als Region fuer diese neue Seite.
+    Erstelle eine neue Seite in deiner Anwendung und wähle **Calendar** als Region für diese neue Seite.
 
     ![createpage](assets/calendar/createpage.png){ style="display:block;margin:auto;" }
 
-    Waehle `9` als **Page Number** und nenne die Seite `MyCalendar`. Als **Table / View Name** waehle die gerade erstellte Tabelle `OCCUPANCIES`.
+    Wähle `9` als **Page Number** und nenne die Seite `MyCalendar`. Als **Table / View Name** wähle die gerade erstellte Tabelle `OCCUPANCIES`.
 
     ![createpage2](assets/calendar/createpage2.png){ style="display:block;margin:auto;" }
 
-    Im naechsten Schritt setzt du die Eigenschaften fuer **Display Column**, **Start Date Column** und **End Date Column** auf die passenden Spalten der Tabelle. Da wir die Uhrzeit sehen wollen, setze **Show Time** auf `Yes`. Klicke auf **Create Page** und starte die Seite, um den Kalender anzusehen.
+    Im nächsten Schritt setzt du die Eigenschaften für **Display Column**, **Start Date Column** und **End Date Column** auf die passenden Spalten der Tabelle. Da wir die Uhrzeit sehen wollen, setze **Show Time** auf `Yes`. Klicke auf **Create Page** und starte die Seite, um den Kalender anzusehen.
 
     ![createpage3](assets/calendar/createpage3.png){ style="display:block;margin:auto;" }
 
-    Jetzt machen wir es etwas schoener und faerben die Eintraege abhaengig von den Raeumen.
+    Jetzt machen wir es etwas schöner und färben die Einträge abhängig von den Räumen.
 
-    Gehe in den Page Designer (Seite 9), klicke die Calendar-Komponente an und sieh dir den Tab **Attributes** der Region an. Im Tab **Region** aenderst du in der Source den **Type** von `Table/View` auf `SQL Query`. Ersetze die **SQL Query** durch diese Abfrage:
+    Gehe in den Page Designer (Seite 9), klicke die Calendar-Komponente an und sieh dir den Tab **Attributes** der Region an. Im Tab **Region** änderst du in der Source den **Type** von `Table/View` auf `SQL Query`. Ersetze die **SQL Query** durch diese Abfrage:
 
     ``` sql
         SELECT ID, ROOM, START_TIME, END_TIME, EVENT_NAME,
@@ -86,9 +86,9 @@ Auf Basis der gerade erstellten Tabelle bauen wir nun einen Kalender, um die Dat
 
     ![newquery](assets/calendar/newquery.png){ style="display:block;margin:auto;" }
 
-    Gehe nun zurueck zum Tab **Attributes** und aendere die Eigenschaft **Display Column** auf `CAL_DISPLAY` und **CSS Class** auf `CSS_CLASS`.
+    Gehe nun zurück zum Tab **Attributes** und ändere die Eigenschaft **Display Column** auf `CAL_DISPLAY` und **CSS Class** auf `CSS_CLASS`.
 
     ![attributes](assets/calendar/attributes.png){ style="display:block;margin:auto;" }
 
-Starte den Kalender. Du siehst jetzt eine schoene Farbcodierung. Schau oben rechts und wechsle die Zeitraeume, um zu sehen, was passiert.
+Starte den Kalender. Du siehst jetzt eine schöne Farbcodierung. Schau oben rechts und wechsle die Zeiträume, um zu sehen, was passiert.
 
