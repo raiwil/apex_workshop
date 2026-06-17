@@ -66,7 +66,7 @@ Auf Seite 3 ist das Item **P3_DEPTNO** als `Select List` definiert. Wir ändern 
     Wenn du die Anwendung jetzt startest, sollte die Abteilung in der Employees Form als Radio Group angezeigt werden.
   </div>
   <div>
-    <img src="assets/application-customization/ui-radiogroup.png" alt="ui-radiogroup" style="display:block;margin:auto;">
+    <img src="../assets/application-customization/ui-radiogroup.png" alt="ui-radiogroup" style="display:block;margin:auto;">
   </div>
 </div>
 
@@ -123,7 +123,7 @@ Wenn eine solche List of Values mehrfach verwendet wird, ist es besser, sie als 
     Wenn du die Anwendung jetzt startest, sollte beim Job-Item eine Select List erscheinen, in der du aus bestehenden Jobs in der Datenbank wählen kannst. Der **Null Display Value** heißt *no job assigned*.
   </div>
   <div>
-    <img src="assets/application-customization/lov_ui.png" alt="lov_ui" style="display:block;margin:auto;">
+    <img src="../assets/application-customization/lov_ui.png" alt="lov_ui" style="display:block;margin:auto;">
   </div>
 </div>
 

@@ -112,7 +112,7 @@ Jetzt machen wir dasselbe für Bilder. Bilder sind ebenfalls Dateien, die aber d
     Jetzt kannst du Mitarbeitenden Bilder hinzufügen und sie in der Form sehen.
   </div>
   <div>
-    <img src="assets/files/imageinform.png" alt="image" style="display:block;margin:auto;">
+    <img src="../assets/files/imageinform.png" alt="image" style="display:block;margin:auto;">
   </div>
 </div>
 

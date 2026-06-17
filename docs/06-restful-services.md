@@ -82,7 +82,7 @@ We now want to display the location data from the REST Data Source on the Depart
      You will see the three pieces of information we have chosen from the REST Source as **Columns** and `postalCode` as **Parameter**. Reorder the columns into MUNICIPALITY_TYPE, DISTRICT_NAME and FEDERALSTATE_NAME. This can be done via drag and drop or the column property **Sequence**.
      Select the parameter **postalCode** and change the **Type** to `Item`. Then we can use `P7_ZIPCODE` as **Item**.
 
-    ![postalcode](assets/rest/postalcode.png){ style="display:block;margin:auto;" } 
+    ![postalcode](assets/rest/postalcode.png){ style="display:block;margin:auto;" } S
 
     You can now save and run the application to see the current result, but we want to make it a little nicer.
 
@@ -96,7 +96,7 @@ We now want to display the location data from the REST Data Source on the Depart
     Now the page should look like this example (here Frankfurt am Main), with a combination of local data and remote data through a RESTful service.
   </div>
   <div>
-    <img src="assets/rest/gardentower.png" alt="lov_ui" style="display:block;margin:auto;">
+    <img src="../assets/rest/gardentower.png" alt="lov_ui" style="display:block;margin:auto;">
   </div>
 </div>
 

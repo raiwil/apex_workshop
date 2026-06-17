@@ -104,7 +104,7 @@ The **APEX_COLLECTION** package provides the API for creating collections and fo
        The Tree region can be based on SQL queries that return hierarchical data and supports various options for controlling the appearance and behavior of the tree.
     </div>
     <div style="flex: 25%;">
-       <img src="assets/misc/tree.png" alt="tree" style="display:block;margin:auto;">
+       <img src="../assets/misc/tree.png" alt="tree" style="display:block;margin:auto;">
    </div>
 </div>
 
@@ -130,7 +130,7 @@ The **APEX_COLLECTION** package provides the API for creating collections and fo
        To create a QR code on a page, simply add an item of type QR Code, specify the source value (either static or dynamic), and choose the desired size. APEX then generates the QR code automatically at runtime.
     </div>
     <div style="flex: 25%;">
-       <img src="assets/misc/qrcode.png" alt="QR code" style="display:block;margin:auto;">
+       <img src="../assets/misc/qrcode.png" alt="QR code" style="display:block;margin:auto;">
    </div>
 </div>
 
@@ -160,7 +160,7 @@ The current mail queue and the email sending history can be monitored using the 
        Both approaches improve usability by presenting large amounts of information in a compact and easy-to-navigate layout.
     </div>
     <div style="flex: 35%;">
-       <img src="assets/misc/regiontabs.png" alt="region tabs" style="display:block;margin:auto;">
+       <img src="../assets/misc/regiontabs.png" alt="region tabs" style="display:block;margin:auto;">
    </div>
 </div>
 

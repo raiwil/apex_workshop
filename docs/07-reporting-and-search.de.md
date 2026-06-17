@@ -21,7 +21,7 @@ Dieses Demo-Kapitel enthält keine Übungen.
     Ein Classic Report ist eine Liste von Daten auf Basis des formatierten Ergebnisses einer SQL-Abfrage oder einer Tabelle/View. Spaltensortierung ist standardmäßig enthalten. Für Classic Reports gibt es verschiedene Template Options, um andere Ausgaben als Standardlisten zu erzeugen.
   </div>
   <div style="flex: 30%;">
-    <img src="assets/reporting/classic.png" alt="classic" style="display:block;margin:auto;">
+    <img src="../assets/reporting/classic.png" alt="classic" style="display:block;margin:auto;">
   </div>
 </div>
 
@@ -32,7 +32,7 @@ Dieses Demo-Kapitel enthält keine Übungen.
     Ein Interactive Report ist eine leistungsfähige Reporting-Komponente in Oracle APEX, mit der Endbenutzer Daten analysieren und anpassen können, ohne dass Entwickler eingreifen müssen. Benutzer können Daten direkt im Report sortieren, filtern, suchen, hervorheben, aggregieren, berechnen und gruppieren. Interactive Reports unterstützen außerdem gespeicherte Report-Layouts, Control Breaks, Charts und Daten-Downloads in verschiedenen Formaten. Damit sind sie ideal für Ad-hoc-Analysen und Self-Service-Reporting.
   </div>
   <div style="flex: 30%;">
-    <img src="assets/reporting/ir.png" alt="ir" style="display:block;margin:auto;">
+    <img src="../assets/reporting/ir.png" alt="ir" style="display:block;margin:auto;">
   </div>
 </div>
 
@@ -91,7 +91,7 @@ Medieninhalte können aus einer BLOB-Spalte, einer URL, in einem iframe eingebet
     Am Anfang dieses Workshops haben wir mit dem Create Application Wizard eine Faceted-Search-Seite erzeugt. Das hat gezeigt, wie schnell Oracle APEX mit minimaler Konfiguration eine leistungsfähige Suchoberfläche erstellen kann.
   </div>
   <div>
-    <img src="assets/reporting/facets.png" alt="facets" style="display:block;margin:auto;">
+    <img src="../assets/reporting/facets.png" alt="facets" style="display:block;margin:auto;">
   </div>
 </div>
 

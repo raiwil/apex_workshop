@@ -66,7 +66,7 @@ On page 3, the item **P3_DEPTNO** is set as a `Select List`. We will now change 
     Running the application now should show the department in the Employees Form as a Radio Group.
   </div>
   <div>
-    <img src="assets/application-customization/ui-radiogroup.png" alt="ui-radiogroup" style="display:block;margin:auto;">
+    <img src="../assets/application-customization/ui-radiogroup.png" alt="ui-radiogroup" style="display:block;margin:auto;">
   </div>
 </div>
 
@@ -125,7 +125,7 @@ When using such a List of Values more than once, it is better to implement it as
     Now, when running the application, there should be a Select List at the job item in which you can choose from any existing job in the database, and the **Null Display Value** is named *no job assigned*.
   </div>
   <div>
-    <img src="assets/application-customization/lov_ui.png" alt="lov_ui" style="display:block;margin:auto;">
+    <img src="../assets/application-customization/lov_ui.png" alt="lov_ui" style="display:block;margin:auto;">
   </div>
 </div>
 
