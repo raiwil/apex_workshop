@@ -43,7 +43,7 @@
   </div>
 
   <div>
-    <img src="assets/gettingstarted/empdept.png" alt="empdept" style="display:block;margin:auto;">
+    <img src="../assets/gettingstarted/empdept.png" alt="empdept" style="display:block;margin:auto;">
   </div>
 
 </div>

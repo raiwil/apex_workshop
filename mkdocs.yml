@@ -79,7 +79,7 @@ plugins:
             '2. Application Customization': '2. Anwendung anpassen'
             '3. Authentication': '3. Authentifizierung'
             '4. Authorization': '4. Autorisierung'
-            '5. Maps': '5. Karten'
+            '5. Maps': '5. Landkarten'
             '6. RESTful Services': '6. RESTful Services'
             '7. Reporting & Search': '7. Reporting und Suche'
             '8. Charts': '8. Diagramme'
@@ -89,12 +89,12 @@ plugins:
             '12. Layout': '12. Layout'
             '13. Data Loading': '13. Daten laden'
             '14. Approvals & Workflows': '14. Genehmigungen und Workflows'
-            '15. Translations': '15. Uebersetzungen'
+            '15. Translations': '15. Übersetzungen'
             '16. AI in APEX': '16. KI in APEX'
             '17. More Development Features': '17. Weitere Entwicklungsfunktionen'
             '18. Operations & ALM': '18. Betrieb und ALM'
             '19. Links & Learning Resources': '19. Links und Lernressourcen'
-            '20. Updates over Joins': '20. Updates ueber Joins'
+            '20. Updates over Joins': '20. Updates über Joins'
 
 markdown_extensions:
   - admonition
