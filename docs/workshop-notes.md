@@ -52,7 +52,7 @@ Bild mkdocs
           ![masterdetail](assets/samples/masterdetail.png){ style="display:block;margin:auto;" }
 
 Bild sonst 
-    <img src="../assets/gettingstarted/empdept.png" alt="empdept" style="display:block;margin:auto;">
+    <img src="assets/gettingstarted/empdept.png" alt="empdept" style="display:block;margin:auto;">
 
 > Ich bin ein Zitat
 
@@ -78,7 +78,6 @@ Bild sonst
 
 SamleApps Bildchen 293*80
 -->
-
 
 
 

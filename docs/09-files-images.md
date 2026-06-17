@@ -114,7 +114,7 @@ Now we do the same for pictures, which are just files that can be shown directly
     Now you can add images to the employees and see them in the form.
   </div>
   <div>
-    <img src="../assets/files/imageinform.png" alt="image" style="display:block;margin:auto;">
+    <img src="assets/files/imageinform.png" alt="image" style="display:block;margin:auto;">
   </div>   
 </div>
 

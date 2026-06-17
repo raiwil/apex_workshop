@@ -1,0 +1,312 @@
+# 2. Anwendung anpassen
+
+## 2.1 Links und Items
+
+### 2.1.1 Navigation - Link vom Report zur Form
+
+!!! presented "Action Menu und Forms"
+    - Wo das Action Menu des Interactive Reports angepasst wird
+    - Wie eine Form funktioniert
+        - Primary Key
+        - Pre-Rendering
+        - Process Form
+        - Buttons mit Conditions
+
+Um zu sehen, wie verlinkte Navigation in APEX funktioniert, fuegen wir einen eigenen Link zu dem automatisch erstellten Link hinzu. Der Name des Mitarbeiters soll klickbar werden (auf Seite 2 - Employees) und zur Mitarbeiter-Form (Seite 3) navigieren, genau wie das Stift-Icon.
+
+!!! exercise "Navigationslink hinzufuegen"
+
+    Suche im Page Designer die Spalte **ENAME** in der Region **Employees** (auf Seite 2). Waehle rechts in den Eigenschaften als **Type** den Wert `Link`. Klicke im Abschnitt **Link** auf **No Link Defined**.
+
+    ![column](assets/application-customization/enamecolumn.png){ style="display:block;margin:auto;" }
+
+    Das Ziel ist die Form-Seite `3`. Dort setzen wir den Primary Key (`P3_EMPNO`) mit dem Wert der ausgewaehlten Zeile im Report (`#EMPNO#`).
+
+    ![targemapping](assets/application-customization/target.png){ style="display:block;margin:auto;" }
+
+Wenn du die Anwendung jetzt startest, siehst du, dass die Namen der Mitarbeitenden klickbar sind und wie das Stift-Icon zur passenden Form-Seite navigieren.
+
+### 2.1.2 Datumsformate aendern
+
+In dieser Uebung aendern wir das Anzeigeformat von HIREDATE in der Form und im Report.
+Je nach Umgebung ist das Datumsformat moeglicherweise nicht das gewuenschte Format. Man kann ein Standardformat fuer die Anwendung setzen, was wir bisher noch nicht getan haben.
+
+!!! exercise "Datumsformat aendern"
+
+    Waehle die Spalte **HIREDATE** in der Region **Employees** auf Seite 2. Setze im Abschnitt **Appearance** die **Format Mask** auf `DD.MM.YYYY`.
+
+    ![targemapping](assets/application-customization/data_report.png){ style="display:block;margin:auto;" }
+
+    Mache dasselbe auf der Form-Seite 3 fuer das Item **P3_HIREDATE**. Setze unter **Appearance** die **Format Mask** auf `DD.MM.YYYY`.
+
+    ![targemapping](assets/application-customization/data_form.png){ style="display:block;margin:auto;" }
+
+Jetzt sollte das Datumsformat wie das typische deutsche Format aussehen. Wir haben gezeigt, wie man ein Format fuer eine einzelne Spalte oder ein einzelnes Item setzt. Es ist auch moeglich, ein Standardformat fuer die Anwendung zu setzen, das verwendet wird, wenn kein eigenes Format gewaehlt wurde.
+In **Shared Components** (die drei geometrischen Formen) findest du im Abschnitt **Globalization** die **Globalization Attributes**. Dort gibt es ein Item **Application Date Format**, in dem du den Standard fuer die Anwendung setzen kannst.
+
+### 2.1.3 Item von Select List zu Radio Group aendern
+
+Auf Seite 3 ist das Item **P3_DEPTNO** als `Select List` definiert. Wir aendern es nun zu einer `Radio Group`.
+
+![lov](assets/application-customization/lov_department.png){ style="display:block;margin:auto;" }
+
+!!! exercise "Item-Typ aendern"
+
+    Ueber die Developer Toolbar kommst du schnell zu den Eigenschaften eines Items. Klicke auf **Quick Edit** und danach direkt auf das Item. Ein Klick auf den Schraubenschluessel bringt dich zu den Live Template Options. Wenn du im Page Designer bist, musst du nicht ueber die Developer Toolbar gehen. Das ist nur ein effektiver Weg fuer Entwickler, aus der laufenden Anwendung direkt an die richtige Stelle im Page Designer zu springen.
+
+    ![quickedit](assets/application-customization/quickedit.png){ style="display:block;margin:auto;" }
+
+    Wenn **P3_DEPTNO** im Page Designer ausgewaehlt ist, waehle statt `Select List` den **Type** `Radio Group`.
+    Unter **List of Values** unterdrueckst du die Eigenschaften **Display Extra Values** und **Display Null Value**.
+
+    ![radiogroup](assets/application-customization/radiogroup.png){ style="display:block;margin:auto;" }
+
+<div class="two-columns">
+  <div>
+    Wenn du die Anwendung jetzt startest, sollte die Abteilung in der Employees Form als Radio Group angezeigt werden.
+  </div>
+  <div>
+    <img src="assets/application-customization/ui-radiogroup.png" alt="ui-radiogroup" style="display:block;margin:auto;">
+  </div>
+</div>
+
+!!! tip "Item Types"
+
+    <div class="two-columns">
+
+      <div style="flex: 30%;">
+          Markiere die Eigenschaft **Type** und waehle im mittleren Bereich den Tab **Help**, um einen kurzen Ueberblick ueber die verfuegbaren vordefinierten Item-Typen zu erhalten.
+      </div>
+
+      <div style="flex: 70%;">
+          ![contexthelp](assets/application-customization/contexthelp.png){ style="display:block;margin:auto;" }
+      </div>
+
+    </div>
+
+### 2.1.4 Modal Dialog aendern
+
+!!! exercise "Modal Dialog aendern"
+
+    Das Darstellungsverhalten des modalen Fensters kann auf Seitenebene geaendert werden. Klicke im Page Designer oben links auf Seite 3. Im Abschnitt **Appearance** der Eigenschaften kannst du das **Dialog Template** von `Drawer` auf `Modal Dialog` aendern. Dadurch wird das modale Fenster zentriert, waehrend Drawer es von rechts einblendet. Beim Testen musst du eventuell Shift-Reload verwenden, um die Auswirkung der geaenderten Eigenschaft zu sehen.
+
+    Es ist moeglich, die Seitengroesse fuer ein modales Fenster festzulegen. Man kann aber auch zulassen, dass Endbenutzer die Groesse des modalen Fensters selbst anpassen.
+
+    ![modaldialog](assets/application-customization/modeldialog.png){ style="display:block;margin:auto;" }
+
+### 2.1.5 List of Values fuer den Job hinzufuegen
+
+Das Job-Item in der Form ist aktuell ein einfaches Text Field. Jetzt fuegen wir diesem Item eine List of Values hinzu, damit Benutzer einen Job aus bestehenden Jobs in einer Select List auswaehlen koennen.
+
+!!! exercise "List of Values hinzufuegen"
+    Waehle auf Seite 3 das Item **P3_JOB** (ueber Page Designer oder Quick Edit) und setze als **Type** den Wert `Select List`. Sofort erscheinen rote Fehlermarker: nicht nur das Ausrufezeichen oben, sondern auch das Item in der Tree View und im Layout. Klicke auf das Ausrufezeichen und danach auf den Fehler, den du beheben willst. Hier gibt es nur einen.
+
+    ![lov_error](assets/application-customization/lov_error.png){ style="display:block;margin:auto;" }
+
+    Waehle `SQL Query` als **Type** fuer die List of Values. Verwende als **SQL Query** das Code-Snippet und trage als **Null Display Value** `no job assigned` ein.
+
+    ```sql
+       SELECT DISTINCT job as d, job as r
+         FROM emp
+        WHERE job IS NOT NULL
+        ORDER BY 1
+    ```
+
+     ![lov_query](assets/application-customization/lov_query.png){ style="display:block;margin:auto;" }
+
+    In einer List-of-Values-Abfrage gibt es zwei Spalten: eine Display Column und eine Return Column. Sieh in der Context Help nach, um ein Beispiel zu sehen.
+
+Wenn eine solche List of Values mehrfach verwendet wird, ist es besser, sie als Shared Component zu implementieren und hier nur darauf zu verweisen.
+
+<div class="two-columns">
+  <div>
+    Wenn du die Anwendung jetzt startest, sollte beim Job-Item eine Select List erscheinen, in der du aus bestehenden Jobs in der Datenbank waehlen kannst. Der **Null Display Value** heisst *no job assigned*.
+  </div>
+  <div>
+    <img src="assets/application-customization/lov_ui.png" alt="lov_ui" style="display:block;margin:auto;">
+  </div>
+</div>
+
+## 2.2 Verhalten abhaengig von Werten
+
+In dieser Uebung wird die Form geaendert, um wertabhaengiges Verhalten abzubilden. Unser Ziel ist sicherzustellen, dass nur SALESMAN eine Provision bekommen koennen (Spalte `comm` in der Tabelle).
+
+### 2.2.1 Validations
+
+Zuerst fuegen wir eine Validation hinzu, die prueft, dass das Item `P3_COMM` (die Provision) null ist, wenn der Job nicht SALESMAN ist. In unseren Beispieldaten werden Jobs in Grossbuchstaben in der Datenbank gespeichert, und Suchen in der Datenbank sind standardmaessig case-sensitive. Deshalb verwenden wir hier ebenfalls SALESMAN in Grossbuchstaben.
+
+!!! exercise "Provision validieren"
+
+     <div class="two-columns">
+      <div style="flex: 50%;">
+          Klicke auf Seite 3 mit der rechten Maustaste auf das Item **P3_COMM** und waehle **Create Validation**.
+      </div>
+      <div style="flex: 50%;">
+          ![createvalidation](assets/application-customization/createvalidation.png){ style="display:block;margin:auto;" }
+      </div>
+    </div>
+
+   Die Validation (standardmaessig New genannt) ist rot markiert, weil am Anfang Pflicht-Eigenschaften fehlen. Diese sind ebenfalls rot markiert. Nenne die Validation `check_commission`.
+   Da es `IS NULL` nicht als **Type** fuer die Validation gibt, waehle `Expression`. Als **Language** verwenden wir `PL/SQL`, und `:P3_COMM IS NULL` ist unsere **PL/SQL Expression**. Vergiss den Doppelpunkt nicht, um das Page Item zu referenzieren.
+
+   Schreibe zusaetzlich eine **Error Message** und waehle aus, wo diese Meldung angezeigt werden soll (**Display Location**).
+
+   Fuege jetzt eine Bedingung (**Server-side Condition**) hinzu, wann diese Validation ausgefuehrt werden soll. Waehle `Item != Value` als **Type**, `P3_JOB` als **Item** und `SALESMAN` als **Value**.
+
+   ![validation](assets/application-customization/validation.png){ style="display:block;margin:auto;" }
+
+Versuche, einem Nicht-Salesman eine Provision zu geben, und schau, was passiert.
+In diesem Fall ist das aber vielleicht nicht der perfekte Ansatz ...
+
+### 2.2.2 Conditions
+
+Jetzt versuchen wir einen anderen Weg: In der Form soll gar keine Provision eingegeben werden koennen, wenn der Job des Mitarbeiters nicht SALESMAN ist.
+
+!!! exercise "Conditional Read Only"
+    Loesche zuerst die Validation aus der vorherigen Uebung, indem du sie mit der rechten Maustaste anklickst und **Delete** waehlst. Alternativ kannst du ein Objekt einfach auswaehlen und DEL druecken. Konfiguriere den Abschnitt **Read Only** des Items **P3_COMM** mit denselben Einstellungen wie zuvor in der Server-side Condition der Validation.
+
+    ![conditionalreadonly](assets/application-customization/conditionalreadonly.png){ style="display:block;margin:auto;" }
+
+    Alternativ kannst du dieselben Einstellungen im Abschnitt Server-side Condition verwenden, wodurch das Item bedingt ausgeblendet wird.
+
+Oeffne die Form fuer verschiedene Mitarbeitende und pruefe, wie sich das Item verhaelt.
+Aber auch das ist in diesem Fall vielleicht nicht der perfekte Ansatz ...
+
+### 2.2.3 Dynamic Actions
+
+Wenn der Job in der Form geaendert wird, aendert sich das Item fuer die Provision noch nicht. Im dritten Ansatz blenden wir das Item jetzt dynamisch auf dem Client ein und aus, abhaengig vom aktuellen Job-Wert, ohne Interaktion mit dem Server. Dafuer ist JavaScript noetig, aber **Dynamic Actions** uebernehmen die JavaScript-Generierung fuer dich. Du musst den Code also nicht selbst schreiben.
+
+!!! exercise "Dynamic Actions"
+
+    <div class="two-columns">
+      <div style="flex: 50%;">
+          Loesche die Read-Only-Bedingung von vorher. Das geht, indem du als **Type** `- Select -` auswaehlst.
+      </div>
+      <div style="flex: 50%;">
+          ![select](assets/application-customization/select.png){ style="display:block;margin:auto;" }
+      </div>
+    </div>
+    <div class="two-columns">
+      <div style="flex: 50%;">
+          Klicke mit der rechten Maustaste auf **P3_JOB** (wir wollen etwas erstellen, das passiert, wenn der Job geaendert wird) und waehle **Create Dynamic Action**.
+      </div>
+      <div style="flex: 50%;">
+          ![createda](assets/application-customization/createda.png){ style="display:block;margin:auto;" }
+      </div>
+    </div>
+
+    Gib der Action einen **Name** (`JobChanged`). Der Abschnitt **When** ist durch die Art der Erstellung bereits vorbelegt: Es ist das `Change`-Event des **Item** `P3_JOB`.
+    Jetzt haben wir zwei Faelle: Der Job wird SALESMAN oder etwas anderes. Wir koennten nun zwei Actions hinter das Event legen, die jeweils pruefen, welcher Fall zutrifft, und entsprechend reagieren. Oder wir pruefen den Fall bereits im Event und gehen dann entweder in den TRUE- oder FALSE-Zweig. In diesem Fall ist das der bessere Ansatz, weil die Pruefung nur einmal passieren muss.
+    Dafuer verwenden wir jetzt eine **Client-side Condition** (wir wollen keinen Roundtrip zur Datenbank), in der wir definieren, dass das **Item** `P3_JOB` den Wert `SALESMAN` haben soll.
+
+    ![da](assets/application-customization/da.png){ style="display:block;margin:auto;" }
+
+    Klicke auf die vorab erstellte True Action **Show** (die wegen fehlender Eigenschaften rot ist). Wegen der Bedingung im Dynamic-Action-Event und weil wir im True-Zweig sind, ist die **Action** `Show` richtig. Nenne diese Action `ShowComm`, da das **Affected Element** das Item **P3_COMM** ist. Die Eigenschaft **Fire on Initialization** ist aktiviert, daher sind keine zusaetzlichen Schritte noetig, um das Item beim Laden der Seite anzuzeigen, wenn der Job SALESMAN ist.
+
+    ![action](assets/application-customization/action.png){ style="display:block;margin:auto;" }
+
+    <div class="two-columns">
+      <div style="flex: 50%;">
+           Jetzt brauchen wir die Gegenaktion, um die Provision auszublenden, wenn der Job nicht SALESMAN ist. Klicke mit der rechten Maustaste auf die True Action `ShowComm` und erstelle ueber **Create Opposite Action** die Gegenaktion, die das Item ausblendet, wenn der Job auf etwas anderes als SALESMAN geaendert wird.
+      </div>
+      <div style="flex: 50%;">
+          ![opposite](assets/application-customization/opposite.png){ style="display:block;margin:auto;" }
+      </div>
+    </div>
+
+    Benenne die erstellte False Action in `HideComm` um, und wir sind fertig.
+
+Probiere es aus und beobachte das Provision-Item in der Form, waehrend du den Job aenderst.
+Noch nicht beruecksichtigt ist, wie mit einem eventuell bereits vorhandenen Provision-Wert umgegangen werden soll.
+
+!!! bytheway "Dynamic Action Event Input"
+    *Uebrigens*,<br>
+    in 24.1 wurde ein Dynamic-Action-Event namens Input eingefuehrt. Das Event wird jedes Mal ausgeloest, wenn sich der Wert eines Elements aendert. Das unterscheidet sich vom Change-Event aus den Uebungen, das erst feuert, nachdem der Benutzer die Eingabe abgeschlossen hat, zum Beispiel durch Enter oder Auswahl eines Werts aus einer List of Values.
+
+!!! sampleapp "Sample App Dynamic Actions"
+    <div class="two-columns">
+      <div style="flex: 50%;">
+           Diese Anwendung demonstriert verschiedene Dynamic Actions, die in eine Anwendung eingebaut werden koennen. Diese deklarativen clientseitigen Verhaltensweisen umfassen einfache Beispiele zur Manipulation der Anzeige von Komponenten, Styling-Beispiele zur Aenderung des Erscheinungsbilds und serverseitige Beispiele, die mit der Datenbank interagieren.
+      </div>
+      <div style="flex: 50%;">
+          ![da](assets/samples/da.png){ style="display:block;margin:auto;" }
+      </div>
+    </div>
+
+!!! bytheway "Trigger Actions"
+    *Uebrigens*,<br>
+    in 26.1 werden Trigger Actions eingefuehrt. Sie bieten einen vereinfachten Weg, reaktives Verhalten in Oracle APEX zu definieren. Statt eine vollstaendige Dynamic Action mit Events, Bedingungen und Actions zu erstellen, kann man mit einer Trigger Action deklarativ festlegen, was bei einem bestimmten Ereignis passieren soll. Sie sind dafuer gedacht, haeufige clientseitige Interaktionsmuster mit weniger Konfiguration und besserer Wartbarkeit abzudecken. Trigger Actions helfen, Komplexitaet zu reduzieren und trotzdem responsive und interaktive Benutzeroberflaechen zu ermoeglichen.
+
+## 2.3 Session State
+
+Client-side Conditions werten Item-Werte direkt im Browser mit JavaScript aus. Da die Auswertung auf dem Client erfolgt, muss kein Request an den Server gesendet werden. Das macht clientseitige Bedingungen sehr reaktionsschnell und effizient, zum Beispiel um Regionen ein- oder auszublenden, Items zu aktivieren oder zu deaktivieren oder Benutzereingaben waehrend der Eingabe zu pruefen.
+
+Server-side Conditions werten dagegen Werte aus, die im APEX Session State gespeichert sind. Session State wird auf dem Datenbankserver verwaltet und enthaelt die aktuellen Werte von Page Items fuer eine bestimmte Benutzersession. Weil die Auswertung auf dem Server erfolgt, muss Oracle APEX eventuell einen Request zur Datenbank ausfuehren, bevor die Bedingung ausgewertet werden kann.
+
+Oracle APEX verwaltet den Session State automatisch fuer jede Benutzersession. Entwickler koennen von jeder Seite der Anwendung aus auf Session-State-Werte zugreifen. Dadurch lassen sich Informationen ueber Seiten und Prozesse hinweg teilen. Wichtig ist aber: Ein Wert, den ein Benutzer eingibt, ist zunaechst nur im Browser verfuegbar. Er wird nicht automatisch im Session State gespeichert.
+
+Damit ein Wert auf dem Server verfuegbar ist, muss er submitted werden. Das kann durch Submit der gesamten Seite oder durch Submit nur ausgewaehlter Page Items ueber die Eigenschaft Page Items to Submit einer Dynamic Action, Region oder eines Prozesses passieren. Sobald der Wert submitted wurde, liegt er im Session State und kann von serverseitigen Bedingungen, Computations, Validations, Processes und PL/SQL-Code referenziert werden.
+
+Der Unterschied zwischen Browser-Werten und Session State ist beim Entwickeln von APEX-Anwendungen wesentlich, weil er erklaert, warum ein Wert auf der Seite sichtbar sein kann, aber fuer serverseitige Logik noch nicht verfuegbar ist.
+
+Wir erleben das im Kapitel **Charts** direkt.
+
+## 2.4 Computations, Processes und Branches
+
+!!! presented "Computations, Processes und Branches"
+
+    <div class="two-columns">
+
+      <div>
+
+      **Computations**
+
+      **Processes**
+
+      - Invoke API - gespeicherten Code deklarativ aufrufen
+      - Human Tasks - Approval Processes
+      - Execute Code - PL/SQL
+      - Data Loading
+      - Send E-Mail
+      - Execution Chain - Ausfuehrungsreihenfolge, auch im Hintergrund moeglich
+
+      **Branches (Submit Page Sequences)**
+      </div>
+
+      <div>
+          ![targemapping](assets/application-customization/processes.png){ style="display:block;margin:auto;" }
+      </div>
+
+    </div>
+
+!!! tip "LiveLab"
+    Es gibt ein Oracle LiveLab **Implement custom authentication in APEX**.
+    [Hier klicken](https://livelabs.oracle.com/ords/r/dbpm/livelabs/view-workshop?wid=3315){target="_blank"}
+
+## 2.5 User Interface Attributes
+
+Als kurzer Ausblick auf das Kapitel **Layout** passen wir nun das Menue unserer Anwendung an, damit die folgenden Uebungen leichter nachzuvollziehen und visuell intuitiver sind.
+
+User Interface Attributes enthalten Einstellungen, die das Erscheinungsbild der Benutzeroberflaeche einer Anwendung steuern. Ein wichtiger Aspekt ist das Navigationsmenue und seine Platzierung. Diese Einstellungen definieren den Standard fuer die Anwendung, koennen aber auf einzelnen Seiten ueberschrieben werden.
+
+Es gibt mehrere Moeglichkeiten, das Menue einer Anwendung darzustellen. Unsere erste App verwendet eine Sidebar fuer die Navigation. Wir aendern das auf Top Navigation.
+
+!!! exercise "Menue von Side auf Top aendern"
+
+    Suche den Button **Edit Application Definition**, um direkt zu einem bestimmten Teil der Shared Components zu gelangen.
+
+    ![appdefinition](assets/application-customization/appdefinition.png){ style="display:block;margin:auto;" }
+
+    Gehe in den Abschnitt **User Interface** und aendere die **Position** fuer **Navigation Menu** von `Side` auf `Top`.
+
+    ![menu](assets/application-customization/menu.png){ style="display:block;margin:auto;" }
+
+    <div class="two-columns">
+      <div>
+        Starte die Anwendung und sieh dir das neue Menue an.
+      </div>
+      <div>
+              ![menu_app](assets/application-customization/menu_app.png){ style="display:block;margin:auto;" }
+      </div>
+
+    </div>

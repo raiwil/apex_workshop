@@ -6,7 +6,7 @@ repo_name: raiwil/apex_workshop
 
 theme:
   name: material
-  language: de
+  language: en
   features:
     - navigation.tabs
     - navigation.sections
@@ -57,6 +57,44 @@ nav:
 
 plugins:
   - search
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: de
+          name: Deutsch
+          build: true
+          site_name: APEX Hands-On Workshop
+          nav_translations:
+            Start: Start
+            Workshop Notes: Workshop-Hinweise
+            Chapters: Kapitel
+            '1. Getting started': '1. Erste Schritte'
+            '2. Application Customization': '2. Anwendung anpassen'
+            '3. Authentication': '3. Authentifizierung'
+            '4. Authorization': '4. Autorisierung'
+            '5. Maps': '5. Karten'
+            '6. RESTful Services': '6. RESTful Services'
+            '7. Reporting & Search': '7. Reporting und Suche'
+            '8. Charts': '8. Diagramme'
+            '9. Files & Images': '9. Dateien und Bilder'
+            '10. Calendars': '10. Kalender'
+            '11. JavaScript': '11. JavaScript'
+            '12. Layout': '12. Layout'
+            '13. Data Loading': '13. Daten laden'
+            '14. Approvals & Workflows': '14. Genehmigungen und Workflows'
+            '15. Translations': '15. Uebersetzungen'
+            '16. AI in APEX': '16. KI in APEX'
+            '17. More Development Features': '17. Weitere Entwicklungsfunktionen'
+            '18. Operations & ALM': '18. Betrieb und ALM'
+            '19. Links & Learning Resources': '19. Links und Lernressourcen'
+            '20. Updates over Joins': '20. Updates ueber Joins'
 
 markdown_extensions:
   - admonition

@@ -84,10 +84,9 @@ In this example, we will use an Interactive Grid; the same approach also works f
         BEGIN
             CASE :apex$row_status
             WHEN 'C' THEN
-                newempno := emp_seq.nextval;
-
-                INSERT INTO emp (empno, ename, sal, job)
-                VALUES (newempno, :ename, :sal, :job);
+                INSERT INTO emp (ename, sal, job)
+                VALUES (:ename, :sal, :job)
+                RETURNING empno INTO newempno;
 
                 IF :mycomment IS NOT NULL THEN
                     INSERT INTO emp2 (empno, mycomment)
@@ -126,15 +125,11 @@ In this example, we will use an Interactive Grid; the same approach also works f
 
     ![ig_plsql](assets/extra/ig_plsql.png){ style="display:block;margin:auto;" }
 
-    For each changed grid row, the code checks whether it was updated (`U`), created (`C`), or deleted (`D`) and then performs the logic described above. This code uses a sequence, so create it in **SQL Commands**:
+    For each changed grid row, the code checks whether it was updated (`U`), created (`C`), or deleted (`D`) and then performs the logic described above. When a new employee is created, the existing trigger and sequence from the sample dataset generate the new `EMPNO`; `RETURNING empno INTO newempno` captures that value so that the related row can be inserted into `EMP2`.
 
-    ```sql
-        CREATE SEQUENCE emp_seq START WITH 100;
-    ```
+    Now test the application, make some data changes, and check in Object Browser what happens in table `EMP`, and especially in `EMP2`.
 
-
-There are now two ways to generate keys for table `EMP`: the existing identity column or sequence used by the sample table, and this additional sequence. That is not good practice, and we use the second sequence here only to demonstrate the code above. In a real application, use one clear key-generation strategy. Now test the application, make some data changes, and check in Object Browser what happens in table `EMP`, and especially in `EMP2`.
-There is a little bit of coding involved, but you get the full flexibility and power when you need it.
+There is a little bit of coding involved, but this approach gives you the full flexibility and power when you need it.
 
 !!! bytheway "Prevent Lost Updates"
     *By the way*,<br>

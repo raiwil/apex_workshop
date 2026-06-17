@@ -305,7 +305,7 @@ Another approach is to create a file in Shared Components - **Static Application
      Acceptance through bells and whistles ;)
   </div>
   <div style="flex: 50%;">
-        <img src="../assets/layout/rotatingcard.png" alt="rotatingcard" style="display:block;margin:auto;">
+        <img src="assets/layout/rotatingcard.png" alt="rotatingcard" style="display:block;margin:auto;">
   </div>
 </div>
 

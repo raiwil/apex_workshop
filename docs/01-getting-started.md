@@ -44,7 +44,7 @@ Two foreign keys are also created so that employees can only work in departments
   </div>
 
   <div>
-    <img src="../assets/gettingstarted/empdept.png" alt="empdept" style="display:block;margin:auto;">
+    <img src="assets/gettingstarted/empdept.png" alt="empdept" style="display:block;margin:auto;">
   </div>
 
 </div>

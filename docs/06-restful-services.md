@@ -69,7 +69,7 @@ We now want to display the location data from the REST Data Source on the Depart
     Go to **Page Designer** for page 7 **Department**. 
     First, we rearrange the existing items to have some more vertical space. This can be done via drag and drop or the property **Start New Row** (and potentially **Sequence**) in the **Layout** section of the items.
 
-    ![item](assets/rest/item.png){ style="display:block;margin:auto;" } 
+    ![item](assets/rest/items.png){ style="display:block;margin:auto;" }
 
     Drag and drop a **Classic Report** from the **Gallery** above the item **P7_GEOLOCATION**.
    
@@ -96,7 +96,7 @@ We now want to display the location data from the REST Data Source on the Depart
     Now the page should look like this example (here Frankfurt am Main), with a combination of local data and remote data through a RESTful service.
   </div>
   <div>
-    <img src="../assets/rest/gardentower.png" alt="lov_ui" style="display:block;margin:auto;">
+    <img src="assets/rest/gardentower.png" alt="lov_ui" style="display:block;margin:auto;">
   </div>
 </div>
 
