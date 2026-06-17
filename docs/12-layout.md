@@ -345,6 +345,19 @@ You can manipulate layout at the object level by adding CSS classes without modi
     
     The name now has a red background when the job is Manager or President.
 
+!!! bytheway "CSS utility classes"
+    <div class="two-columns">
+      <div style="flex: 50%;">
+            *By the way*,<br>
+            while many components within Universal Theme automatically make use of several colors, you can use them in custom components as well. Universal Theme provides a number of CSS utility classes that can be used to apply this color palette to any HTML markup: [Click here](https://oracleapex.com/ords/r/apex_pm/ut/color-and-status-modifiers){target="_blank"}
+      </div>
+      <div style="flex: 50%;">
+          ![banner](assets/layout/cssclasses.png){ style="display:block;margin:auto;" }
+      </div>
+    </div>
+
+
+
 ## 12.5 Responsive Grid Layout
 
 Oracle APEX uses a Responsive Grid Layout based on a 12-column grid. Page components such as regions and items can be positioned by choosing where they start and how many columns they span. This makes it easy to create layouts that adapt to different screen sizes while keeping the page structure consistent. The grid can also be nested, allowing regions or items inside a parent grid column to define their own internal 12-column layout.

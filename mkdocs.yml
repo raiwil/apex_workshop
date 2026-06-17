@@ -50,11 +50,10 @@ nav:
       - '14. Approvals & Workflows': 14-approvals-workflows.md
       - '15. Translations': 15-translations.md  
       - '16. AI in APEX': 16-ai-in-apex.md
-      - '17. Application Lifecycle Management': 17-application-lifecycle-management.md
-      - '18. Administration': 18-administration.md
-      - '19. Miscellaneous': 19-miscellaneous.md
-      - '20. Links & Learning Resources': 20-links-learning-resources.md
-      - '21. Extra-Updates over Joins': 21-extra_updates-over-joins.md
+      - '17. More Development Features': 17-dev-features.md
+      - '18. Operations & ALM': 18-ops-alm.md
+      - '19. Links & Learning Resources': 19-links-learning-resources.md
+      - '20. Updates over Joins': 20-updates-over-joins.md
 
 plugins:
   - search

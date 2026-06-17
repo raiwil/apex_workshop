@@ -1,8 +1,8 @@
-# 21. Forms - Updates over Joins
+# 20. Forms: Updates over Joins
 
 This chapter may not be an obvious fit for a beginner workshop, but I like it too much to leave it out.
 
-So far, the dialogs and data changes we have built have changed one table at a time. Real scenarios can be more complex. In this chapter, we will see how forms can be used more flexibly and how more than one table can be involved. We will use a join as an example.
+So far, the forms and data changes we have built have changed one table at a time. Real scenarios can be more complex. In this chapter, we will see how forms can be used more flexibly and how more than one table can be involved. We will use a join as an example.
 
 We will create a table `EMP2` to store comments for employees and join it to `EMP` via the primary key `EMPNO`. A row in `EMP2` exists only when an employee has a comment. When a comment is entered, we need to insert a row into `EMP2`. When a comment is deleted, the employee row in `EMP` remains, but the corresponding row in `EMP2` should be deleted.
 
@@ -17,22 +17,26 @@ In this example, we will use an Interactive Grid; the same approach also works f
         CREATE TABLE emp2 (
             empno      NUMBER PRIMARY KEY,
             mycomment  VARCHAR2(50),
-            CONSTRAINT fk_emp   FOREIGN KEY ( empno )
-                                REFERENCES emp ( empno )
-            )
+            CONSTRAINT fk_emp FOREIGN KEY (empno)
+                REFERENCES emp (empno)
+        );
     ```
 
     Now try to run the following SQL query in **SQL Commands**. The SELECT statement inside the `UPDATE` uses an outer join so that rows from `EMP` are shown even when no corresponding row in `EMP2` is available yet.
 
     ```sql
         UPDATE (
-            SELECT e.empno e_empno, e.ename, e.sal, e.job, e2.mycomment
-                FROM emp e
-                LEFT OUTER JOIN emp2 e2
-                ON e.empno = e2.empno )
-            SET
-                sal = sal,
-                mycomment = mycomment
+            SELECT e.empno AS e_empno,
+                   e.ename,
+                   e.sal,
+                   e.job,
+                   e2.mycomment
+              FROM emp e
+              LEFT OUTER JOIN emp2 e2
+                ON e.empno = e2.empno
+        )
+           SET sal = sal,
+               mycomment = mycomment;
     ```
 
     You will get an *ORA-01776: cannot modify more than one base table through a join view*. Updating only the column `sal` works, but updating only the column `mycomment` results in an *ORA-01763: update or delete involves outer joined table*.
@@ -42,10 +46,14 @@ In this example, we will use an Interactive Grid; the same approach also works f
     Create a new page with an **Interactive Grid** component. Use any **Name** you like, set **Source Type** to `SQL Query`, and enter the following code in **Enter a SQL SELECT statement**.
 
     ```sql
-        SELECT e.empno, e.ename, e.sal, e.job, e2.mycomment
+        SELECT e.empno,
+               e.ename,
+               e.sal,
+               e.job,
+               e2.mycomment
           FROM emp e
           LEFT OUTER JOIN emp2 e2
-          ON e.empno = e2.empno
+            ON e.empno = e2.empno
     ```
 
     ![ig](assets/extra/ig.png){ style="display:block;margin:auto;" }
@@ -54,7 +62,7 @@ In this example, we will use an Interactive Grid; the same approach also works f
 
     Now define the column **EMPNO** as the **Primary Key**. There is a switch for this property in the **Source** section.
 
-    You will see the same error messages as before in SQL Commands when you try to update data. If you set the column **MYCOMMENT** to **Read Only**, the grid can be used for updates, but this column will be ignored.
+    You will see the same error messages as before when you try to update data. If you set the column **MYCOMMENT** to **Read Only**, the grid can be used for updates to `EMP`, but this column will be ignored.
 
     But we want to achieve the following:
 
@@ -72,34 +80,46 @@ In this example, we will use an Interactive Grid; the same approach also works f
 
     ```plsql
         DECLARE
-            newempno  NUMBER;
+            newempno NUMBER;
         BEGIN
             CASE :apex$row_status
             WHEN 'C' THEN
                 newempno := emp_seq.nextval;
-                INSERT INTO emp (empno,ename,sal,job)
-                    VALUES (newempno,:ename,:sal,:job);
+
+                INSERT INTO emp (empno, ename, sal, job)
+                VALUES (newempno, :ename, :sal, :job);
+
                 IF :mycomment IS NOT NULL THEN
-                    INSERT INTO emp2 (empno,mycomment)
-                        VALUES (newempno,:mycomment);
+                    INSERT INTO emp2 (empno, mycomment)
+                    VALUES (newempno, :mycomment);
                 END IF;
+
             WHEN 'U' THEN
                 UPDATE emp
-                   SET ename = :ename, sal = :sal, job = :job
+                   SET ename = :ename,
+                       sal   = :sal,
+                       job   = :job
                  WHERE empno = :empno;
-                MERGE INTO emp2 mytarget
-                USING (SELECT :empno AS empno,:mycomment AS mycomment FROM sys.dual) mysource
-                ON ( mysource.empno = mytarget.empno )
-                WHEN MATCHED THEN
-                    UPDATE SET mytarget.mycomment = mysource.mycomment
-                    DELETE WHERE mysource.mycomment IS NULL
-                WHEN NOT MATCHED THEN
-                    INSERT (mytarget.empno,mytarget.mycomment)
-                       VALUES (mysource.empno,mysource.mycomment )
-                       WHERE  mysource.mycomment IS NOT NULL;
+
+                MERGE INTO emp2 target
+                USING (
+                    SELECT :empno     AS empno,
+                           :mycomment AS mycomment
+                      FROM sys.dual
+                ) source
+                   ON (source.empno = target.empno)
+                 WHEN MATCHED THEN
+                    UPDATE
+                       SET target.mycomment = source.mycomment
+                    DELETE WHERE source.mycomment IS NULL
+                 WHEN NOT MATCHED THEN
+                    INSERT (target.empno, target.mycomment)
+                    VALUES (source.empno, source.mycomment)
+                    WHERE source.mycomment IS NOT NULL;
+
             WHEN 'D' THEN
-                DELETE emp2 WHERE empno = :empno;
-                DELETE emp WHERE empno = :empno;
+                DELETE FROM emp2 WHERE empno = :empno;
+                DELETE FROM emp  WHERE empno = :empno;
             END CASE;
         END;
     ```
@@ -109,23 +129,23 @@ In this example, we will use an Interactive Grid; the same approach also works f
     For each changed grid row, the code checks whether it was updated (`U`), created (`C`), or deleted (`D`) and then performs the logic described above. This code uses a sequence, so create it in **SQL Commands**:
 
     ```sql
-        CREATE SEQUENCE emp_seq START WITH 100
+        CREATE SEQUENCE emp_seq START WITH 100;
     ```
 
 
-There are now two sequences for table `EMP`: one used by the identity column and this additional one. That is certainly not good practice, and we use the second sequence here only to demonstrate the code above. Now test the application, make some data changes, and check in Object Browser what happens in table `EMP`, and especially in `EMP2`.
+There are now two ways to generate keys for table `EMP`: the existing identity column or sequence used by the sample table, and this additional sequence. That is not good practice, and we use the second sequence here only to demonstrate the code above. In a real application, use one clear key-generation strategy. Now test the application, make some data changes, and check in Object Browser what happens in table `EMP`, and especially in `EMP2`.
 There is a little bit of coding involved, but you get the full flexibility and power when you need it.
 
 !!! bytheway "Prevent Lost Updates"
     *By the way*,<br>
     Even with our own DML code, **Prevent Lost Updates** is still handled automatically.
 
-!!! bytheway "Instead Of Triggers"
+!!! bytheway "Instead of Triggers"
     *By the way*,<br>
     As an alternative, consider this approach:
 
     * Create a view with the query above
-    * Create `INSTEAD OF` triggers for this view that move the logic from the code above into the database
+    * Create `INSTEAD OF` triggers for this view to move the logic from the code above into the database
     * Use the view as the basis for a form
 
     With this approach, the logic is reusable from other environments.

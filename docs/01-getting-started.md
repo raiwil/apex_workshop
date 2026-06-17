@@ -142,6 +142,10 @@ We will now add an additional page to the application to see how this is done wi
 
     ![AppBuilder Create](assets/gettingstarted/createpage5.png){ style="display:block;margin:auto;" }
 
+!!! bytheway "Page 0"
+    *By the way*,<br>
+    there’s a page 0 in APEX. This is a kind of template for the application, as all components of this page will be rendered on all pages of an application. So, there’s only page rendering at page 0 and for example, you can define a footer, which should appear on every site of your application.  
+
 ## 1.6 Page Designer
 
 
