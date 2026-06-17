@@ -70,7 +70,7 @@ In this example, we will use an Interactive Grid; the same approach also works f
 
     As **PL/SQL Code to Insert/Update/Delete**, use this code:
 
-    ```PL/SQL
+    ```plsql
         DECLARE
             newempno  NUMBER;
         BEGIN
