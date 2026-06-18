@@ -6,7 +6,7 @@ Starting with Oracle APEX 24.1, AI capabilities have become an integral part of 
 
 For developers, AI can assist with tasks such as generating SQL queries, explaining application components, creating page content, and accelerating application development. For end users, AI-powered features can be embedded directly into applications, enabling natural language interaction, intelligent search, content generation, summarization, and conversational user experiences.
 
-With Oracle APEX 26.1, the introduction of the new APEXlang application representation further expands the possibilities for AI-assisted development. Because application definitions can now be represented in a structured, human-readable format, AI tools can better understand application components, relationships, and business logic. This improves the quality of AI-generated explanations, recommendations, code suggestions, and application modifications, while also supporting modern development workflows based on source control and collaboration.
+With Oracle APEX 26.1, the introduction of the new **APEXlang** application representation further expands the possibilities for AI-assisted development. Because application definitions can now be represented in a structured, human-readable format, AI tools can better understand application components, relationships, and business logic. This improves the quality of AI-generated explanations, recommendations, code suggestions, and application modifications, while also supporting modern development workflows based on source control and collaboration.
 
 As AI capabilities continue to evolve, Oracle APEX provides a powerful platform for combining low-code development with generative AI, allowing organizations to build more intelligent, productive, and user-friendly applications.
 
@@ -62,6 +62,12 @@ APEX makes it easy to integrate artificial intelligence into business applicatio
 **Conversational AI Experiences**
 
 APEX includes built-in support for AI-powered conversations. Developers can quickly add chat-based assistants to applications by defining a system prompt, welcome message, and user interface options. These assistants can be displayed inline on a page or within a modal dialog, allowing users to interact with AI capabilities directly within the application context.
+
+**Natural Language in Interactive Reports**
+
+Starting with Oracle APEX 26.1, Interactive Reports can accept natural language input from end users. When **Natural Language Support** is enabled for a report region, users can enter questions or instructions in the search field, for example to apply filters, highlight rows, sort data, show or hide columns, or create control breaks, group by views, pivot views, and charts.
+
+APEX translates the input into declarative report settings using the configured Generative AI Service. The component remains a standard Interactive Report, but it becomes much more accessible to business users because they do not need to know every menu and filter option. Good results depend on meaningful column names and, where useful, report context, column context, and reference data such as LOVs.
 
 **APEX_AI API**
 

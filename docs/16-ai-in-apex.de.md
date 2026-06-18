@@ -6,7 +6,7 @@ Seit Oracle APEX 24.1 sind KI-Fähigkeiten ein integrierter Bestandteil der Plat
 
 Für Entwickler kann KI bei Aufgaben helfen wie SQL Queries erzeugen, Anwendungskomponenten erklären, Seiteninhalte erstellen und die Anwendungsentwicklung beschleunigen. Für Endbenutzer können KI-gestützte Features direkt in Anwendungen eingebettet werden, zum Beispiel natürliche Sprachinteraktion, intelligente Suche, Inhaltserzeugung, Zusammenfassung und dialogorientierte User Experiences.
 
-Mit Oracle APEX 26.1 erweitert die Einführung der neuen APEXlang-Anwendungsrepräsentation die Möglichkeiten für KI-gestützte Entwicklung weiter. Da Anwendungsdefinitionen nun in einem strukturierten, menschenlesbaren Format dargestellt werden können, können KI-Werkzeuge Anwendungskomponenten, Beziehungen und Business-Logik besser verstehen. Das verbessert die Qualität von KI-generierten Erklärungen, Empfehlungen, Code-Vorschlägen und Anwendungsänderungen und unterstützt moderne Entwicklungsworkflows mit Source Control und Zusammenarbeit.
+Mit Oracle APEX 26.1 erweitert die Einführung der neuen **APEXlang**-Anwendungsrepräsentation die Möglichkeiten für KI-gestützte Entwicklung weiter. Da Anwendungsdefinitionen nun in einem strukturierten, menschenlesbaren Format dargestellt werden können, können KI-Werkzeuge Anwendungskomponenten, Beziehungen und Business-Logik besser verstehen. Das verbessert die Qualität von KI-generierten Erklärungen, Empfehlungen, Code-Vorschlägen und Anwendungsänderungen und unterstützt moderne Entwicklungsworkflows mit Source Control und Zusammenarbeit.
 
 Da KI-Fähigkeiten sich weiterentwickeln, bietet Oracle APEX eine leistungsfähige Plattform, um Low-Code-Entwicklung mit generativer KI zu kombinieren. Organisationen können dadurch intelligentere, produktivere und benutzerfreundlichere Anwendungen bauen.
 
@@ -63,6 +63,12 @@ APEX macht es einfach, künstliche Intelligenz in Business-Anwendungen zu integr
 
 APEX enthält eingebaute Unterstützung für KI-gestützte Konversationen. Entwickler können schnell chatbasierte Assistenten zu Anwendungen hinzufügen, indem sie einen System Prompt, eine Willkommensnachricht und UI-Optionen definieren. Diese Assistenten können inline auf einer Seite oder in einem modalen Dialog angezeigt werden, sodass Benutzer direkt im Anwendungskontext mit KI-Fähigkeiten interagieren können.
 
+**Natural Language in Interactive Reports**
+
+Ab Oracle APEX 26.1 können Interactive Reports natürliche Spracheingaben von Endbenutzern verarbeiten. Wenn für eine Report-Region **Natural Language Support** aktiviert ist, können Benutzer im Suchfeld Fragen oder Anweisungen eingeben, zum Beispiel um Filter zu setzen, Zeilen hervorzuheben, Sortierungen anzuwenden, Spalten ein- oder auszublenden, Control Breaks, Group By, Pivot-Ansichten oder Charts zu erzeugen.
+
+APEX übersetzt die Eingabe mithilfe des konfigurierten Generative AI Service in deklarative Report-Einstellungen. Damit bleibt der Report weiterhin ein normaler Interactive Report, wird aber für Fachanwender deutlich zugänglicher, weil sie nicht jedes Menü und jede Filteroption kennen müssen. Gute Ergebnisse hängen davon ab, dass der Report aussagekräftige Spaltennamen, optionalen Report Context, Column Context und bei Bedarf Referenzdaten wie LOVs bereitstellt.
+
 **APEX_AI API**
 
 Für fortgeschrittenere Use Cases stellt APEX das Package **APEX_AI** bereit. Seine APIs erlauben Entwicklern, programmatisch mit konfigurierten KI-Services zu interagieren und eigene KI-getriebene Funktionalität zu bauen. Da Unterschiede zwischen einzelnen KI-Providern abstrahiert werden, können Entwickler sich auf fachliche Anforderungen konzentrieren statt auf provider-spezifische Implementierungsdetails.
@@ -92,4 +98,3 @@ Semantische Ähnlichkeitssuche hilft Endbenutzern, relevante Ergebnisse zu finde
           ![vectorsearch](assets/samples/vectorsearch.png){ style="display:block;margin:auto;" }
       </div>
     </div>
-
