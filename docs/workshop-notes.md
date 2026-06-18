@@ -4,7 +4,7 @@ This hands-on workshop is a mix of explanations, demonstrations, and hands-on ex
 
 
 !!! presented "Presented"
-    Boxes with a brown background list topics the presenter will show and explain at this point. They are included as a reminder of what has been covered.
+    Boxes with a brown background list topics the presenter will show and explain at this point. They are included as a reminder of what has been covered. That's the part that's missing when you go through it on your own.
 
 !!! exercise "Exercise"
     Boxes with this aqua background represent the exercises. These are demonstrated step by step, and relevant details are explained. After that, or in parallel, there is time to reproduce these steps yourself.

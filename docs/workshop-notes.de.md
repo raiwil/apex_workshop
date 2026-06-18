@@ -3,7 +3,7 @@
 Dieser Hands-On Workshop ist eine Mischung aus Erklärungen, Demonstrationen und praktischen Übungen.
 
 !!! presented "Präsentation"
-    Boxen mit braunem Hintergrund enthalten Themen, die an dieser Stelle von der vortragenden Person gezeigt und erklärt werden. Sie dienen als Erinnerung daran, was behandelt wurde.
+    Boxen mit braunem Hintergrund enthalten Themen, die an dieser Stelle von der vortragenden Person gezeigt und erklärt werden. Sie dienen als Erinnerung daran, was behandelt wurde. Das ist der Teil, der im Selbststudium dann halt fehlt.
 
 !!! exercise "Übung"
     Boxen mit türkisfarbenem Hintergrund enthalten die Übungen. Diese werden Schritt für Schritt demonstriert, und relevante Details werden erklärt. Danach, oder parallel dazu, ist Zeit, die Schritte selbst nachzuvollziehen.
@@ -15,9 +15,9 @@ SELECT *
 FROM emp;
 ```
 
-Eigenschaftsnamen, Button-Beschriftungen und ähnliche Begriffe im Text sind **fett** dargestellt. Eigenschaftswerte werden `so formatiert`.
+Eigenschaftsnamen, Button-Beschriftungen und ähnliche Begriffe im Text sind **fett** dargestellt. Eingabewerte werden `so formatiert`.
 
-Einige Übungen bauen aufeinander auf. Deshalb sollten die Übungen eines Kapitels immer in der angegebenen Reihenfolge durchgeführt werden. Kapitel 1 und 2 erstellen eine Basisanwendung, die als Grundlage für alle weiteren Übungen dient.
+Einige Übungen bauen aufeinander auf. Deshalb sollten die Übungen eines Kapitels immer in der angegebenen Reihenfolge durchgeführt werden. Kapitel 1 und 2 erstellen eine Basisanwendung, die als Grundlage für alle weiteren Übungen dient. 
 Ausserdem benötigt das Kapitel zur RESTful-Service-Integration das Ergebnis der Übung zu geografischen Informationen, und das JavaScript-Beispiel baut auf der Kalenderübung auf.
 
 Eine APEX-Anwendung besteht unter anderem aus Seiten, denen jeweils eine eindeutige Nummer zugeordnet ist. Alle Items auf einer Seite haben, oder sollten zumindest haben, diese Nummer im Namen (`Px_ITEMNAME`).

@@ -9,13 +9,13 @@
 
     - Die Entwicklungsumgebung und die Endbenutzer-Oberfläche laufen im Webbrowser -> **Keine Client-Software erforderlich**
     - APEX-App-Definitionen werden als Metadaten in der Datenbank gespeichert -> **Deklarativ, keine Code-Generierung**
-    - Seitenerzeugung passiert in der Datenbank mit nur einem Request -> **Seite und Daten zusammen**
+    - Die Seitenerzeugung erfolgt in der Datenbank mit nur einem Request -> **Seite und Daten zusammen**
     - Show Page und Accept Page: APEX verarbeitet jeden Request in zwei Phasen: Show Page (Rendering der Seite) und Accept Page (Verarbeitung gesendeter Daten, Validierungen und Branching).
-    - Session Management: APEX hält Session State, um benutzerspezifische Daten über Seitenaufrufe hinweg zu speichern. Dadurch entsteht zustandsbehaftetes Anwendungsverhalten auf dem zustandslosen HTTP-Protokoll.
+    - Session Management: APEX hält den Session State, um benutzerspezifische Daten über Seitenaufrufe hinweg zu speichern. Dadurch entsteht stateful Anwendungsverhalten auf dem stateless HTTP-Protokoll.
     - APEX deckt das Spektrum von No-Code über Low-Code bis High-Control ab -> **flexibel und erweiterbar**
-    - Zugängliche UI für jedes Gerät -> **responsive Apps**
-    - ORDS als Listener
-    - Eine Datenbank mit mehreren Workspaces
+    - UI für jedes Gerät -> **responsive Apps**
+    - **ORDS** als Listener
+    - Eine Datenbank mit mehreren **Workspaces**
 
 ## 1.2 UI - Überblick
 
@@ -38,8 +38,8 @@
 <div class="two-columns">
 
   <div>
-    Die Übungen verwenden die bekannten Tabellen EMP und DEPT. Wir erstellen sie aus den Sample Datasets. Für beide Tabellen werden Sequenzen und Trigger für die Primärschlüsselspalten erstellt.
-    Ausserdem werden zwei Foreign Keys erstellt, damit Mitarbeitende nur in existierenden Abteilungen arbeiten können und nur einen existierenden Manager haben können.
+    Die Übungen verwenden die bekannten Tabellen EMP und DEPT. Wir erstellen sie aus den **Sample Datasets**. Für beide Tabellen werden Sequenzen und Trigger für die Primärschlüsselspalten erstellt.
+    Ausserdem werden zwei Foreign Keys erstellt, damit Mitarbeiter nur in existierenden Abteilungen arbeiten können und nur einen existierenden Manager haben können.
   </div>
 
   <div>
@@ -63,7 +63,7 @@ Wir verwenden **Sample Datasets**, es gäbe aber auch andere Optionen wie Quick 
 
     Nach einem Klick auf **Next** wähle im nächsten Fenster **Install Dataset** und danach **Exit**. Bitte nicht den Button Create Application verwenden.
 
-Jetzt sind die Tabellen erstellt und können im **Object Browser** geprüft werden.
+Jetzt sind die Tabellen erstellt und können im **Object Browser** angeschaut werden.
 
 !!! bytheway "Dark und Light Mode"
     <div class="two-columns">
@@ -78,7 +78,7 @@ Jetzt sind die Tabellen erstellt und können im **Object Browser** geprüft werd
 
 ## 1.4 Erste Anwendung mit dem Wizard erstellen - MyEmployees
 
-Wir verwenden den Wizard, um eine Anwendung mit einer ersten Home Page und einem Report/Form für Mitarbeitende zu erstellen. Danach fügen wir im Page Designer eine zweite Seite hinzu. Das ist unser Startpunkt für die folgenden Übungen. Alles, was hier erstellt wird, kann später geändert werden.
+Wir verwenden den Wizard, um eine Anwendung mit einer ersten Home Page und einem Report mit einer Form für Mitarbeiter zu erstellen. Danach fügen wir im Page Designer eine zweite Seite hinzu. Das ist unser Startpunkt für die folgenden Übungen. Alles, was hier erstellt wird, kann später geändert werden.
 
 !!! exercise "Erste Anwendung mit dem Wizard erstellen"
 
@@ -93,7 +93,7 @@ Wir verwenden den Wizard, um eine Anwendung mit einer ersten Home Page und einem
     ![AppBuilder Create](assets/gettingstarted/createanapplication.png){ style="display:block;margin:auto;" }
 
     !!! tip "Create App Using Generative AI"
-        Der Eintrag **Create App Using Generative AI** ist nur verfügbar, wenn in den Workspace Utilities ein **Generative AI Service** konfiguriert wurde. Das Gleiche gilt für die APEX Assistants in den Code Editors.
+        Der Eintrag **Create App Using Generative AI** ist nur verfügbar, wenn in den **Workspace Utilities** ein **Generative AI Service** konfiguriert wurde. Das Gleiche gilt für die APEX Assistants in den Code Editoren.
 
     Wir können das Logo und das Standard-Erscheinungsbild ändern. Klicke auf **Add Page**.
 
@@ -117,10 +117,10 @@ Wir verwenden den Wizard, um eine Anwendung mit einer ersten Home Page und einem
 
 ## 1.5 Seite hinzufügen (Faceted Search)
 
-Wir fügen der Anwendung jetzt eine zusätzliche Seite hinzu, um zu sehen, wie das ohne den Wizard funktioniert.
+Wir fügen der Anwendung jetzt eine zusätzliche Seite hinzu, um zu sehen, wie das ohne den initialen Wizard funktioniert.
 
 !!! exercise "Faceted-Search-Seite hinzufügen"
-    Du siehst die Anwendung mit den bereits vom Wizard erstellten Seiten. Klicke auf **Create Page**. Später sehen wir, dass das auch im Page Designer möglich ist.
+    Du siehst die Anwendung mit den bereits erstellten Seiten. Klicke auf **Create Page**. Später sehen wir, dass das auch im Page Designer möglich ist.
 
     ![AppBuilder Create](assets/gettingstarted/createpage.png){ style="display:block;margin:auto;" }
 
@@ -142,7 +142,7 @@ Wir fügen der Anwendung jetzt eine zusätzliche Seite hinzu, um zu sehen, wie d
 
 !!! bytheway "Page 0"
     *Übrigens*,<br>
-    in APEX gibt es eine Page 0. Sie ist eine Art Vorlage für die Anwendung, da alle Komponenten dieser Seite auf allen Seiten einer Anwendung gerendert werden. Auf Page 0 gibt es also nur Page Rendering. Zum Beispiel kannst du dort einen Footer definieren, der auf jeder Seite deiner Anwendung erscheinen soll.
+    in APEX gibt es eine Page 0. Sie ist eine Art Vorlage für die Anwendung, da alle Komponenten dieser Seite auf allen Seiten einer Anwendung dargestellt werden. Auf Page 0 gibt es also nur Page Rendering. Zum Beispiel kannst du dort einen Footer definieren, der auf jeder Seite deiner Anwendung erscheinen soll.
 
 ## 1.6 Page Designer
 

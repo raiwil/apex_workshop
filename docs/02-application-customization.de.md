@@ -24,11 +24,11 @@ Um zu sehen, wie verlinkte Navigation in APEX funktioniert, fügen wir einen eig
 
     ![targemapping](assets/application-customization/target.png){ style="display:block;margin:auto;" }
 
-Wenn du die Anwendung jetzt startest, siehst du, dass die Namen der Mitarbeitenden klickbar sind und wie das Stift-Icon zur passenden Form-Seite navigieren.
+Wenn du die Anwendung jetzt startest, siehst du, dass die Namen der Mitarbeiter klickbar sind und wie das Stift-Icon zur passenden Form-Seite navigieren.
 
 ### 2.1.2 Datumsformate ändern
 
-In dieser Übung ändern wir das Anzeigeformat von HIREDATE in der Form und im Report.
+In dieser Übung ändern wir das Anzeigeformat von **HIREDATE** in der Form und im Report.
 Je nach Umgebung ist das Datumsformat möglicherweise nicht das gewünschte Format. Man kann ein Standardformat für die Anwendung setzen, was wir bisher noch nicht getan haben.
 
 !!! exercise "Datumsformat ändern"
@@ -52,7 +52,8 @@ Auf Seite 3 ist das Item **P3_DEPTNO** als `Select List` definiert. Wir ändern 
 
 !!! exercise "Item-Typ ändern"
 
-    Über die Developer Toolbar kommst du schnell zu den Eigenschaften eines Items. Klicke auf **Quick Edit** und danach direkt auf das Item. Ein Klick auf den Schraubenschlüssel bringt dich zu den Live Template Options. Wenn du im Page Designer bist, musst du nicht über die Developer Toolbar gehen. Das ist nur ein effektiver Weg für Entwickler, aus der laufenden Anwendung direkt an die richtige Stelle im Page Designer zu springen.
+    Über die Developer Toolbar kommst du schnell zu den Eigenschaften eines Items. Klicke auf **Quick Edit** und danach direkt auf das Item. Ein Klick auf den Schraubenschlüssel bringt dich zu den Live Template Options. 
+    Wenn du im Page Designer bist, musst du nicht über die Developer Toolbar gehen. Das ist nur ein effektiver Weg für Entwickler, aus der laufenden Anwendung direkt an die richtige Stelle im Page Designer zu springen.
 
     ![quickedit](assets/application-customization/quickedit.png){ style="display:block;margin:auto;" }
 
@@ -139,7 +140,7 @@ Zuerst fügen wir eine Validation hinzu, die prüft, dass das Item `P3_COMM` (di
 
      <div class="two-columns">
       <div style="flex: 50%;">
-          Klicke auf Seite 3 mit der rechten Maustaste auf das Item **P3_COMM** und wähle **Create Validation**.
+          Klicke mit der rechten Maustaste auf Seite 3 auf das Item **P3_COMM** und wähle **Create Validation**.
       </div>
       <div style="flex: 50%;">
           ![createvalidation](assets/application-customization/createvalidation.png){ style="display:block;margin:auto;" }
