@@ -112,7 +112,7 @@ We will use the wizard to create an application with an initial home page and a 
 
     ![AppBuilder Create](assets/gettingstarted/createanapplication2.png){ style="display:block;margin:auto;" }
 
-    After a few seconds, the application is created and you can see the pages. Click **Run Application** to see the result. Username and password are identical to those you chose to connect to the development environment, as the default Authentication Scheme is Oracle APEX Accounts.
+    After a few seconds, the application is created and you can see the pages. Click **Run Application** to see the result. Username and password are identical to those you chose to connect to the development environment, as the default Authentication Scheme is **Oracle APEX Accounts**.
 
     ![AppBuilder Create](assets/gettingstarted/runmyemployees.png){ style="display:block;margin:auto;" }
 

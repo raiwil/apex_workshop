@@ -94,7 +94,7 @@ Wir wollen die Standortdaten aus der REST Data Source jetzt auf der Departments-
     Jetzt sollte die Seite wie dieses Beispiel aussehen (hier Frankfurt am Main), mit einer Kombination aus lokalen Daten und Remote-Daten über einen RESTful Service.
   </div>
   <div>
-    <img src="../assets/rest/gardentower.png" alt="gardentower" style="display:block;margin:auto;">
+    <img src="../assets/rest/gardentower.png" alt="lov_ui" style="display:block;margin:auto;">
   </div>
 </div>
 

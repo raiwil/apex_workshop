@@ -53,7 +53,7 @@ Auf Seite 3 ist das Item **P3_DEPTNO** als `Select List` definiert. Wir ändern 
 !!! exercise "Item-Typ ändern"
 
     Über die Developer Toolbar kommst du schnell zu den Eigenschaften eines Items. Klicke auf **Quick Edit** und danach direkt auf das Item. Ein Klick auf den Schraubenschlüssel bringt dich zu den Live Template Options. 
-    Wenn du im Page Designer bist, musst du nicht über die Developer Toolbar gehen. Das ist nur ein effektiver Weg für Entwickler, aus der laufenden Anwendung direkt an die richtige Stelle im Page Designer zu springen.
+    Wenn du im Page Designer bist, musst du nicht über die Developer Toolbar gehen. Das ist ein effektiver Weg für Entwickler, aus der laufenden Anwendung direkt an die richtige Stelle im Page Designer zu springen.
 
     ![quickedit](assets/application-customization/quickedit.png){ style="display:block;margin:auto;" }
 

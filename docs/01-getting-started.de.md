@@ -38,14 +38,13 @@
 <div class="two-columns">
 
   <div>
-    Die Übungen verwenden die bekannten Tabellen EMP und DEPT. Wir erstellen sie aus den **Sample Datasets**. Für beide Tabellen werden Sequenzen und Trigger für die Primärschlüsselspalten erstellt.
-    Ausserdem werden zwei Foreign Keys erstellt, damit Mitarbeiter nur in existierenden Abteilungen arbeiten können und nur einen existierenden Manager haben können.
+    Die Übungen verwenden die bekannten Tabellen EMP und DEPT. Wir erstellen sie aus den Sample Datasets. Für beide Tabellen werden Sequenzen und Trigger für die Primärschlüsselspalten erstellt.
+    Außerdem werden zwei Foreign Keys erstellt, damit Mitarbeiter nur in existierenden Abteilungen arbeiten können und nur einen existierenden Manager haben können.
   </div>
 
   <div>
     <img src="../assets/gettingstarted/empdept.png" alt="empdept" style="display:block;margin:auto;">
   </div>
-
 </div>
 
 Wir verwenden **Sample Datasets**, es gäbe aber auch andere Optionen wie Quick SQL oder Data Generator.
@@ -78,7 +77,7 @@ Jetzt sind die Tabellen erstellt und können im **Object Browser** angeschaut we
 
 ## 1.4 Erste Anwendung mit dem Wizard erstellen - MyEmployees
 
-Wir verwenden den Wizard, um eine Anwendung mit einer ersten Home Page und einem Report mit einer Form für Mitarbeiter zu erstellen. Danach fügen wir im Page Designer eine zweite Seite hinzu. Das ist unser Startpunkt für die folgenden Übungen. Alles, was hier erstellt wird, kann später geändert werden.
+Wir verwenden den Wizard, um eine Anwendung mit einer ersten Home Page und einem Report mit einer Formular für Mitarbeiter zu erstellen. Danach fügen wir im Page Designer eine zweite Seite hinzu. Das ist unser Startpunkt für die folgenden Übungen. Alles, was hier erstellt wird, kann später geändert werden.
 
 !!! exercise "Erste Anwendung mit dem Wizard erstellen"
 
@@ -111,7 +110,7 @@ Wir verwenden den Wizard, um eine Anwendung mit einer ersten Home Page und einem
 
     ![AppBuilder Create](assets/gettingstarted/createanapplication2.png){ style="display:block;margin:auto;" }
 
-    Nach wenigen Sekunden ist die Anwendung erstellt und du siehst die Seiten. Klicke auf **Run Application**, um das Ergebnis zu sehen. Benutzername und Passwort sind identisch mit den Daten, mit denen du dich an der Entwicklungsumgebung anmeldest, da das Standard-Authentication Scheme Oracle APEX Accounts ist.
+    Nach wenigen Sekunden ist die Anwendung erstellt und du siehst die Seiten. Klicke auf **Run Application**, um das Ergebnis zu sehen. Benutzername und Passwort sind identisch mit den Daten, mit denen du dich an der Entwicklungsumgebung anmeldest, da das Standard-Authentication Scheme **Oracle APEX Accounts** ist.
 
     ![AppBuilder Create](assets/gettingstarted/runmyemployees.png){ style="display:block;margin:auto;" }
 
@@ -136,7 +135,7 @@ Wir fügen der Anwendung jetzt eine zusätzliche Seite hinzu, um zu sehen, wie d
 
     ![AppBuilder Create](assets/gettingstarted/createpage4.png){ style="display:block;margin:auto;" }
 
-    Abschliessend wollen wir die Cards in einem **Grid** sehen und auswählen, welche Spalten der Tabelle als Titel und Body der Cards angezeigt werden sollen. `ENAME` und `JOB` sollten hier vorausgewählt sein.
+    Abschließend wollen wir die Cards in einem **Grid** sehen und auswählen, welche Spalten der Tabelle als Titel und Body der Cards angezeigt werden sollen. `ENAME` und `JOB` sollten hier vorausgewählt sein.
 
     ![AppBuilder Create](assets/gettingstarted/createpage5.png){ style="display:block;margin:auto;" }
 
