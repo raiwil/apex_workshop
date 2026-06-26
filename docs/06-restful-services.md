@@ -96,7 +96,7 @@ We now want to display the location data from the REST Data Source on the Depart
     Now the page should look like this example (here Frankfurt am Main), with a combination of local data and remote data through a RESTful service.
   </div>
   <div>
-    <img src="../assets/rest/gardentower.png" alt="lov_ui" style="display:block;margin:auto;">
+    <img src="../assets/rest/gardentower.png" alt="gardentower" style="display:block;margin:auto;">
   </div>
 </div>
 
